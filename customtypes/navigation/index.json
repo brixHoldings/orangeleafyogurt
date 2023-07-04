@@ -1,0 +1,8 @@
+{
+  "id": "navigation",
+  "label": "Navigation",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": { "Main": {} }
+}
