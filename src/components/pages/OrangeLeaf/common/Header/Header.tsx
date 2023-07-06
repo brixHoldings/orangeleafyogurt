@@ -92,7 +92,14 @@ const Header: FC = () => {
         >
           Menu
         </ButtonLink>
-        <NativeLink href="/locations">Locations</NativeLink>
+        <ButtonLink
+          data-is-active={pathname === '/locations'}
+          onClick={(): void => {
+            onClose('/locations');
+          }}
+        >
+          Locations
+        </ButtonLink>
         <ButtonLink
           data-is-active={pathname === '/e-club'}
           onClick={(): void => {
@@ -160,7 +167,9 @@ const Header: FC = () => {
               </svg>
             </Link>
             <Separator />
-            <NativeLink href="/locations">Locations</NativeLink>
+            <Link data-is-active={pathname === '/locations'} href="/locations">
+              Locations
+            </Link>
           </Section>
           <LinkSection>
             <Link data-is-active={pathname === '/menu'} href="/menu">

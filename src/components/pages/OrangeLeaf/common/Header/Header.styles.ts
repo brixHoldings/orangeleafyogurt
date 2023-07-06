@@ -70,6 +70,7 @@ export const ButtonLink = styled.button`
   font-size: 18px;
   line-height: 25px;
   color: #421b00;
+  text-transform: initial;
   &[data-is-active='true'] {
     &:before {
       content: '';
