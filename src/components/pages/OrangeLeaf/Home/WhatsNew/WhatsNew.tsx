@@ -32,7 +32,7 @@ const WhatsNew: FC = () => (
           watermelon and creamy frozen yogurt, delivering a burst of refreshing flavors. Beat the heat and indulge in
           this guilt-free treat that will keep you coming back for more.
         </Description>
-        <Link href="/orange-leaf/menu">
+        <Link href="/menu">
           <ButtonRound>See the menu</ButtonRound>
         </Link>
       </SideText>

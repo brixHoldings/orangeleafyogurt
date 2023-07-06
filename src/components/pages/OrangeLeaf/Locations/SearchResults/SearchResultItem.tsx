@@ -41,7 +41,7 @@ const SearchResultItem: FC<{ location: Location }> = ({ location }) => {
   const onClick = (): void => {
     setSearchResultCoordinates({ lat, lng });
     setLocations([location]);
-    router.push(`/orange-leaf/locations/${id}`);
+    router.push(`/locations/${id}`);
   };
 
   return (

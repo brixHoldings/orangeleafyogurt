@@ -22,7 +22,7 @@ const NotFound: FC = () => (
     <FlexWrapper>
       <Title>Error 404</Title>
       <SubTitle>Page not found!</SubTitle>
-      <Link href="/orange-leaf/">
+      <Link href="/">
         <ButtonOutlined>Go back home</ButtonOutlined>
       </Link>
     </FlexWrapper>

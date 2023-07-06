@@ -95,7 +95,7 @@ const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
   const fbLink = socialProfiles.find((profile) => profile.type === 'FACEBOOK')?.url;
 
   const onBack = useCallback(async (): Promise<void> => {
-    router.push('/orange-leaf/locations');
+    router.push('/locations');
 
     const {
       response: { locations },
@@ -159,7 +159,7 @@ const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
           <a href={`https://www.google.com/maps/dir/Current+Location/${lat},${lng}`} target="_blank">
             <Button>Get directions</Button>
           </a>
-          <Link href="/orange-leaf/menu">
+          <Link href="/menu">
             <ButtonOutlined>See menu</ButtonOutlined>
           </Link>
         </ButtonsWrapper>

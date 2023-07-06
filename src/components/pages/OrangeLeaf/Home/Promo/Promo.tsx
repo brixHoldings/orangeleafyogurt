@@ -51,7 +51,7 @@ const Promo: FC = () => {
         <Title>Join our club</Title>
         <FlexWrapper>
           <Subtitle>to get special offers</Subtitle>
-          <Link href="/orange-leaf/e-club">
+          <Link href="/e-club">
             <Button>JOIN E-CLUB</Button>
           </Link>
         </FlexWrapper>

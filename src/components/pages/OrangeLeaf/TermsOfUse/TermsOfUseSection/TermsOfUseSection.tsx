@@ -56,16 +56,16 @@ const TermsOfUseSection: FC = () => (
       <Paper>
         <PageTitle>Terms of use</PageTitle>
         <Text>
-          Welcome to the Orange Leaf, LLC website, <Link href="/orange-leaf/">www.orangeleafyogurt.com</Link>. These
-          Terms and Conditions of Use (“Terms”) apply to your access to, and use of, all or part of any website or
-          mobile application of Orange Leaf, LLC or its subsidiaries and affiliated companies (collectively, “Orange
-          Leaf,” “we,” or “us”), including <Link href="/orange-leaf/">www.orangeleafyogurt.com</Link> and any other
-          site, mobile application (“Application”), or online service where these Terms are posted (collectively, the
-          “Sites”). By accessing the Sites, you (“you”) agree to be bound by these Terms regardless of whether or not
-          you have read them. If you do not agree to these Terms, do not access the Sites. The Sites are not targeted
-          towards, nor intended for use by, anyone under the age of 13. YOU MUST BE AT LEAST 13 YEARS OLD TO ACCESS AND
-          USE THE SITES. If you are between the ages of 13 and 18, you may only use the Sites under the supervision of a
-          parent or legal guardian who agrees to be bound by these Terms.
+          Welcome to the Orange Leaf, LLC website, <Link href="/">www.orangeleafyogurt.com</Link>. These Terms and
+          Conditions of Use (“Terms”) apply to your access to, and use of, all or part of any website or mobile
+          application of Orange Leaf, LLC or its subsidiaries and affiliated companies (collectively, “Orange Leaf,”
+          “we,” or “us”), including <Link href="/">www.orangeleafyogurt.com</Link> and any other site, mobile
+          application (“Application”), or online service where these Terms are posted (collectively, the “Sites”). By
+          accessing the Sites, you (“you”) agree to be bound by these Terms regardless of whether or not you have read
+          them. If you do not agree to these Terms, do not access the Sites. The Sites are not targeted towards, nor
+          intended for use by, anyone under the age of 13. YOU MUST BE AT LEAST 13 YEARS OLD TO ACCESS AND USE THE
+          SITES. If you are between the ages of 13 and 18, you may only use the Sites under the supervision of a parent
+          or legal guardian who agrees to be bound by these Terms.
         </Text>
         <Text>
           This Application utilizes Google Maps and Google Earth. By using this Application, you are also are bound by
@@ -144,7 +144,7 @@ const TermsOfUseSection: FC = () => (
           Pursuant to the Digital Millennium Copyright Act, 17 U.S.C. Sec. 512(c), if you believe any material available
           on the Sites infringes upon a copyright that you own or control, you may file a notification of such
           infringement with our Designated Agent as set forth below or you can contact us via the{' '}
-          <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site.
+          <Link href="/about-us">Contact Us</Link> section of the Site.
         </Text>
         <Text>
           Orange Leaf, LLC <br />
@@ -353,16 +353,16 @@ const TermsOfUseSection: FC = () => (
         <Title>LOST, STOLEN OR DAMAGED GIFT CARD REPLACEMENT POLICY</Title>
         <Text>
           Unless you have an original sales receipt for your gift card and your 16-digit gift card number, or unless it
-          has been registered by you on <Link href="/orange-leaf/">www.orangeleafyogurt.com</Link> and you can provide
-          us your email address or phone number that you used to register your gift card, the remaining gift card value
-          will not be replaced if lost, stolen or damaged.
+          has been registered by you on <Link href="/">www.orangeleafyogurt.com</Link> and you can provide us your email
+          address or phone number that you used to register your gift card, the remaining gift card value will not be
+          replaced if lost, stolen or damaged.
         </Text>
         <ul>
           <ListItem>
             If you registered your gift card with us, you can contact us via the{' '}
-            <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site or via your account balance page
-            (go to disable my gift card) and we can deactivate your lost, stolen or damaged gift card and load the
-            balance remaining at the time of notification onto a new gift card or Orange Leaf Rewards account.
+            <Link href="/about-us">Contact Us</Link> section of the Site or via your account balance page (go to disable
+            my gift card) and we can deactivate your lost, stolen or damaged gift card and load the balance remaining at
+            the time of notification onto a new gift card or Orange Leaf Rewards account.
           </ListItem>
           <ListItem>
             You can also go into a participating Orange Leaf location, with your original receipt for the gift card
@@ -402,14 +402,14 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Title>REGISTRATION, LIABILITY FOR UNAUTHORIZED TRANSACTIONS</Title>
         <Text>
-          To register your gift card, please visit <Link href="/orange-leaf/">www.orangeleafyogurt.com</Link>. When
-          registering a gift card, you agree that you will: (i) provide complete and accurate information about
-          yourself; and (ii) update such information if it changes. If you do not provide or update such information, or
-          if we have reasonable grounds to suspect that you have not provided or updated such information, we shall have
-          the right, in our sole and absolute discretion, to disable your gift card. If you believe your gift card has
-          been disabled in error, please contact us via the <Link href="/orange-leaf/about-us">Contact Us</Link> section
-          of the Site. You are responsible for: (a) the accuracy of all information that you provide to us; and (b)
-          maintaining the confidentiality and security of your gift card information.
+          To register your gift card, please visit <Link href="/">www.orangeleafyogurt.com</Link>. When registering a
+          gift card, you agree that you will: (i) provide complete and accurate information about yourself; and (ii)
+          update such information if it changes. If you do not provide or update such information, or if we have
+          reasonable grounds to suspect that you have not provided or updated such information, we shall have the right,
+          in our sole and absolute discretion, to disable your gift card. If you believe your gift card has been
+          disabled in error, please contact us via the <Link href="/about-us">Contact Us</Link> section of the Site. You
+          are responsible for: (a) the accuracy of all information that you provide to us; and (b) maintaining the
+          confidentiality and security of your gift card information.
         </Text>
         <Text>
           Because your gift card is used like cash for purchases from participating locations, you are responsible for
@@ -417,10 +417,9 @@ const TermsOfUseSection: FC = () => (
           card is lost, stolen or destroyed, the card can be replaced with the balance remaining on it at the time of
           your call, but only if you have registered it with us. Please notify us immediately if you change any of your
           registration information. If your gift card becomes lost, stolen or damaged, you should contact us via the{' '}
-          <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site. Your gift card balance is only
-          protected from the point in time you notify us that your gift card is missing. We will freeze the remaining
-          balance on your gift card at the time you notify us and will load that remaining balance on a replacement gift
-          card.
+          <Link href="/about-us">Contact Us</Link> section of the Site. Your gift card balance is only protected from
+          the point in time you notify us that your gift card is missing. We will freeze the remaining balance on your
+          gift card at the time you notify us and will load that remaining balance on a replacement gift card.
         </Text>
         <Title>ARBITRATION</Title>
         <Text>
@@ -502,14 +501,14 @@ const TermsOfUseSection: FC = () => (
           Rewards points; however, if you forget to do so, you may either (i) take your original receipt back to the
           Orange Leaf location from which you made your purchase, and request your Orange Leaf Rewards points for that
           purchase be added to your Orange Leaf Rewards account, or (ii) contact us via the{' '}
-          <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site. Make sure that you keep a copy of
-          your receipt for the previous qualified purchases as we will need the information from the receipt in order to
-          update your account accordingly with the rewards points earned for any qualified purchases you make in
-          participating Orange Leaf location(s). If you cannot contact us via the
-          <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site or return to the Orange Leaf
-          location, then you can mail a copy of your receipt and your Orange Leaf Rewards card number to Orange Leaf,
-          Attn: Orange Leaf Rewards, 14850 Montfort Drive, Suite 131 PMB22, Dallas, TX 75254. Visit our website for
-          answers to frequently asked questions regarding Orange Leaf Rewards.
+          <Link href="/about-us">Contact Us</Link> section of the Site. Make sure that you keep a copy of your receipt
+          for the previous qualified purchases as we will need the information from the receipt in order to update your
+          account accordingly with the rewards points earned for any qualified purchases you make in participating
+          Orange Leaf location(s). If you cannot contact us via the
+          <Link href="/about-us">Contact Us</Link> section of the Site or return to the Orange Leaf location, then you
+          can mail a copy of your receipt and your Orange Leaf Rewards card number to Orange Leaf, Attn: Orange Leaf
+          Rewards, 14850 Montfort Drive, Suite 131 PMB22, Dallas, TX 75254. Visit our website for answers to frequently
+          asked questions regarding Orange Leaf Rewards.
         </Text>
         <Text>
           Your use of an Orange Leaf Rewards account constitutes your acceptance of the complete Orange Leaf Loyalty
@@ -664,28 +663,28 @@ const TermsOfUseSection: FC = () => (
           the remaining balance on your Orange Leaf Rewards card at the time you notify us and will load that remaining
           balance on a replacement Orange Leaf Rewards card. If you do not remember any of this information, you will
           need to obtain and register a new Orange Leaf Rewards account either in a participating Orange Leaf location
-          or online by contacting us via the <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site;
-          we are sorry but none of your Rewards points, rewards or balances can be transferred if you cannot remember
-          the 16-digit number of the Orange Leaf Rewards account or card or the email address or phone number that you
-          used to register your account
+          or online by contacting us via the <Link href="/about-us">Contact Us</Link> section of the Site; we are sorry
+          but none of your Rewards points, rewards or balances can be transferred if you cannot remember the 16-digit
+          number of the Orange Leaf Rewards account or card or the email address or phone number that you used to
+          register your account
         </Text>
         <Title>USERNAME, PASSWORD AND ACCESS TO YOUR ORANGE LEAF REWARDS CLUB ACCOUNT</Title>
         <Text>
           You are solely responsible for managing your password and for keeping your password confidential. No one from
           Orange Leaf will be authorized to provide you your password. If you forget your username or password, click on
-          the “Forgot Your Password” link, or contact us via the <Link href="/orange-leaf/about-us">Contact Us</Link>{' '}
-          section of the Site to request your username or password. For your privacy, we do not have access to your
-          password information. However, we can reset it for you so that you can update your account with a new
-          password. You are also solely responsible for restricting access to any computer or mobile device you use to
-          access your Orange Leaf Rewards membership. You agree that you are responsible for all activities that occur
-          on your account or through use of your password by yourself or by other persons. If we provide you with, and
-          you opt for a “Remember me” feature for your Orange Leaf Rewards account, or if you login with your personal
-          Facebook account, a cookie helps Orange Leaf recall certain items of your specific information on subsequent
-          visits, including your username and password. When you return to Orange Leaf Rewards, the information you
-          previously provided can be retrieved, so that it is not necessary to enter your username and password to
-          access certain functionality. While cookies are a convenience, please remember that if you elect the “Remember
-          Me” option, anyone who can access the computer or mobile device you are using will have the ability to access
-          your account for certain functions and view certain information about your account.
+          the “Forgot Your Password” link, or contact us via the <Link href="/about-us">Contact Us</Link> section of the
+          Site to request your username or password. For your privacy, we do not have access to your password
+          information. However, we can reset it for you so that you can update your account with a new password. You are
+          also solely responsible for restricting access to any computer or mobile device you use to access your Orange
+          Leaf Rewards membership. You agree that you are responsible for all activities that occur on your account or
+          through use of your password by yourself or by other persons. If we provide you with, and you opt for a
+          “Remember me” feature for your Orange Leaf Rewards account, or if you login with your personal Facebook
+          account, a cookie helps Orange Leaf recall certain items of your specific information on subsequent visits,
+          including your username and password. When you return to Orange Leaf Rewards, the information you previously
+          provided can be retrieved, so that it is not necessary to enter your username and password to access certain
+          functionality. While cookies are a convenience, please remember that if you elect the “Remember Me” option,
+          anyone who can access the computer or mobile device you are using will have the ability to access your account
+          for certain functions and view certain information about your account.
         </Text>
         <Title>CONSENT TO ELECTRONIC COMMUNICATIONS</Title>
         <Text>
@@ -817,7 +816,7 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           If you have any questions or comments about these Terms, please contact us via the{' '}
-          <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site.
+          <Link href="/about-us">Contact Us</Link> section of the Site.
         </Text>
         <Title>LINKS</Title>
         <Text>
@@ -852,8 +851,8 @@ const TermsOfUseSection: FC = () => (
           If you have any questions or concerns regarding these Terms (including, without limitation, the Orange Leaf
           Rewards Loyalty Program Rules or the Gift Card Rules) or regarding the privacy or security of any Orange Leaf
           gift card or Orange Leaf Rewards card or account, please contact us via the{' '}
-          <Link href="/orange-leaf/about-us">Contact Us</Link> section of the Site, or write to us at Orange Leaf, 14850
-          Montfort Drive, Suite 131 PMB22, Dallas, TX 75254.
+          <Link href="/about-us">Contact Us</Link> section of the Site, or write to us at Orange Leaf, 14850 Montfort
+          Drive, Suite 131 PMB22, Dallas, TX 75254.
         </Text>
         <Text>© 2021 Orange Leaf, LLC. All rights reserved.</Text>
       </Paper>

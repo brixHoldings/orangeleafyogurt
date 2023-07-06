@@ -183,7 +183,7 @@ const Classics: FC = () => {
           <SliderName style={{ color: slider.color }}>{slider.name}</SliderName>
           <SliderTitle>{slider.title}</SliderTitle>
           <SliderDescription>{slider.description}</SliderDescription>
-          <Link href="/orange-leaf/menu" style={{ marginLeft: index % 2 ? 'initial' : 'auto' }}>
+          <Link href="/menu" style={{ marginLeft: index % 2 ? 'initial' : 'auto' }}>
             <ButtonRound>See the menu</ButtonRound>
           </Link>
           <MobileCircle background={slider.circle} isRightAligned={Boolean(index % 2)}>
@@ -207,7 +207,7 @@ const Classics: FC = () => {
           <SliderName style={{ color: sliders[activeSliderIndex].color }}>{sliders[activeSliderIndex].name}</SliderName>
           <SliderTitle>{sliders[activeSliderIndex].title}</SliderTitle>
           <SliderDescription>{sliders[activeSliderIndex].description}</SliderDescription>
-          <Link href="/orange-leaf/menu">
+          <Link href="/menu">
             <ButtonRound>See the menu</ButtonRound>
           </Link>
         </SliderContent>

@@ -20,43 +20,43 @@ const routes: prismic.ClientConfig['routes'] = [
     type: 'homepage',
   },
   {
-    path: '/orange-leaf/about-us',
+    path: '/about-us',
     type: 'page',
   },
   {
-    path: '/orange-leaf/e-club',
+    path: '/e-club',
     type: 'page',
   },
   {
-    path: '/orange-leaf/franchising',
+    path: '/franchising',
     type: 'page',
   },
   {
-    path: '/orange-leaf/gift-cards',
+    path: '/gift-cards',
     type: 'page',
   },
   {
-    path: '/orange-leaf/locations',
+    path: '/locations',
     type: 'page',
   },
   {
-    path: '/orange-leaf/locations/:id',
+    path: '/locations/:id',
     type: 'page',
   },
   {
-    path: '/orange-leaf/menu',
+    path: '/menu',
     type: 'page',
   },
   {
-    path: '/orange-leaf/order',
+    path: '/order',
     type: 'page',
   },
   {
-    path: '/orange-leaf/privacy',
+    path: '/privacy',
     type: 'page',
   },
   {
-    path: '/orange-leaf/terms-of-use',
+    path: '/terms-of-use',
     type: 'page',
   },
 ];

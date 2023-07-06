@@ -90,9 +90,9 @@ const Footer: FC = () => {
             </Disclaimer>
           </CopyrightSection>
           <TermsAndConditions>
-            <Link href="/orange-leaf/privacy">Privacy</Link>
+            <Link href="/privacy">Privacy</Link>
             <Separator />
-            <Link href="/orange-leaf/terms-of-use">Terms & Conditions</Link>
+            <Link href="/terms-of-use">Terms & Conditions</Link>
           </TermsAndConditions>
         </Container>
       </Wrapper>
