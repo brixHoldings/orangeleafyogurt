@@ -85,14 +85,6 @@ export const ButtonLink = styled.button`
   }
 `;
 
-export const NativeLink = styled.a`
-  text-decoration: none;
-  position: relative;
-  font-size: 18px;
-  line-height: 25px;
-  color: #421b00;
-`;
-
 export const Separator = styled.div`
   width: 2px;
   height: 30px;

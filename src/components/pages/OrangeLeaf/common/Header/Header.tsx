@@ -19,7 +19,6 @@ import {
   HamburgerButton,
   HamburgerMenu,
   CloseButton,
-  NativeLink,
   HomeLink,
   ButtonLink,
 } from './Header.styles';
