@@ -21,7 +21,7 @@ import {
   SuggestionsList,
   Suggestion,
 } from './SearchResults.styles';
-import { getLocations } from 'src/app/orange-leaf/locations/layout';
+import { getLocations } from 'src/app/locations/layout';
 import { useStore } from 'src/context/StoreProvider';
 
 type OpeningHour = {

@@ -9,7 +9,7 @@ import Header from '@components/pages/OrangeLeaf/common/Header';
 import StyledComponentsRegistry from '@styles/registry';
 
 import { StoreProvider } from 'src/context/StoreProvider';
-import GlobalStyle from './orange-leaf/GlobalStyle';
+import GlobalStyle from './GlobalStyle';
 
 import type { FC, ReactNode } from 'react';
 

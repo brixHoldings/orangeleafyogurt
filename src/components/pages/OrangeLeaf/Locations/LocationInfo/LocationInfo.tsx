@@ -25,14 +25,14 @@ import {
   BackLink,
 } from './LocationInfo.styles';
 
-import { getLocations } from 'src/app/orange-leaf/locations/layout';
+import { getLocations } from 'src/app/locations/layout';
 import { initialCoordinates } from '@constants/initialCoordinates';
 import { useRouter } from 'next/navigation';
 import { useStore } from '@context/StoreProvider';
 
 import type { FC } from 'react';
 
-import type { SingleLocation } from 'src/app/orange-leaf/locations/[id]/page';
+import type { SingleLocation } from 'src/app/locations/[id]/page';
 
 export const convertTo12HourFormat = (time: string): string => {
   const [hour, minute] = time.split(':').map(Number);
