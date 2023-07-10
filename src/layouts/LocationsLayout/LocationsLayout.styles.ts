@@ -12,6 +12,7 @@ export const ContentWrapper = styled.section<{ footerHeight: number; navigationH
   @media (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
     position: initial;
+    margin-top: ${({ navigationHeight }): string => `${navigationHeight}px`};
   }
 `;
 
