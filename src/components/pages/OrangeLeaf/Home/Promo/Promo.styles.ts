@@ -121,6 +121,7 @@ export const CardContentWrapper = styled.div`
   width: clamp(329px, 30.42vw, 460px);
   height: clamp(187px, 17.32vw, 262px);
   border-radius: 16px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.18));
   @media (max-width: calc(${theme.breakpoints.tablet}px)) {
     left: initial;
     top: 100%;

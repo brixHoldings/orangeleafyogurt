@@ -22,7 +22,7 @@ export const LocationsLayout: FC<{ children: ReactNode; initialLocations: Locati
 }) => {
   const segments = useSelectedLayoutSegments();
   const { width } = useWindowSize();
-  const { locations, setLocations, footerHeight } = useStore();
+  const { locations, setLocations, footerHeight, navigationHeight } = useStore();
 
   useEffect(() => {
     setLocations(initialLocations);
@@ -39,7 +39,7 @@ export const LocationsLayout: FC<{ children: ReactNode; initialLocations: Locati
   );
 
   return (
-    <ContentWrapper footerHeight={footerHeight}>
+    <ContentWrapper footerHeight={footerHeight} navigationHeight={navigationHeight}>
       <Column>{children}</Column>
       {width && width <= theme.breakpoints.tablet && segments.length > 0 ? null : (
         <MapWrapper>

@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useAnimate } from 'framer-motion';
 
@@ -24,6 +24,8 @@ import {
 } from './Header.styles';
 
 import type { FC } from 'react';
+import { useStore } from '@context/StoreProvider';
+import useDimension from '@hooks/useDimension';
 
 const Header: FC = () => {
   const { width } = useWindowSize();
@@ -31,6 +33,10 @@ const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+
+  const { setNavigationHeight, navigationHeight } = useStore();
+  const mobileNavigationRef = useRef<HTMLElement>(null);
+  const desktopNavigationRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -43,6 +49,12 @@ const Header: FC = () => {
   }, [isOpen]);
 
   const isMobile = width <= theme.breakpoints.smallScreen;
+
+  const { height } = useDimension(isMobile ? mobileNavigationRef : desktopNavigationRef);
+
+  useEffect(() => {
+    setNavigationHeight(height);
+  }, [height, setNavigationHeight]);
 
   const onHamburgerClick = (): void => {
     void animate(ref.current, { opacity: 1, x: 0 }, { duration: 0.3 });
@@ -132,7 +144,7 @@ const Header: FC = () => {
           Order now
         </Button>
       </HamburgerMenu>
-      <MobileWrapper>
+      <MobileWrapper ref={mobileNavigationRef}>
         <HomeLink href="/">
           <svg fill="none" height="32" viewBox="0 0 32 33">
             <path
@@ -153,7 +165,7 @@ const Header: FC = () => {
       </MobileWrapper>
     </>
   ) : (
-    <OuterContainer>
+    <OuterContainer ref={desktopNavigationRef}>
       <MaxWidthWrapper>
         <Container>
           <Section>
