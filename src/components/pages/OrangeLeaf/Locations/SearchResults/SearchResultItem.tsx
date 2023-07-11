@@ -23,20 +23,15 @@ import { useStore } from '@context/StoreProvider';
 const SearchResultItem: FC<{ location: Location }> = ({ location }) => {
   const router = useRouter();
 
-  const {
-    city,
-    province,
-    openNow,
-    zip,
-    streetAndNumber,
-    id,
-    lat,
-    lng,
-    nextOpen: { hour },
-  } = location;
+  const { city, province, openNow, zip, streetAndNumber, id, lat, lng, openingHours } = location;
   const { setSearchResultCoordinates, setLocations } = useStore();
 
-  const openHoursString = openNow && hour ? `Open Until ${convertTo12HourFormat(hour)}` : 'Closed Now';
+  const date = new Date();
+  const currentDayOfTheWeek = date.getDay();
+
+  const closingHours = openingHours.find((day) => day.dayOfWeek === currentDayOfTheWeek);
+  const openHoursString =
+    openNow && closingHours ? `Open Until ${convertTo12HourFormat(closingHours.to1 as string)}` : 'Closed Now';
 
   const onClick = (): void => {
     setSearchResultCoordinates({ lat, lng });

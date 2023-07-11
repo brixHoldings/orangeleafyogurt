@@ -70,7 +70,12 @@ const LocationInfo: FC<{ location: SingleLocation }> = ({ location }) => {
     lng,
   } = location;
 
-  const openHoursString = openNow && hour ? `Open Until ${convertTo12HourFormat(hour)}` : 'Closed Now';
+  const date = new Date();
+  const currentDayOfTheWeek = date.getDay();
+
+  const closingHours = openingHours.find((day) => day.dayOfWeek === currentDayOfTheWeek);
+  const openHoursString =
+    openNow && closingHours ? `Open Until ${convertTo12HourFormat(closingHours.to1)}` : 'Closed Now';
 
   const sameWorkingHoursForEachDay = openingHours.every(
     (item) => (item.from1 === openingHours[0].from1 && item.to1) === openingHours[0].to1,
