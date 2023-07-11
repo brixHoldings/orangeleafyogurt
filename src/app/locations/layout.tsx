@@ -10,6 +10,7 @@ export async function getLocations(lat: number, lng: number): Promise<GetLocatio
   const res = await fetch(
     // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     `https://uberall.com/api/store-finders/${process.env.NEXT_PUBLIC_UBERALL_API_KEY}/locations?lat=${lat}&lng=${lng}&radius=100000`,
+    { cache: 'no-store' },
   );
 
   if (!res.ok) {
