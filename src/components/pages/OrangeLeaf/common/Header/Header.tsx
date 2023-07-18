@@ -112,9 +112,9 @@ const Header: FC = () => {
           Locations
         </ButtonLink>
         <ButtonLink
-          data-is-active={pathname === '/e-club'}
+          data-is-active={pathname === '/e-club-signup'}
           onClick={(): void => {
-            onClose('/e-club');
+            onClose('/e-club-signup');
           }}
         >
           E-club
@@ -186,7 +186,7 @@ const Header: FC = () => {
             <Link data-is-active={pathname === '/menu'} href="/menu">
               Menu
             </Link>
-            <Link data-is-active={pathname === '/e-club'} href="/e-club">
+            <Link data-is-active={pathname === '/e-club-signup'} href="/e-club-signup">
               E-club
             </Link>
             <Link data-is-active={pathname === '/gift-cards'} href="/gift-cards">
