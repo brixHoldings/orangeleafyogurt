@@ -6,7 +6,6 @@ import Lottie from 'lottie-react';
 import { useForm } from 'react-hook-form';
 
 import FormButton from '@components/pages/OrangeLeaf/common/Button';
-import VideoPlayerSection from '@components/pages/RedMango/Franchising/VideoSection';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import {
@@ -175,11 +174,6 @@ const AboutUsSection: FC = () => {
           </OurPurposeText>
         </TextWrapper>
       </OurPurposeSection>
-      <VideoPlayerSection
-        poster="/images/video-learn_about_franchising_opportunities.png"
-        url="/videos/learn_about_franchising_opportunities.mp4"
-        isAboutUs
-      />
       <BigTitle>We are here for you</BigTitle>
       <WeAreHereSection>
         <LeftColumn>

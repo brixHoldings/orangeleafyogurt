@@ -20,10 +20,9 @@ import type { FC } from 'react';
 const steps = [
   {
     description:
-      'Froyo, Mix It & Go, Froyo Cakes & Slices, Smoothies, Shakes, Waffle Cones, Acai Bowls and Party Boxes.',
+      'Froyo, Mix It & Go, Froyo Cakes & Slices, Smoothies, Shakes, Waffle Cones, Super Food Bowls and Party Boxes.',
     title: 'Menu variety',
   },
-  { description: "Clear cups to show off the customer's masterpiece.", title: 'Cups' },
   {
     description:
       '8 flavors of yogurt, including rotating seasonal flavors.<br/>Over 20 toppings and flavors - textures, colors and more!',

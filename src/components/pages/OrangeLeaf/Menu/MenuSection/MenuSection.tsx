@@ -289,7 +289,7 @@ const MenuSection: FC = () => (
           />
         </AcaiBowlsCircle>
         <FlexWrapper>
-          <TextTitle>Acai bowls</TextTitle>
+          <TextTitle>Super food bowls</TextTitle>
           <Paragraph>
             Shake it up with this creamy decadent dessert beverage. That’s right, DESSERT beverage. You choose the
             froyo, you choose the toppings, we’ll do the rest.
