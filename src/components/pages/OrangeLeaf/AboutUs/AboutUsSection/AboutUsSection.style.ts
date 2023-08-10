@@ -266,7 +266,11 @@ export const Banner = styled.div<{
 export const FloatingCreamImage = styled(FloatingImage)`
   transform: translate(-119%, -1%) rotate(180deg);
   @media (max-width: calc(${theme.breakpoints.smallScreen}px)) {
-    transform: translate(3%, 120%) rotate(180deg);
+    bottom: 0;
+    left: 0;
+    top: initial;
+    right: initial;
+    transform: translateY(100%);
   }
   @media (max-width: calc(${theme.breakpoints.tablet}px)) {
     bottom: 0;
