@@ -209,9 +209,8 @@ const AboutUsSection: FC = () => {
           >
             <BannerTitle>Outstanding product innovation!</BannerTitle>
             <BannerText>
-              The space design of our froyo shop is carefully crafted to be welcoming and suitable for people of all
-              ages. From the bright and playful color scheme to the comfortable seating arrangements, our space creates
-              a warm and inviting atmosphere for everyone!
+              At Orange Leaf Frozen Yogurt, we are always innovating to give you the best frozen yogurt experience.
+              That's why we offer seasonal variety, unique toppings, and more flavors than anyone else.
             </BannerText>
           </Banner>
           <Banner

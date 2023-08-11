@@ -55,7 +55,7 @@ const sliders = [
     circle: 'linear-gradient(180deg, #8BA726 0%, rgba(139, 167, 38, 0) 100%);',
     color: '#8BA726',
     description:
-      "Shake it up with this creamy decadent dessert beverage. That's right, DESSERT beverage. You choose the froyo, you choose the toppings, we'll do the rest.",
+      'Super Food Bowls are not only tasty, but also good for you. They provide you with energy, vitamins, minerals, and antioxidants to support your health and wellness.',
     height: 'clamp(179px,32.87vw, 497px)',
     image: '/images/home-slider2.png',
     left: '-9%',
