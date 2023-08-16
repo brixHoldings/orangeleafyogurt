@@ -291,8 +291,8 @@ const MenuSection: FC = () => (
         <FlexWrapper>
           <TextTitle>Super food bowls</TextTitle>
           <Paragraph>
-            Shake it up with this creamy decadent dessert beverage. That’s right, DESSERT beverage. You choose the
-            froyo, you choose the toppings, we’ll do the rest.
+            Super Food Bowls are not only tasty, but also good for you. They provide you with energy, vitamins,
+            minerals, and antioxidants to support your health and wellness.
           </Paragraph>
           {/* <ButtonsWrapper>
             <Button>See the menu</Button>
