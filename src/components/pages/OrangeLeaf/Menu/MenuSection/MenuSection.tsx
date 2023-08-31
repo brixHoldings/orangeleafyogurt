@@ -242,7 +242,6 @@ const MenuSection: FC = () => (
       </SuperStarOfTheMonth>
     </MenuPageMaxWidthWrapper>
     <MenuPageMaxWidthWrapper>
-      <BigTitle>We don’t stop at froyo</BigTitle>
       <SmoothiesAndShakes>
         <SmoothiesAndShakesCircle>
           <RoundImage
@@ -253,7 +252,9 @@ const MenuSection: FC = () => (
             width="clamp(378px, 35.71vw, 540px)"
           />
         </SmoothiesAndShakesCircle>
+
         <FlexWrapper>
+          <BigTitle>We don’t stop at froyo</BigTitle>
           <TextTitle>Smoothies & shakes:</TextTitle>
           <Paragraph>
             Made fresh to order, just for you. Choose from our menu of favorites or create a masterpiece of your own.

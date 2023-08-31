@@ -80,7 +80,7 @@ export const SmoothiesAndShakes = styled.div`
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 640px;
+    margin-bottom: 123px;
   }
 `;
 
@@ -98,7 +98,7 @@ export const AcaiBowls = styled.div`
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 640px;
+    margin-bottom: 153px;
   }
   &:last-of-type {
     margin-bottom: clamp(189px, 37.36vw, 565px);
@@ -122,7 +122,7 @@ export const Cakes = styled.div`
     max-width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 640px;
+    margin-bottom: 123px;
     padding-top: 35px;
   }
 `;
@@ -136,7 +136,7 @@ export const SuperStarOfTheMonth = styled.div`
   padding: clamp(25px, 2.38vw, 36px);
   margin-bottom: clamp(150px, 17.72vw, 268px);
   @media (max-width: ${theme.breakpoints.tablet}px) {
-    margin-bottom: 751px;
+    margin-bottom: 118px;
   }
 `;
 
@@ -189,7 +189,7 @@ export const SmoothiesAndShakesCircle = styled.div`
   right: -163%;
   width: clamp(618px, 58.46vw, 884px);
   height: clamp(618px, 58.46vw, 884px);
-  top: -81%;
+  top: 0;
   z-index: -1;
   border-radius: 50%;
   display: flex;
@@ -199,7 +199,7 @@ export const SmoothiesAndShakesCircle = styled.div`
   @media (max-width: ${theme.breakpoints.tablet}px) {
     left: initial;
     right: initial;
-    top: max(-260%, -684px);
+    position: initial;
   }
 `;
 
@@ -217,7 +217,7 @@ export const AcaiBowlsCircle = styled.div`
   @media (max-width: ${theme.breakpoints.tablet}px) {
     left: initial;
     right: initial;
-    top: -200%;
+    position: initial;
   }
 `;
 
@@ -235,7 +235,7 @@ export const CakesCircle = styled.div`
   @media (max-width: ${theme.breakpoints.tablet}px) {
     left: initial;
     right: initial;
-    top: -200%;
+    position: initial;
   }
 `;
 
