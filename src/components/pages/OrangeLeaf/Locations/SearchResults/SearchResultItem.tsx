@@ -23,6 +23,8 @@ import { useStore } from '@context/StoreProvider';
 const SearchResultItem: FC<{ location: Location }> = ({ location }) => {
   const router = useRouter();
 
+  console.log(888, location);
+
   const { city, province, openNow, zip, streetAndNumber, id, lat, lng, openingHours } = location;
   const { setSearchResultCoordinates, setLocations } = useStore();
 

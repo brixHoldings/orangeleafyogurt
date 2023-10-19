@@ -34,7 +34,7 @@ const Header: FC = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const { setNavigationHeight, navigationHeight } = useStore();
+  const { setNavigationHeight } = useStore();
   const mobileNavigationRef = useRef<HTMLElement>(null);
   const desktopNavigationRef = useRef<HTMLElement>(null);
 
