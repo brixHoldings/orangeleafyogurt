@@ -181,7 +181,6 @@ const MenuSection: FC = () => {
 
       <SliderContainer>
         <SliderImageContainer>
-          jjjjjj
           {sliderInfoArray.map((sliderInfo, index) => {
             if (index === 0) {
               return (
