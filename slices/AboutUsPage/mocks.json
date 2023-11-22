@@ -1,0 +1,69 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"header_title": {
+				"__TYPE__": "FieldContent",
+				"value": "quite",
+				"type": "Text"
+			},
+			"header_text": {
+				"__TYPE__": "FieldContent",
+				"value": "stems",
+				"type": "Text"
+			},
+			"section_title": {
+				"__TYPE__": "FieldContent",
+				"value": "pain",
+				"type": "Text"
+			},
+			"section_text": {
+				"__TYPE__": "FieldContent",
+				"value": "available",
+				"type": "Text"
+			},
+			"section_2_title": {
+				"__TYPE__": "FieldContent",
+				"value": "place",
+				"type": "Text"
+			},
+			"banner_1_title": {
+				"__TYPE__": "FieldContent",
+				"value": "bread",
+				"type": "Text"
+			},
+			"banner_1_text": {
+				"__TYPE__": "FieldContent",
+				"value": "coat",
+				"type": "Text"
+			},
+			"banner_2_title": {
+				"__TYPE__": "FieldContent",
+				"value": "iron",
+				"type": "Text"
+			},
+			"banner_2_text": {
+				"__TYPE__": "FieldContent",
+				"value": "last",
+				"type": "Text"
+			},
+			"banner_3_title": {
+				"__TYPE__": "FieldContent",
+				"value": "we",
+				"type": "Text"
+			},
+			"banner_3_text": {
+				"__TYPE__": "FieldContent",
+				"value": "fight",
+				"type": "Text"
+			},
+			"form_title": {
+				"__TYPE__": "FieldContent",
+				"value": "aboard",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,75 @@
+{
+  "id": "franchising_how_to_section",
+  "type": "SharedSlice",
+  "name": "FranchisingHowToSection",
+  "description": "FranchisingHowToSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title_first_part": {
+          "type": "Text",
+          "config": {
+            "label": "Title First Part",
+            "placeholder": ""
+          }
+        },
+        "title_second_part": {
+          "type": "Text",
+          "config": {
+            "label": "Title Second Part",
+            "placeholder": ""
+          }
+        },
+        "step_1_title": {
+          "type": "Text",
+          "config": {
+            "label": "Step 1 Title",
+            "placeholder": ""
+          }
+        },
+        "step_1_text": {
+          "type": "Text",
+          "config": {
+            "label": "Step 1 Text",
+            "placeholder": ""
+          }
+        },
+        "step_2_title": {
+          "type": "Text",
+          "config": {
+            "label": "Step 2 Title",
+            "placeholder": ""
+          }
+        },
+        "step_2_text": {
+          "type": "Text",
+          "config": {
+            "label": "Step 2 Text",
+            "placeholder": ""
+          }
+        },
+        "step_3_title": {
+          "type": "Text",
+          "config": {
+            "label": "Step 3 Title",
+            "placeholder": ""
+          }
+        },
+        "step_3_text": {
+          "type": "Text",
+          "config": {
+            "label": "Step 3 Text",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

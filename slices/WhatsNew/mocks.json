@@ -1,0 +1,34 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "hole",
+				"type": "Text"
+			},
+			"card_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "throat",
+				"type": "Text"
+			},
+			"card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "time",
+				"type": "Text"
+			},
+			"card_button": {
+				"__TYPE__": "FieldContent",
+				"value": "for",
+				"type": "Text"
+			},
+			"card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "hole",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

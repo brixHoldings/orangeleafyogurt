@@ -16,48 +16,12 @@ export const { repositoryName } = config;
 // TODO: Update the routes array to match your project's route structure.
 const routes: prismic.ClientConfig['routes'] = [
   {
-    path: '/orange-leaf',
+    path: '/',
     type: 'homepage',
   },
   {
-    path: '/about-us',
-    type: 'page',
-  },
-  {
-    path: '/e-club-signup',
-    type: 'page',
-  },
-  {
-    path: '/franchising',
-    type: 'page',
-  },
-  {
-    path: '/gift-cards',
-    type: 'page',
-  },
-  {
-    path: '/locations',
-    type: 'page',
-  },
-  {
-    path: '/locations/:id',
-    type: 'page',
-  },
-  {
     path: '/menu',
-    type: 'page',
-  },
-  {
-    path: '/order',
-    type: 'page',
-  },
-  {
-    path: '/privacy',
-    type: 'page',
-  },
-  {
-    path: '/terms-of-use',
-    type: 'page',
+    type: 'menu',
   },
 ];
 

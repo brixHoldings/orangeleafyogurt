@@ -5,12 +5,17 @@
 		"primary": {
 			"title": {
 				"__TYPE__": "FieldContent",
-				"value": "sky",
+				"value": "earlier",
 				"type": "Text"
 			},
 			"subtitle": {
 				"__TYPE__": "FieldContent",
-				"value": "bark",
+				"value": "continent",
+				"type": "Text"
+			},
+			"subtitle_2": {
+				"__TYPE__": "FieldContent",
+				"value": "choose",
 				"type": "Text"
 			}
 		},

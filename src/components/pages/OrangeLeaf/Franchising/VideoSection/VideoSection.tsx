@@ -1,3 +1,4 @@
+'use client';
 import Button from '@components/pages/OrangeLeaf/common/Button';
 
 import {
@@ -18,8 +19,13 @@ import {
 import useVideoSection from './useVideoSection.hook';
 
 import type { FC } from 'react';
+import { FranchisingVideoSlice } from 'prismicio-types';
 
-const VideoSection: FC = () => {
+const VideoSection: FC<{ slice: FranchisingVideoSlice }> = ({
+  slice: {
+    primary: { title, text, button },
+  },
+}) => {
   const { handlePauseVideo, handlePlayVideo, isVideoPlaying, videoRef } = useVideoSection();
 
   return (
@@ -144,12 +150,9 @@ const VideoSection: FC = () => {
       </VideoContainer>
       <VideoOverlayContainer isVideoPlaying={isVideoPlaying} onClick={handlePauseVideo}>
         <VideoOverlayContent>
-          <VideoOverlayTitle>It&apos;s more than a franchise!</VideoOverlayTitle>
-          <VideoOverlayQuote>
-            I was a customer of Orange Leaf before I became franchisee, and it&apos;s always a place that makes me and
-            my kids happy.
-          </VideoOverlayQuote>
-          <Button label="Watch video" onClick={handlePlayVideo} size="s" variant="outlined-inverted" />
+          <VideoOverlayTitle dangerouslySetInnerHTML={{ __html: title as string }}></VideoOverlayTitle>
+          <VideoOverlayQuote dangerouslySetInnerHTML={{ __html: text as string }}></VideoOverlayQuote>
+          <Button label={button as string} onClick={handlePlayVideo} size="s" variant="outlined-inverted" />
         </VideoOverlayContent>
       </VideoOverlayContainer>
     </Container>

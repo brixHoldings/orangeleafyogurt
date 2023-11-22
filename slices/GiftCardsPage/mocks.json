@@ -1,0 +1,44 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"header_title": {
+				"__TYPE__": "FieldContent",
+				"value": "exist",
+				"type": "Text"
+			},
+			"header_text": {
+				"__TYPE__": "FieldContent",
+				"value": "aloud",
+				"type": "Text"
+			},
+			"header_button": {
+				"__TYPE__": "FieldContent",
+				"value": "chosen",
+				"type": "Text"
+			},
+			"section_title": {
+				"__TYPE__": "FieldContent",
+				"value": "film",
+				"type": "Text"
+			},
+			"card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "pass",
+				"type": "Text"
+			},
+			"card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "see",
+				"type": "Text"
+			},
+			"card_button": {
+				"__TYPE__": "FieldContent",
+				"value": "came",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

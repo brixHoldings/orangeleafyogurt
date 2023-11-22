@@ -56,6 +56,7 @@ import type { FieldValues } from 'react-hook-form';
 
 import sloganRotate from '../../../../../../public/lottie/slogan-rotate.json';
 import wave1 from '../../../../../../public/lottie/wave1.json';
+import { AboutUsPageSlice } from 'prismicio-types';
 
 type AboutUsFormData = {
   email: string;
@@ -77,7 +78,24 @@ const schema = object({
   }),
 }).required();
 
-const AboutUsSection: FC = () => {
+const AboutUsSection: FC<{ slice: AboutUsPageSlice }> = ({
+  slice: {
+    primary: {
+      header_title,
+      header_text,
+      section_title,
+      section_text,
+      section_2_title,
+      banner_1_title,
+      banner_1_text,
+      banner_2_title,
+      banner_2_text,
+      banner_3_title,
+      banner_3_text,
+      form_title,
+    },
+  },
+}) => {
   const {
     formState: { errors },
     handleSubmit,
@@ -138,13 +156,8 @@ const AboutUsSection: FC = () => {
           />
         </SmallGreenCircle>
         <RelativeWrapper>
-          <WeAreExperienceTitle>We are experience!</WeAreExperienceTitle>
-          <WeAreExperienceText>
-            We of creative expression. For those fun seekers andhave few opportunities in our day to experience the joy
-            creative snackers who are looking for a sweet treat that’s also fun to make, orange leaf frozen yogurt lets
-            you create it your way by mixing and matching yogurt flavors, toppings and more to create an experience that
-            is as fun and unique as you are.
-          </WeAreExperienceText>
+          <WeAreExperienceTitle dangerouslySetInnerHTML={{ __html: header_title as string }}></WeAreExperienceTitle>
+          <WeAreExperienceText dangerouslySetInnerHTML={{ __html: header_text as string }}></WeAreExperienceText>
         </RelativeWrapper>
       </WeAreExperienceSection>
       <OurPurposeSection>
@@ -168,13 +181,11 @@ const AboutUsSection: FC = () => {
           width="clamp(104px, 14.74vw, 307px)"
         />
         <TextWrapper>
-          <OurPurposeTitle>Our Purpose</OurPurposeTitle>
-          <OurPurposeText>
-            Orange Leaf Frozen Yogurt inspires people to recapture the joy of creative expression.
-          </OurPurposeText>
+          <OurPurposeTitle dangerouslySetInnerHTML={{ __html: section_title as string }}></OurPurposeTitle>
+          <OurPurposeText dangerouslySetInnerHTML={{ __html: section_text as string }}></OurPurposeText>
         </TextWrapper>
       </OurPurposeSection>
-      <BigTitle>We are here for you</BigTitle>
+      <BigTitle dangerouslySetInnerHTML={{ __html: section_2_title as string }}></BigTitle>
       <WeAreHereSection>
         <LeftColumn>
           <Image alt="orange-leaf" src="/images/orange-leaf.jpg" style={{ objectFit: 'cover' }} fill />
@@ -197,33 +208,22 @@ const AboutUsSection: FC = () => {
               top="10%"
               width="clamp(132px,17.269vw, 261px)"
             />
-            <BannerTitle>Amazing space and design!</BannerTitle>
-            <BannerText>
-              From the bright and playful color scheme to the comfortable seating arrangements, our space is designed to
-              create a warm and inviting atmosphere for everyone!
-            </BannerText>
+            <BannerTitle dangerouslySetInnerHTML={{ __html: banner_1_title as string }}></BannerTitle>
+            <BannerText dangerouslySetInnerHTML={{ __html: banner_1_text as string }}></BannerText>
           </Banner>
           <Banner
             background="linear-gradient(180deg, #FFDB31 0%, rgba(255, 219, 49, 0) 100%)"
             paddingBottom="clamp(120px, 10.38vw, 157px)"
           >
-            <BannerTitle>Outstanding product innovation!</BannerTitle>
-            <BannerText>
-              At Orange Leaf Frozen Yogurt, we are always innovating to give you the best frozen yogurt experience.
-              That's why we offer seasonal variety, unique toppings, and more flavors than anyone else.
-            </BannerText>
+            <BannerTitle dangerouslySetInnerHTML={{ __html: banner_2_title as string }}></BannerTitle>
+            <BannerText dangerouslySetInnerHTML={{ __html: banner_2_text as string }}></BannerText>
           </Banner>
           <Banner
             background="linear-gradient(180deg, #FF8A0C 0%, rgba(255, 152, 40, 0) 109.05%)"
             paddingBottom="clamp(120px, 14.88vw, 225px)"
           >
-            <BannerTitle>The team that always smiles!</BannerTitle>
-            <BannerText>
-              We take pride in creating a welcoming and comfortable environment where everyone feels at home. Our team
-              is always eager to assist and make sure that every customer has a memorable experience. When you visit us,
-              you&apos;ll be greeted by a team that is genuinely happy to see you, and will make sure your visit is as
-              enjoyable as possible.
-            </BannerText>
+            <BannerTitle dangerouslySetInnerHTML={{ __html: banner_3_title as string }}></BannerTitle>
+            <BannerText dangerouslySetInnerHTML={{ __html: banner_3_text as string }}></BannerText>
           </Banner>
         </Banners>
       </BannersMaxWidthWrapper>
@@ -250,7 +250,7 @@ const AboutUsSection: FC = () => {
             top="-80%"
             width="395px"
           />
-          <FormTitle>Contact us.</FormTitle>
+          <FormTitle dangerouslySetInnerHTML={{ __html: form_title as string }}></FormTitle>
           {isSubmitted ? (
             <SuccessfulSubmit />
           ) : (

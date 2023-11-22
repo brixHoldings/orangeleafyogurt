@@ -44,6 +44,7 @@ import SuccessfulSubmit from '../../common/SuccessfulSubmit/SuccessfulSubmit';
 
 import type { FC, FormEventHandler } from 'react';
 import type { FieldValues } from 'react-hook-form';
+import { EClubPageSlice } from 'prismicio-types';
 
 type EClubFormData = {
   birthday: string;
@@ -68,7 +69,24 @@ export const eClubFormSchema = object({
   }),
 }).required();
 
-const EClubSection: FC<{ options: string[] }> = ({ options }) => {
+const EClubSection: FC<{ options: string[]; slice: EClubPageSlice }> = ({
+  options,
+  slice: {
+    primary: {
+      header_title,
+      header_text,
+      header_button,
+      section_title,
+      section_text,
+      section_button,
+      step_1,
+      step_2,
+      step_3,
+      form_title,
+      form_text,
+    },
+  },
+}) => {
   const {
     formState: { errors },
     handleSubmit,
@@ -77,6 +95,7 @@ const EClubSection: FC<{ options: string[] }> = ({ options }) => {
   } = useForm<EClubFormData>({
     resolver: yupResolver(eClubFormSchema),
   });
+
   const [isDisabled, setIsDisabled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -130,18 +149,10 @@ const EClubSection: FC<{ options: string[] }> = ({ options }) => {
 
       <HeaderBox>
         <YellowBg>
-          <Title>
-            Join us and get
-            <br /> deals and offers!
-          </Title>
-          <Paragraph>
-            If you love frozen yogurt, you&apos;ll love the Orange Leaf e-club program! It&apos;s easy to join and
-            you&apos;ll get amazing benefits like free froyo on your birthday, discounts on special holiday purchases,
-            and access to exclusive offers. Don&apos;t miss this opportunity to swirl up your favorite flavors and
-            toppings at a great value. Join the Orange Leaf e-club program today!
-          </Paragraph>
+          <Title dangerouslySetInnerHTML={{ __html: header_title as string }}></Title>
+          <Paragraph dangerouslySetInnerHTML={{ __html: header_text as string }}></Paragraph>
           <a href="#form-bg">
-            <Button>Join now</Button>
+            <Button dangerouslySetInnerHTML={{ __html: header_button as string }}></Button>
           </a>
           <FloatingImage
             alt="circle"
@@ -164,15 +175,10 @@ const EClubSection: FC<{ options: string[] }> = ({ options }) => {
           width="clamp(133px, 62.16vw, 413px)"
         />
         <BirthdayContent>
-          <Title2>Get the best birthday gift!</Title2>
-          <Paragraph>
-            Do you love froyo? Do you want to treat yo&apos;self on your special day? Then join the Orange Leaf e-club
-            today and get a free froyo on your birthday! All you have to do is sign up with your email address, provide
-            your birthday, and we&apos;ll take care of the rest. Don&apos;t miss this sweet deal and get ready to
-            celebrate with Orange Leaf!
-          </Paragraph>
+          <Title2 dangerouslySetInnerHTML={{ __html: section_title as string }}></Title2>
+          <Paragraph dangerouslySetInnerHTML={{ __html: section_text as string }}></Paragraph>
           <a href="#form-bg">
-            <Button>Join now</Button>
+            <Button dangerouslySetInnerHTML={{ __html: section_button as string }}></Button>
           </a>
         </BirthdayContent>
       </BirthdayWrapper>
@@ -183,19 +189,19 @@ const EClubSection: FC<{ options: string[] }> = ({ options }) => {
             <Number color="#FF6034">
               <span>1</span>
             </Number>
-            <StepLabel>Sign up</StepLabel>
+            <StepLabel dangerouslySetInnerHTML={{ __html: step_1 as string }}></StepLabel>
           </NumberWrapper>
           <NumberWrapper>
             <Number color="#FFDB31">
               <span>2</span>
             </Number>
-            <StepLabel>Wait for email</StepLabel>
+            <StepLabel dangerouslySetInnerHTML={{ __html: step_2 as string }}></StepLabel>
           </NumberWrapper>
           <NumberWrapper>
             <Number color="#8BA726">
               <span>3</span>
             </Number>
-            <StepLabel>Get deals and offers!</StepLabel>
+            <StepLabel dangerouslySetInnerHTML={{ __html: step_3 as string }}></StepLabel>
           </NumberWrapper>
         </Steps>
       </MaxWidthWrapper>
@@ -203,11 +209,8 @@ const EClubSection: FC<{ options: string[] }> = ({ options }) => {
         <Image alt="background" src="/images/terms-of-service-bg2.jpg" style={{ objectFit: 'cover' }} fill />
         <Paper>
           <FormColumn>
-            <Title2>Join now and get deals and offers</Title2>
-            <Paragraph data-should-hide="true">
-              Join the Orange Leaf e-club for exclusive deals and offers, and updates on new flavors. It only takes a
-              minute and you won&apos;t want to miss out!
-            </Paragraph>
+            <Title2 dangerouslySetInnerHTML={{ __html: form_title as string }}></Title2>
+            <Paragraph data-should-hide="true" dangerouslySetInnerHTML={{ __html: form_text as string }}></Paragraph>
           </FormColumn>
           {isSubmitted ? (
             <SuccessfulSubmit />

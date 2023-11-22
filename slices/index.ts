@@ -3,5 +3,17 @@
 import dynamic from 'next/dynamic';
 
 export const components = {
-  main_title: dynamic(() => import('./HomeHeading')),
+  about_us_page: dynamic(() => import('./AboutUsPage')),
+  e_club_page: dynamic(() => import('./EClubPage')),
+  franchising_header: dynamic(() => import('./FranchisingHeader')),
+  franchising_how_to_section: dynamic(() => import('./FranchisingHowToSection')),
+  franchising_menu_section: dynamic(() => import('./FranchisingMenuSection')),
+  franchising_video: dynamic(() => import('./FranchisingVideo')),
+  gift_cards_page: dynamic(() => import('./GiftCardsPage')),
+  home_gallery: dynamic(() => import('./HomeGallery')),
+  home_heading: dynamic(() => import('./HomeHeading')),
+  home_promo: dynamic(() => import('./HomePromo')),
+  menu_header: dynamic(() => import('./MenuPage')),
+  share_photos: dynamic(() => import('./SharePhotos')),
+  whats_new: dynamic(() => import('./WhatsNew')),
 };

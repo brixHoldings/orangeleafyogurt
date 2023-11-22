@@ -1,0 +1,16 @@
+{
+  "id": "franchising_menu_section",
+  "type": "SharedSlice",
+  "name": "FranchisingMenuSection",
+  "description": "FranchisingMenuSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "id": "main_title",
+  "id": "home_heading",
   "type": "SharedSlice",
   "name": "HomeHeading",
-  "description": "MainTitle",
+  "description": "HomeHeading",
   "variations": [
     {
       "id": "default",
@@ -12,8 +12,27 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "title": { "type": "Text", "config": { "label": "Title", "placeholder": "" } },
-        "subtitle": { "type": "Text", "config": { "label": "Subtitle", "placeholder": "" } }
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": ""
+          }
+        },
+        "subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle 2",
+            "placeholder": ""
+          }
+        }
       },
       "items": {}
     }

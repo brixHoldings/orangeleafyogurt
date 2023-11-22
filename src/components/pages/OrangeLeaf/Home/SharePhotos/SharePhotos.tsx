@@ -20,85 +20,29 @@ import {
 
 import type { FC } from 'react';
 import Image from 'next/image';
+import { SharePhotosSlice } from 'prismicio-types';
+import { PrismicImage } from '@prismicio/react';
 
-const photos = [
-  {
-    src: '/images/ig_image_1.png',
-    text: 'Let’s talk about those layers. 🤌😍 #HowDoYouOrangeLeaf',
+const SharePhotos: FC<{ slice: SharePhotosSlice }> = ({
+  slice: {
+    primary: { title, hashtag },
+    items,
   },
-  {
-    src: '/images/ig_image_2.png',
-    text: 'Build. Your. Own. 🥤',
-  },
-  {
-    src: '/images/ig_image_3.png',
-    text: 'The frozen yogurt’s lookin’ pretty FLY this month. 🦋😉',
-  },
-  {
-    src: '/images/ig_image_4.png',
-    text: 'We all have that one friend that’s obsessed with everything gummy.',
-  },
-  {
-    src: '/images/ig_image_5.png',
-    text: 'Raise your hand if you’re a boba fan: 🙋‍♀️🙋‍♂️',
-  },
-  {
-    src: '/images/ig_image_1.png',
-    text: 'Let’s talk about those layers. 🤌😍 #HowDoYouOrangeLeaf',
-  },
-  {
-    src: '/images/ig_image_2.png',
-    text: 'Build. Your. Own. 🥤',
-  },
-  {
-    src: '/images/ig_image_3.png',
-    text: 'The frozen yogurt’s lookin’ pretty FLY this month. 🦋😉',
-  },
-  {
-    src: '/images/ig_image_4.png',
-    text: 'We all have that one friend that’s obsessed with everything gummy.',
-  },
-  {
-    src: '/images/ig_image_5.png',
-    text: 'Raise your hand if you’re a boba fan: 🙋‍♀️🙋‍♂️',
-  },
-  {
-    src: '/images/ig_image_1.png',
-    text: 'Let’s talk about those layers. 🤌😍 #HowDoYouOrangeLeaf',
-  },
-  {
-    src: '/images/ig_image_2.png',
-    text: 'Build. Your. Own. 🥤',
-  },
-  {
-    src: '/images/ig_image_3.png',
-    text: 'The frozen yogurt’s lookin’ pretty FLY this month. 🦋😉',
-  },
-  {
-    src: '/images/ig_image_4.png',
-    text: 'We all have that one friend that’s obsessed with everything gummy.',
-  },
-  {
-    src: '/images/ig_image_5.png',
-    text: 'Raise your hand if you’re a boba fan: 🙋‍♀️🙋‍♂️',
-  },
-];
-
-const SharePhotos: FC = () => (
+}) => (
   <>
     <TextContainer>
       <div>
-        <Title>Share your experience with us!</Title>
-        <Subtitle>Use #Frozenyogurt and/or #Brainfreeze...</Subtitle>
+        <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+        <Subtitle dangerouslySetInnerHTML={{ __html: hashtag as string }}></Subtitle>
       </div>
     </TextContainer>
     <Slider>
       <Barrier>
         <Lane>
-          {photos.map((photo, index) => (
+          {[...items, ...items, ...items].map((photo, index) => (
             <Item key={index}>
               <Photo>
-                <Image alt="ig" src={photo.src} style={{ objectFit: 'cover' }} fill />
+                <PrismicImage field={photo.image} style={{ objectFit: 'cover', height: '100%' }} />
 
                 <Logo>
                   <svg fill="none" height="55" viewBox="0 0 53 55" width="53" xmlns="http://www.w3.org/2000/svg">
@@ -110,8 +54,8 @@ const SharePhotos: FC = () => (
                 </Logo>
               </Photo>
 
-              <PhotoTitle>orangeleaf</PhotoTitle>
-              <PhotoDescription>{photo.text}</PhotoDescription>
+              <PhotoTitle dangerouslySetInnerHTML={{ __html: photo.title as string }}></PhotoTitle>
+              <PhotoDescription dangerouslySetInnerHTML={{ __html: photo.text as string }}></PhotoDescription>
             </Item>
           ))}
         </Lane>

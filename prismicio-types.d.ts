@@ -2,10 +2,278 @@
 
 import type * as prismic from '@prismicio/client';
 
-type Simplify<T> = {
-  [KeyType in keyof T]: T[KeyType];
-};
-/** Content for Homepage documents */
+type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
+
+type AboutUsDocumentDataSlicesSlice = AboutUsPageSlice;
+
+/**
+ * Content for About Us documents
+ */
+interface AboutUsDocumentData {
+  /**
+   * Slice Zone field in *About Us*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<AboutUsDocumentDataSlicesSlice> /**
+   * Meta Description field in *About Us*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: about_us.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *About Us*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *About Us*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: about_us.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * About Us document from Prismic
+ *
+ * - **API ID**: `about_us`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type AboutUsDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<AboutUsDocumentData>,
+  'about_us',
+  Lang
+>;
+
+type EclubsignupDocumentDataSlicesSlice = EClubPageSlice;
+
+/**
+ * Content for EclubSignup documents
+ */
+interface EclubsignupDocumentData {
+  /**
+   * Slice Zone field in *EclubSignup*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: eclubsignup.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<EclubsignupDocumentDataSlicesSlice> /**
+   * Meta Description field in *EclubSignup*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: eclubsignup.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *EclubSignup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: eclubsignup.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *EclubSignup*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: eclubsignup.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * EclubSignup document from Prismic
+ *
+ * - **API ID**: `eclubsignup`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type EclubsignupDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<EclubsignupDocumentData>,
+  'eclubsignup',
+  Lang
+>;
+
+type FranchisingDocumentDataSlicesSlice =
+  | FranchisingMenuSectionSlice
+  | FranchisingHowToSectionSlice
+  | FranchisingVideoSlice
+  | FranchisingHeaderSlice;
+
+/**
+ * Content for Franchising documents
+ */
+interface FranchisingDocumentData {
+  /**
+   * Slice Zone field in *Franchising*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<FranchisingDocumentDataSlicesSlice> /**
+   * Meta Description field in *Franchising*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: franchising.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Franchising*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Franchising*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: franchising.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Franchising document from Prismic
+ *
+ * - **API ID**: `franchising`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type FranchisingDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<FranchisingDocumentData>,
+  'franchising',
+  Lang
+>;
+
+type GiftCardsDocumentDataSlicesSlice = GiftCardsPageSlice;
+
+/**
+ * Content for Gift Cards documents
+ */
+interface GiftCardsDocumentData {
+  /**
+   * Slice Zone field in *Gift Cards*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<GiftCardsDocumentDataSlicesSlice> /**
+   * Meta Description field in *Gift Cards*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: gift_cards.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Gift Cards*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Gift Cards*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: gift_cards.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Gift Cards document from Prismic
+ *
+ * - **API ID**: `gift_cards`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type GiftCardsDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<GiftCardsDocumentData>,
+  'gift_cards',
+  Lang
+>;
+
+type HomepageDocumentDataSlicesSlice =
+  | SharePhotosSlice
+  | HomePromoSlice
+  | HomeGallerySlice
+  | WhatsNewSlice
+  | HomeHeadingSlice;
+
+/**
+ * Content for Homepage documents
+ */
 interface HomepageDocumentData {
   /**
    * Slice Zone field in *Homepage*
@@ -14,21 +282,19 @@ interface HomepageDocumentData {
    * - **Placeholder**: *None*
    * - **API ID Path**: homepage.slices[]
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
-   *
+   * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<HomepageDocumentDataSlicesSlice>;
-  /**
+  slices: prismic.SliceZone<HomepageDocumentDataSlicesSlice> /**
    * Meta Description field in *Homepage*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: A brief summary of the page
    * - **API ID Path**: homepage.meta_description
    * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-   *
-   */
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */;
   meta_description: prismic.RichTextField;
+
   /**
    * Meta Image field in *Homepage*
    *
@@ -36,10 +302,10 @@ interface HomepageDocumentData {
    * - **Placeholder**: *None*
    * - **API ID Path**: homepage.meta_image
    * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/core-concepts/image
-   *
+   * - **Documentation**: https://prismic.io/docs/field#image
    */
   meta_image: prismic.ImageField<never>;
+
   /**
    * Meta Title field in *Homepage*
    *
@@ -47,22 +313,17 @@ interface HomepageDocumentData {
    * - **Placeholder**: A title of the page used for social media and search engines
    * - **API ID Path**: homepage.meta_title
    * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-   *
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   meta_title: prismic.KeyTextField;
 }
-/**
- * Slice for *Homepage → Slice Zone*
- *
- */
-type HomepageDocumentDataSlicesSlice = MainTitleSlice;
+
 /**
  * Homepage document from Prismic
  *
  * - **API ID**: `homepage`
  * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
@@ -71,14 +332,79 @@ export type HomepageDocument<Lang extends string = string> = prismic.PrismicDocu
   'homepage',
   Lang
 >;
-/** Content for Navigation documents */
-type NavigationDocumentData = Record<string, never>;
+
+type MenuDocumentDataSlicesSlice = MenuHeaderSlice;
+
+/**
+ * Content for Menu documents
+ */
+interface MenuDocumentData {
+  /**
+   * Slice Zone field in *Menu*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<MenuDocumentDataSlicesSlice> /**
+   * Meta Description field in *Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: menu.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Menu*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: menu.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Menu document from Prismic
+ *
+ * - **API ID**: `menu`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type MenuDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<MenuDocumentData>,
+  'menu',
+  Lang
+>;
+
+interface NavigationDocumentData {}
+
 /**
  * Navigation document from Prismic
  *
  * - **API ID**: `navigation`
  * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
@@ -87,76 +413,1396 @@ export type NavigationDocument<Lang extends string = string> = prismic.PrismicDo
   'navigation',
   Lang
 >;
-export type AllDocumentTypes = HomepageDocument | NavigationDocument;
+
+export type AllDocumentTypes =
+  | AboutUsDocument
+  | EclubsignupDocument
+  | FranchisingDocument
+  | GiftCardsDocument
+  | HomepageDocument
+  | MenuDocument
+  | NavigationDocument;
+
 /**
- * Primary content in HomeHeading → Primary
- *
+ * Primary content in *AboutUsPage → Primary*
  */
-interface MainTitleSliceDefaultPrimary {
+export interface AboutUsPageSliceDefaultPrimary {
+  /**
+   * Header Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.header_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_title: prismic.KeyTextField;
+
+  /**
+   * Header Text field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.header_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_text: prismic.KeyTextField;
+
+  /**
+   * Section Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.section_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_title: prismic.KeyTextField;
+
+  /**
+   * Section Text field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.section_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_text: prismic.KeyTextField;
+
+  /**
+   * Section 2 Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.section_2_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_2_title: prismic.KeyTextField;
+
+  /**
+   * Banner 1 Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.banner_1_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  banner_1_title: prismic.KeyTextField;
+
+  /**
+   * Banner 1 Text field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.banner_1_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  banner_1_text: prismic.KeyTextField;
+
+  /**
+   * Banner 2 Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.banner_2_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  banner_2_title: prismic.KeyTextField;
+
+  /**
+   * Banner 2 Text field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.banner_2_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  banner_2_text: prismic.KeyTextField;
+
+  /**
+   * Banner 3 Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.banner_3_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  banner_3_title: prismic.KeyTextField;
+
+  /**
+   * Banner 3 Text field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.banner_3_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  banner_3_text: prismic.KeyTextField;
+
+  /**
+   * Form Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.form_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  form_title: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for AboutUsPage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutUsPageSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<AboutUsPageSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *AboutUsPage*
+ */
+type AboutUsPageSliceVariation = AboutUsPageSliceDefault;
+
+/**
+ * AboutUsPage Shared Slice
+ *
+ * - **API ID**: `about_us_page`
+ * - **Description**: AboutUsPage
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutUsPageSlice = prismic.SharedSlice<'about_us_page', AboutUsPageSliceVariation>;
+
+/**
+ * Primary content in *EClubPage → Primary*
+ */
+export interface EClubPageSliceDefaultPrimary {
+  /**
+   * Header Title field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.header_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_title: prismic.KeyTextField;
+
+  /**
+   * Header Text field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.header_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_text: prismic.KeyTextField;
+
+  /**
+   * Header Button field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.header_button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_button: prismic.KeyTextField;
+
+  /**
+   * Section Title field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.section_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_title: prismic.KeyTextField;
+
+  /**
+   * Section Text field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.section_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_text: prismic.KeyTextField;
+
+  /**
+   * Section Button field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.section_button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_button: prismic.KeyTextField;
+
+  /**
+   * Step 1 field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.step_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_1: prismic.KeyTextField;
+
+  /**
+   * Step 2 field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.step_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_2: prismic.KeyTextField;
+
+  /**
+   * Step 3 field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.step_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_3: prismic.KeyTextField;
+
+  /**
+   * Form Title field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.form_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  form_title: prismic.KeyTextField;
+
+  /**
+   * Form Text field in *EClubPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: e_club_page.primary.form_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  form_text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for EClubPage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type EClubPageSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<EClubPageSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *EClubPage*
+ */
+type EClubPageSliceVariation = EClubPageSliceDefault;
+
+/**
+ * EClubPage Shared Slice
+ *
+ * - **API ID**: `e_club_page`
+ * - **Description**: EClubPage
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type EClubPageSlice = prismic.SharedSlice<'e_club_page', EClubPageSliceVariation>;
+
+/**
+ * Primary content in *FranchisingHeader → Primary*
+ */
+export interface FranchisingHeaderSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingHeader → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_header.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *FranchisingHeader → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_header.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Button field in *FranchisingHeader → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_header.primary.button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *FranchisingHeader → Items*
+ */
+export interface FranchisingHeaderSliceDefaultItem {
+  /**
+   * Text field in *FranchisingHeader → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_header.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Color field in *FranchisingHeader → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_header.items[].color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  color: prismic.ColorField;
+}
+
+/**
+ * Default variation for FranchisingHeader Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingHeaderSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingHeaderSliceDefaultPrimary>,
+  Simplify<FranchisingHeaderSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *FranchisingHeader*
+ */
+type FranchisingHeaderSliceVariation = FranchisingHeaderSliceDefault;
+
+/**
+ * FranchisingHeader Shared Slice
+ *
+ * - **API ID**: `franchising_header`
+ * - **Description**: FranchisingHeader
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingHeaderSlice = prismic.SharedSlice<'franchising_header', FranchisingHeaderSliceVariation>;
+
+/**
+ * Primary content in *FranchisingHowToSection → Primary*
+ */
+export interface FranchisingHowToSectionSliceDefaultPrimary {
+  /**
+   * Title First Part field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.title_first_part
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title_first_part: prismic.KeyTextField;
+
+  /**
+   * Title Second Part field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.title_second_part
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title_second_part: prismic.KeyTextField;
+
+  /**
+   * Step 1 Title field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.step_1_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_1_title: prismic.KeyTextField;
+
+  /**
+   * Step 1 Text field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.step_1_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_1_text: prismic.KeyTextField;
+
+  /**
+   * Step 2 Title field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.step_2_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_2_title: prismic.KeyTextField;
+
+  /**
+   * Step 2 Text field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.step_2_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_2_text: prismic.KeyTextField;
+
+  /**
+   * Step 3 Title field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.step_3_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_3_title: prismic.KeyTextField;
+
+  /**
+   * Step 3 Text field in *FranchisingHowToSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_how_to_section.primary.step_3_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  step_3_text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for FranchisingHowToSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingHowToSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingHowToSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FranchisingHowToSection*
+ */
+type FranchisingHowToSectionSliceVariation = FranchisingHowToSectionSliceDefault;
+
+/**
+ * FranchisingHowToSection Shared Slice
+ *
+ * - **API ID**: `franchising_how_to_section`
+ * - **Description**: FranchisingHowToSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingHowToSectionSlice = prismic.SharedSlice<
+  'franchising_how_to_section',
+  FranchisingHowToSectionSliceVariation
+>;
+
+/**
+ * Default variation for FranchisingMenuSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingMenuSectionSliceDefault = prismic.SharedSliceVariation<'default', Record<string, never>, never>;
+
+/**
+ * Slice variation for *FranchisingMenuSection*
+ */
+type FranchisingMenuSectionSliceVariation = FranchisingMenuSectionSliceDefault;
+
+/**
+ * FranchisingMenuSection Shared Slice
+ *
+ * - **API ID**: `franchising_menu_section`
+ * - **Description**: FranchisingMenuSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingMenuSectionSlice = prismic.SharedSlice<
+  'franchising_menu_section',
+  FranchisingMenuSectionSliceVariation
+>;
+
+/**
+ * Primary content in *FranchisingVideo → Primary*
+ */
+export interface FranchisingVideoSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingVideo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_video.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *FranchisingVideo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_video.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Button field in *FranchisingVideo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_video.primary.button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for FranchisingVideo Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingVideoSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingVideoSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FranchisingVideo*
+ */
+type FranchisingVideoSliceVariation = FranchisingVideoSliceDefault;
+
+/**
+ * FranchisingVideo Shared Slice
+ *
+ * - **API ID**: `franchising_video`
+ * - **Description**: FranchisingVideo
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingVideoSlice = prismic.SharedSlice<'franchising_video', FranchisingVideoSliceVariation>;
+
+/**
+ * Primary content in *GiftCardsPage → Primary*
+ */
+export interface GiftCardsPageSliceDefaultPrimary {
+  /**
+   * Header Title field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.header_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_title: prismic.KeyTextField;
+
+  /**
+   * Header Text field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.header_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_text: prismic.KeyTextField;
+
+  /**
+   * Header Button field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.header_button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  header_button: prismic.KeyTextField;
+
+  /**
+   * Section Title field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.section_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_title: prismic.KeyTextField;
+
+  /**
+   * Card Title field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.card_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_title: prismic.KeyTextField;
+
+  /**
+   * Card Text field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.card_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_text: prismic.KeyTextField;
+
+  /**
+   * Card Button field in *GiftCardsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: gift_cards_page.primary.card_button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_button: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for GiftCardsPage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GiftCardsPageSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<GiftCardsPageSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *GiftCardsPage*
+ */
+type GiftCardsPageSliceVariation = GiftCardsPageSliceDefault;
+
+/**
+ * GiftCardsPage Shared Slice
+ *
+ * - **API ID**: `gift_cards_page`
+ * - **Description**: GiftCardsPage
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type GiftCardsPageSlice = prismic.SharedSlice<'gift_cards_page', GiftCardsPageSliceVariation>;
+
+/**
+ * Primary content in *HomeGallery → Primary*
+ */
+export interface HomeGallerySliceDefaultPrimary {
+  /**
+   * Title field in *HomeGallery → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_gallery.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *HomeGallery → Items*
+ */
+export interface HomeGallerySliceDefaultItem {
+  /**
+   * Title field in *HomeGallery → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_gallery.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Subtitle field in *HomeGallery → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_gallery.items[].subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle: prismic.KeyTextField;
+
+  /**
+   * Image field in *HomeGallery → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_gallery.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Text field in *HomeGallery → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_gallery.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Mobile Image field in *HomeGallery → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_gallery.items[].mobile_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  mobile_image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for HomeGallery Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomeGallerySliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<HomeGallerySliceDefaultPrimary>,
+  Simplify<HomeGallerySliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *HomeGallery*
+ */
+type HomeGallerySliceVariation = HomeGallerySliceDefault;
+
+/**
+ * HomeGallery Shared Slice
+ *
+ * - **API ID**: `home_gallery`
+ * - **Description**: HomeGallery
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomeGallerySlice = prismic.SharedSlice<'home_gallery', HomeGallerySliceVariation>;
+
+/**
+ * Primary content in *HomeHeading → Primary*
+ */
+export interface HomeHeadingSliceDefaultPrimary {
   /**
    * Title field in *HomeHeading → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: main_title.primary.title
-   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-   *
+   * - **API ID Path**: home_heading.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   title: prismic.KeyTextField;
+
   /**
    * Subtitle field in *HomeHeading → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: main_title.primary.subtitle
-   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-   *
+   * - **API ID Path**: home_heading.primary.subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   subtitle: prismic.KeyTextField;
+
+  /**
+   * Subtitle 2 field in *HomeHeading → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_heading.primary.subtitle_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle_2: prismic.KeyTextField;
 }
+
 /**
  * Default variation for HomeHeading Slice
  *
  * - **API ID**: `default`
- * - **Description**: `Default`
- * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
- *
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
  */
-export type MainTitleSliceDefault = prismic.SharedSliceVariation<
+export type HomeHeadingSliceDefault = prismic.SharedSliceVariation<
   'default',
-  Simplify<MainTitleSliceDefaultPrimary>,
+  Simplify<HomeHeadingSliceDefaultPrimary>,
   never
 >;
+
 /**
  * Slice variation for *HomeHeading*
- *
  */
-type MainTitleSliceVariation = MainTitleSliceDefault;
+type HomeHeadingSliceVariation = HomeHeadingSliceDefault;
+
 /**
  * HomeHeading Shared Slice
  *
- * - **API ID**: `main_title`
- * - **Description**: `MainTitle`
- * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
- *
+ * - **API ID**: `home_heading`
+ * - **Description**: HomeHeading
+ * - **Documentation**: https://prismic.io/docs/slice
  */
-export type MainTitleSlice = prismic.SharedSlice<'main_title', MainTitleSliceVariation>;
+export type HomeHeadingSlice = prismic.SharedSlice<'home_heading', HomeHeadingSliceVariation>;
+
+/**
+ * Primary content in *HomePromo → Primary*
+ */
+export interface HomePromoSliceDefaultPrimary {
+  /**
+   * Title 1 field in *HomePromo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_promo.primary.title_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title_1: prismic.KeyTextField;
+
+  /**
+   * Subtitle 1 field in *HomePromo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_promo.primary.subtitle_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle_1: prismic.KeyTextField;
+
+  /**
+   * Button 1 field in *HomePromo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_promo.primary.button_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_1: prismic.KeyTextField;
+
+  /**
+   * Subtitle 2 field in *HomePromo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_promo.primary.subtitle_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle_2: prismic.KeyTextField;
+
+  /**
+   * Title 2 field in *HomePromo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_promo.primary.title_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title_2: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for HomePromo Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomePromoSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<HomePromoSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *HomePromo*
+ */
+type HomePromoSliceVariation = HomePromoSliceDefault;
+
+/**
+ * HomePromo Shared Slice
+ *
+ * - **API ID**: `home_promo`
+ * - **Description**: HomePromo
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HomePromoSlice = prismic.SharedSlice<'home_promo', HomePromoSliceVariation>;
+
+/**
+ * Primary content in *MenuPage → Primary*
+ */
+export interface MenuHeaderSliceDefaultPrimary {
+  /**
+   * Title field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Headline field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.headline
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  headline: prismic.KeyTextField;
+
+  /**
+   * Caption field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.caption
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  caption: prismic.KeyTextField;
+
+  /**
+   * Title_2 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.title_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title_2: prismic.KeyTextField;
+
+  /**
+   * Number of Toppings field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.number_of_toppings
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  number_of_toppings: prismic.KeyTextField;
+
+  /**
+   * Number of Toppings Subtitle field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.number_of_toppings_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  number_of_toppings_subtitle: prismic.KeyTextField;
+
+  /**
+   * Card Title field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.card_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_title: prismic.KeyTextField;
+
+  /**
+   * Card Text field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.card_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_text: prismic.KeyTextField;
+
+  /**
+   * Menu Items Main Title field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_items_main_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_items_main_title: prismic.KeyTextField;
+
+  /**
+   * Menu Item Title 1  field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_title_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_title_1: prismic.KeyTextField;
+
+  /**
+   * Menu Item Text 1 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_text_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_text_1: prismic.KeyTextField;
+
+  /**
+   * Menu Item Title 2 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_title_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_title_2: prismic.KeyTextField;
+
+  /**
+   * Menu Item Text 2 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_text_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_text_2: prismic.KeyTextField;
+
+  /**
+   * Menu Item Title 3 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_title_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_title_3: prismic.KeyTextField;
+
+  /**
+   * Menu Item Text 3 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_text_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_text_3: prismic.KeyTextField;
+
+  /**
+   * Menu Item Title 4 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_title_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_title_4: prismic.KeyTextField;
+
+  /**
+   * Menu Item Text 4 field in *MenuPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_header.primary.menu_item_text_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  menu_item_text_4: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for MenuPage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MenuHeaderSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<MenuHeaderSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *MenuPage*
+ */
+type MenuHeaderSliceVariation = MenuHeaderSliceDefault;
+
+/**
+ * MenuPage Shared Slice
+ *
+ * - **API ID**: `menu_header`
+ * - **Description**: MenuHeader
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MenuHeaderSlice = prismic.SharedSlice<'menu_header', MenuHeaderSliceVariation>;
+
+/**
+ * Primary content in *SharePhotos → Primary*
+ */
+export interface SharePhotosSliceDefaultPrimary {
+  /**
+   * Title field in *SharePhotos → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: share_photos.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Hashtag field in *SharePhotos → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: share_photos.primary.hashtag
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hashtag: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *SharePhotos → Items*
+ */
+export interface SharePhotosSliceDefaultItem {
+  /**
+   * Title field in *SharePhotos → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: share_photos.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *SharePhotos → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: share_photos.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Image field in *SharePhotos → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: share_photos.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for SharePhotos Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SharePhotosSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<SharePhotosSliceDefaultPrimary>,
+  Simplify<SharePhotosSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *SharePhotos*
+ */
+type SharePhotosSliceVariation = SharePhotosSliceDefault;
+
+/**
+ * SharePhotos Shared Slice
+ *
+ * - **API ID**: `share_photos`
+ * - **Description**: SharePhotos
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SharePhotosSlice = prismic.SharedSlice<'share_photos', SharePhotosSliceVariation>;
+
+/**
+ * Primary content in *WhatsNew → Primary*
+ */
+export interface WhatsNewSliceDefaultPrimary {
+  /**
+   * Title field in *WhatsNew → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: whats_new.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Card Subtitle field in *WhatsNew → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: whats_new.primary.card_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_subtitle: prismic.KeyTextField;
+
+  /**
+   * Card title field in *WhatsNew → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: whats_new.primary.card_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_title: prismic.KeyTextField;
+
+  /**
+   * Card Button field in *WhatsNew → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: whats_new.primary.card_button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_button: prismic.KeyTextField;
+
+  /**
+   * Card Text field in *WhatsNew → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: whats_new.primary.card_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for WhatsNew Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WhatsNewSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<WhatsNewSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *WhatsNew*
+ */
+type WhatsNewSliceVariation = WhatsNewSliceDefault;
+
+/**
+ * WhatsNew Shared Slice
+ *
+ * - **API ID**: `whats_new`
+ * - **Description**: WhatsNew
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WhatsNewSlice = prismic.SharedSlice<'whats_new', WhatsNewSliceVariation>;
+
 declare module '@prismicio/client' {
   interface CreateClient {
     (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
   }
+
   namespace Content {
     export type {
+      AboutUsDocument,
+      AboutUsDocumentData,
+      AboutUsDocumentDataSlicesSlice,
+      EclubsignupDocument,
+      EclubsignupDocumentData,
+      EclubsignupDocumentDataSlicesSlice,
+      FranchisingDocument,
+      FranchisingDocumentData,
+      FranchisingDocumentDataSlicesSlice,
+      GiftCardsDocument,
+      GiftCardsDocumentData,
+      GiftCardsDocumentDataSlicesSlice,
+      HomepageDocument,
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
-      HomepageDocument,
-      NavigationDocumentData,
+      MenuDocument,
+      MenuDocumentData,
+      MenuDocumentDataSlicesSlice,
       NavigationDocument,
+      NavigationDocumentData,
       AllDocumentTypes,
-      MainTitleSliceDefaultPrimary,
-      MainTitleSliceDefault,
-      MainTitleSliceVariation,
-      MainTitleSlice,
+      AboutUsPageSlice,
+      AboutUsPageSliceDefaultPrimary,
+      AboutUsPageSliceVariation,
+      AboutUsPageSliceDefault,
+      EClubPageSlice,
+      EClubPageSliceDefaultPrimary,
+      EClubPageSliceVariation,
+      EClubPageSliceDefault,
+      FranchisingHeaderSlice,
+      FranchisingHeaderSliceDefaultPrimary,
+      FranchisingHeaderSliceDefaultItem,
+      FranchisingHeaderSliceVariation,
+      FranchisingHeaderSliceDefault,
+      FranchisingHowToSectionSlice,
+      FranchisingHowToSectionSliceDefaultPrimary,
+      FranchisingHowToSectionSliceVariation,
+      FranchisingHowToSectionSliceDefault,
+      FranchisingMenuSectionSlice,
+      FranchisingMenuSectionSliceVariation,
+      FranchisingMenuSectionSliceDefault,
+      FranchisingVideoSlice,
+      FranchisingVideoSliceDefaultPrimary,
+      FranchisingVideoSliceVariation,
+      FranchisingVideoSliceDefault,
+      GiftCardsPageSlice,
+      GiftCardsPageSliceDefaultPrimary,
+      GiftCardsPageSliceVariation,
+      GiftCardsPageSliceDefault,
+      HomeGallerySlice,
+      HomeGallerySliceDefaultPrimary,
+      HomeGallerySliceDefaultItem,
+      HomeGallerySliceVariation,
+      HomeGallerySliceDefault,
+      HomeHeadingSlice,
+      HomeHeadingSliceDefaultPrimary,
+      HomeHeadingSliceVariation,
+      HomeHeadingSliceDefault,
+      HomePromoSlice,
+      HomePromoSliceDefaultPrimary,
+      HomePromoSliceVariation,
+      HomePromoSliceDefault,
+      MenuHeaderSlice,
+      MenuHeaderSliceDefaultPrimary,
+      MenuHeaderSliceVariation,
+      MenuHeaderSliceDefault,
+      SharePhotosSlice,
+      SharePhotosSliceDefaultPrimary,
+      SharePhotosSliceDefaultItem,
+      SharePhotosSliceVariation,
+      SharePhotosSliceDefault,
+      WhatsNewSlice,
+      WhatsNewSliceDefaultPrimary,
+      WhatsNewSliceVariation,
+      WhatsNewSliceDefault,
     };
   }
 }

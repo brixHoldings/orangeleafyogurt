@@ -50,8 +50,31 @@ import FloatingImage from '../../common/FloatingImage/FloatingImage';
 import type { FC } from 'react';
 
 import wave1 from '../../../../../../public/lottie/wave1.json';
+import { MenuHeaderSlice } from 'prismicio-types';
 
-const MenuSection: FC = () => (
+const MenuSection: FC<{ slice: MenuHeaderSlice }> = ({
+  slice: {
+    primary: {
+      title,
+      headline,
+      caption,
+      title_2,
+      number_of_toppings,
+      number_of_toppings_subtitle,
+      card_title,
+      card_text,
+      menu_items_main_title,
+      menu_item_text_1,
+      menu_item_text_2,
+      menu_item_text_3,
+      menu_item_text_4,
+      menu_item_title_1,
+      menu_item_title_2,
+      menu_item_title_3,
+      menu_item_title_4,
+    },
+  },
+}) => (
   <>
     <HeaderSection>
       <GummyBears
@@ -65,7 +88,7 @@ const MenuSection: FC = () => (
         renderInBody
       />
       <StyledMaxWidthWrapper>
-        <Title>Our most beloved:</Title>
+        <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
         <HeadlineWrapper>
           <HeaderImagesWrapper>
             <HeaderImage>
@@ -113,16 +136,13 @@ const MenuSection: FC = () => (
               />
             </HeaderImage>
           </HeaderImagesWrapper>
-          <Headline>Froyo!</Headline>
+          <Headline dangerouslySetInnerHTML={{ __html: headline as string }}></Headline>
         </HeadlineWrapper>
-        <Caption>
-          Our froyo flavors are the best, because we make them that way. No really, we do. Each flavor recipe is
-          uniquely ours and you can’t get it anywhere else!
-        </Caption>
+        <Caption dangerouslySetInnerHTML={{ __html: caption as string }}></Caption>
       </StyledMaxWidthWrapper>
     </HeaderSection>
     <MenuPageMaxWidthWrapper>
-      <FlavoursTitle>Flavors</FlavoursTitle>
+      <FlavoursTitle dangerouslySetInnerHTML={{ __html: title_2 as string }}></FlavoursTitle>
       <FlavorsContainer>
         {flavors.map((flavor) => (
           <Flavor key={flavor.title} flavor={flavor} />
@@ -204,9 +224,9 @@ const MenuSection: FC = () => (
           style={{ zIndex: -1 }}
           width="clamp(92px, 22.08vw, 334px)"
         />
-        <NumberOfToppings>20+</NumberOfToppings>
+        <NumberOfToppings dangerouslySetInnerHTML={{ __html: number_of_toppings as string }}></NumberOfToppings>
       </NumberOfToppingsContainer>
-      <ToppingsTitle>toppings</ToppingsTitle>
+      <ToppingsTitle dangerouslySetInnerHTML={{ __html: number_of_toppings_subtitle as string }}></ToppingsTitle>
     </MenuPageMaxWidthWrapper>
     <MenuPageMaxWidthWrapper>
       <SuperStarOfTheMonth>
@@ -230,13 +250,8 @@ const MenuSection: FC = () => (
             width="clamp(227px ,21.49vw, 325px)"
           />
           <TextWrapper>
-            <CardTitle>Refreshing Watermelon Froyo: The Perfect Summer Treat!</CardTitle>
-            <CardParagraph>
-              Indulge in a refreshing summer treat with our mouthwatering Watermelon Froyo! Bursting with juicy
-              watermelon goodness, this new flavor is the perfect balance of sweetness and tanginess. Dive into a creamy
-              swirl of delight, cooling you down and leaving you craving for more. Beat the heat and savor the essence
-              of summer with every spoonful!
-            </CardParagraph>
+            <CardTitle dangerouslySetInnerHTML={{ __html: card_title as string }}></CardTitle>
+            <CardParagraph dangerouslySetInnerHTML={{ __html: card_text as string }}></CardParagraph>
           </TextWrapper>
         </GrayArea>
       </SuperStarOfTheMonth>
@@ -254,13 +269,9 @@ const MenuSection: FC = () => (
         </SmoothiesAndShakesCircle>
 
         <FlexWrapper>
-          <BigTitle>We don’t stop at froyo</BigTitle>
-          <TextTitle>Smoothies & shakes:</TextTitle>
-          <Paragraph>
-            Made fresh to order, just for you. Choose from our menu of favorites or create a masterpiece of your own.
-            Flavor freedom is yours. Shake it up with this creamy decadent dessert beverage. That’s right, DESSERT
-            beverage. You choose the froyo, you choose the toppings, we’ll do the rest.
-          </Paragraph>
+          <BigTitle dangerouslySetInnerHTML={{ __html: menu_items_main_title as string }}></BigTitle>
+          <TextTitle dangerouslySetInnerHTML={{ __html: menu_item_title_1 as string }}></TextTitle>
+          <Paragraph dangerouslySetInnerHTML={{ __html: menu_item_text_1 as string }}></Paragraph>
           {/* <ButtonsWrapper>
             <Button>See the menu</Button>
             <ButtonOutlined>See Nutrition info</ButtonOutlined>
@@ -290,11 +301,8 @@ const MenuSection: FC = () => (
           />
         </AcaiBowlsCircle>
         <FlexWrapper>
-          <TextTitle>Super food bowls</TextTitle>
-          <Paragraph>
-            Super Food Bowls are not only tasty, but also good for you. They provide you with energy, vitamins,
-            minerals, and antioxidants to support your health and wellness.
-          </Paragraph>
+          <TextTitle dangerouslySetInnerHTML={{ __html: menu_item_title_2 as string }}></TextTitle>
+          <Paragraph dangerouslySetInnerHTML={{ __html: menu_item_text_2 as string }}></Paragraph>
           {/* <ButtonsWrapper>
             <Button>See the menu</Button>
             <ButtonOutlined>See Nutrition info</ButtonOutlined>
@@ -324,11 +332,8 @@ const MenuSection: FC = () => (
           />
         </CakesCircle>
         <FlexWrapper>
-          <TextTitle>Cakes</TextTitle>
-          <Paragraph>
-            Make your next event extraordinary! Choose from one of our four signature froyo cakesor customize your own
-            with your favorite froyo flavors and toppings.
-          </Paragraph>
+          <TextTitle dangerouslySetInnerHTML={{ __html: menu_item_title_3 as string }}></TextTitle>
+          <Paragraph dangerouslySetInnerHTML={{ __html: menu_item_text_3 as string }}></Paragraph>
           {/* <ButtonsWrapper>
             <Button>See the menu</Button>
             <ButtonOutlined>See Nutrition info</ButtonOutlined>
@@ -358,12 +363,8 @@ const MenuSection: FC = () => (
           />
         </AcaiBowlsCircle>
         <FlexWrapper>
-          <TextTitle>Pop Up Party Boxes:</TextTitle>
-          <Paragraph>
-            Say hello to the Pop-Up Party Box. Perfect for birthday parties, school fundraisers and meet ups with
-            friends. The box offers froyo lovers a convenient and easy way to enjoy Orange Leaf at home, at play or even
-            at school—whether it is 12, 25 or 50 8oz cups of froyo (plus toppings).
-          </Paragraph>
+          <TextTitle dangerouslySetInnerHTML={{ __html: menu_item_title_4 as string }}></TextTitle>
+          <Paragraph dangerouslySetInnerHTML={{ __html: menu_item_text_4 as string }}></Paragraph>
           {/* <ButtonsWrapper>
             <Button>See the menu</Button>
             <ButtonOutlined>See Nutrition info</ButtonOutlined>

@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback, useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 
@@ -181,7 +183,6 @@ const MenuSection: FC = () => {
 
       <SliderContainer>
         <SliderImageContainer>
-          jjjjjj
           {sliderInfoArray.map((sliderInfo, index) => {
             if (index === 0) {
               return (

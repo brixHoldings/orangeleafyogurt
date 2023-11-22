@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import { CircularDiv, Container, ContentContainer, Text, Title, ImageContainer } from './PurposeSection.styles';
