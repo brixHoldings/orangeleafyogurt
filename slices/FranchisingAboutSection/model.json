@@ -1,8 +1,8 @@
 {
-  "id": "franchising_menu_section",
+  "id": "franchising_about_section",
   "type": "SharedSlice",
-  "name": "FranchisingMenuSection",
-  "description": "FranchisingMenuSection",
+  "name": "FranchisingAboutSection",
+  "description": "FranchisingAboutSection",
   "variations": [
     {
       "id": "default",
@@ -19,45 +19,50 @@
             "placeholder": ""
           }
         },
-        "partners_title": {
+        "section_1_title": {
           "type": "Text",
           "config": {
-            "label": "Partners Title",
+            "label": "Section 1 Title",
+            "placeholder": ""
+          }
+        },
+        "section_1_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section 1 Text",
+            "placeholder": ""
+          }
+        },
+        "section_2_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section 2 Title",
+            "placeholder": ""
+          }
+        },
+        "section_2_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section 2 Text",
+            "placeholder": ""
+          }
+        },
+        "section_3_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section 3 Title",
+            "placeholder": ""
+          }
+        },
+        "section_3_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section 3 Text",
             "placeholder": ""
           }
         }
       },
-      "items": {
-        "title": {
-          "type": "Text",
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          }
-        },
-        "text": {
-          "type": "Text",
-          "config": {
-            "label": "Text",
-            "placeholder": ""
-          }
-        },
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "color": {
-          "type": "Color",
-          "config": {
-            "label": "Color",
-            "placeholder": ""
-          }
-        }
-      }
+      "items": {}
     }
   ]
 }

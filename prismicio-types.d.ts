@@ -133,6 +133,10 @@ export type EclubsignupDocument<Lang extends string = string> = prismic.PrismicD
 >;
 
 type FranchisingDocumentDataSlicesSlice =
+  | FranchisingFormSectionSlice
+  | FranchisingGetStartedSectionSlice
+  | FranchisingAboutSectionSlice
+  | FranchisingPurposeSectionSlice
   | FranchisingMenuSectionSlice
   | FranchisingHowToSectionSlice
   | FranchisingVideoSlice
@@ -546,6 +550,96 @@ export interface AboutUsPageSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   form_title: prismic.KeyTextField;
+
+  /**
+   * Promotion Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_title: prismic.KeyTextField;
+
+  /**
+   * Promotion Subtitle field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_subtitle: prismic.KeyTextField;
+
+  /**
+   * Promotion Subtitle 2 field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_subtitle_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_subtitle_2: prismic.KeyTextField;
+
+  /**
+   * Promotion Option Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_option_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_option_title: prismic.KeyTextField;
+
+  /**
+   * Promotion Option Subtitle field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_option_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_option_subtitle: prismic.KeyTextField;
+
+  /**
+   * Promotion Option Title 2 field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_option_title_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_option_title_2: prismic.KeyTextField;
+
+  /**
+   * Promotion Option Subtitle 2 field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.promotion_option_subtitle_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_option_subtitle_2: prismic.KeyTextField;
+
+  /**
+   * Military Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.military_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  military_title: prismic.KeyTextField;
+
+  /**
+   * Military Subtitle field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.military_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  military_subtitle: prismic.KeyTextField;
 }
 
 /**
@@ -716,6 +810,501 @@ type EClubPageSliceVariation = EClubPageSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type EClubPageSlice = prismic.SharedSlice<'e_club_page', EClubPageSliceVariation>;
+
+/**
+ * Primary content in *FranchisingAboutSection → Primary*
+ */
+export interface FranchisingAboutSectionSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Section 1 Title field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.section_1_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_1_title: prismic.KeyTextField;
+
+  /**
+   * Section 1 Text field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.section_1_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_1_text: prismic.KeyTextField;
+
+  /**
+   * Section 2 Title field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.section_2_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_2_title: prismic.KeyTextField;
+
+  /**
+   * Section 2 Text field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.section_2_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_2_text: prismic.KeyTextField;
+
+  /**
+   * Section 3 Title field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.section_3_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_3_title: prismic.KeyTextField;
+
+  /**
+   * Section 3 Text field in *FranchisingAboutSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_about_section.primary.section_3_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_3_text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for FranchisingAboutSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingAboutSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingAboutSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FranchisingAboutSection*
+ */
+type FranchisingAboutSectionSliceVariation = FranchisingAboutSectionSliceDefault;
+
+/**
+ * FranchisingAboutSection Shared Slice
+ *
+ * - **API ID**: `franchising_about_section`
+ * - **Description**: FranchisingAboutSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingAboutSectionSlice = prismic.SharedSlice<
+  'franchising_about_section',
+  FranchisingAboutSectionSliceVariation
+>;
+
+/**
+ * Primary content in *FranchisingFormSection → Primary*
+ */
+export interface FranchisingFormSectionSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingFormSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_form_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *FranchisingFormSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_form_section.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for FranchisingFormSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingFormSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingFormSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FranchisingFormSection*
+ */
+type FranchisingFormSectionSliceVariation = FranchisingFormSectionSliceDefault;
+
+/**
+ * FranchisingFormSection Shared Slice
+ *
+ * - **API ID**: `franchising_form_section`
+ * - **Description**: FranchisingFormSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingFormSectionSlice = prismic.SharedSlice<
+  'franchising_form_section',
+  FranchisingFormSectionSliceVariation
+>;
+
+/**
+ * Primary content in *FranchisingGetStartedSection → Primary*
+ */
+export interface FranchisingGetStartedSectionSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Card 1 Title field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_title: prismic.KeyTextField;
+
+  /**
+   * Card 1 Subtitle field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_subtitle: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Title 1 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_1: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Subtitle 1 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_subtitle_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_subtitle_1: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Title 2 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_title_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_title_2: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Subtitle 2 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_subtitle_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_subtitle_2: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Title 3 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_title_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_title_3: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Subtitle 3 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_subtitle_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_subtitle_3: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Title 4 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_title_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_title_4: prismic.KeyTextField;
+
+  /**
+   * Card 1 List Item Subtitle 4 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_1_list_item_subtitle_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_1_list_item_subtitle_4: prismic.KeyTextField;
+
+  /**
+   * Card 2 Title field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_title: prismic.KeyTextField;
+
+  /**
+   * Card 2 Subtitle field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_subtitle: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Title 1 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_title_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_title_1: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Subtitle 1 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_subtitle_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_subtitle_1: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Title 2 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_title_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_title_2: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Subtitle 2 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_subtitle_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_subtitle_2: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Title 3 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_title_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_title_3: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Subtitle 3 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_subtitle_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_subtitle_3: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Title 4 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_title_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_title_4: prismic.KeyTextField;
+
+  /**
+   * Card 2 List Item Subtitle 4 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.card_2_list_item_subtitle_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  card_2_list_item_subtitle_4: prismic.KeyTextField;
+
+  /**
+   * Military Title field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.military_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  military_title: prismic.KeyTextField;
+
+  /**
+   * Military Subtitle field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.military_subtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  military_subtitle: prismic.KeyTextField;
+
+  /**
+   * Promotion 1 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_1: prismic.KeyTextField;
+
+  /**
+   * Promotion 2 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_2: prismic.KeyTextField;
+
+  /**
+   * Promotion 3 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_3: prismic.KeyTextField;
+
+  /**
+   * Promotion 4 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_4: prismic.KeyTextField;
+
+  /**
+   * Promotion 5 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_5
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_5: prismic.KeyTextField;
+
+  /**
+   * Promotion 6 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_6
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_6: prismic.KeyTextField;
+
+  /**
+   * Promotion 7 field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.promotion_7
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  promotion_7: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for FranchisingGetStartedSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingGetStartedSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingGetStartedSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FranchisingGetStartedSection*
+ */
+type FranchisingGetStartedSectionSliceVariation = FranchisingGetStartedSectionSliceDefault;
+
+/**
+ * FranchisingGetStartedSection Shared Slice
+ *
+ * - **API ID**: `franchising_get_started_section`
+ * - **Description**: FranchisingGetStartedSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingGetStartedSectionSlice = prismic.SharedSlice<
+  'franchising_get_started_section',
+  FranchisingGetStartedSectionSliceVariation
+>;
 
 /**
  * Primary content in *FranchisingHeader → Primary*
@@ -920,13 +1509,87 @@ export type FranchisingHowToSectionSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *FranchisingMenuSection → Primary*
+ */
+export interface FranchisingMenuSectionSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingMenuSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_menu_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Partners Title field in *FranchisingMenuSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_menu_section.primary.partners_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  partners_title: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *FranchisingMenuSection → Items*
+ */
+export interface FranchisingMenuSectionSliceDefaultItem {
+  /**
+   * Title field in *FranchisingMenuSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_menu_section.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *FranchisingMenuSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_menu_section.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Image field in *FranchisingMenuSection → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_menu_section.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Color field in *FranchisingMenuSection → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_menu_section.items[].color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  color: prismic.ColorField;
+}
+
+/**
  * Default variation for FranchisingMenuSection Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
  * - **Documentation**: https://prismic.io/docs/slice
  */
-export type FranchisingMenuSectionSliceDefault = prismic.SharedSliceVariation<'default', Record<string, never>, never>;
+export type FranchisingMenuSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingMenuSectionSliceDefaultPrimary>,
+  Simplify<FranchisingMenuSectionSliceDefaultItem>
+>;
 
 /**
  * Slice variation for *FranchisingMenuSection*
@@ -943,6 +1606,61 @@ type FranchisingMenuSectionSliceVariation = FranchisingMenuSectionSliceDefault;
 export type FranchisingMenuSectionSlice = prismic.SharedSlice<
   'franchising_menu_section',
   FranchisingMenuSectionSliceVariation
+>;
+
+/**
+ * Primary content in *FranchisingPurposeSection → Primary*
+ */
+export interface FranchisingPurposeSectionSliceDefaultPrimary {
+  /**
+   * Title field in *FranchisingPurposeSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_purpose_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *FranchisingPurposeSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_purpose_section.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for FranchisingPurposeSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingPurposeSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FranchisingPurposeSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *FranchisingPurposeSection*
+ */
+type FranchisingPurposeSectionSliceVariation = FranchisingPurposeSectionSliceDefault;
+
+/**
+ * FranchisingPurposeSection Shared Slice
+ *
+ * - **API ID**: `franchising_purpose_section`
+ * - **Description**: FranchisingPurposeSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FranchisingPurposeSectionSlice = prismic.SharedSlice<
+  'franchising_purpose_section',
+  FranchisingPurposeSectionSliceVariation
 >;
 
 /**
@@ -1757,6 +2475,18 @@ declare module '@prismicio/client' {
       EClubPageSliceDefaultPrimary,
       EClubPageSliceVariation,
       EClubPageSliceDefault,
+      FranchisingAboutSectionSlice,
+      FranchisingAboutSectionSliceDefaultPrimary,
+      FranchisingAboutSectionSliceVariation,
+      FranchisingAboutSectionSliceDefault,
+      FranchisingFormSectionSlice,
+      FranchisingFormSectionSliceDefaultPrimary,
+      FranchisingFormSectionSliceVariation,
+      FranchisingFormSectionSliceDefault,
+      FranchisingGetStartedSectionSlice,
+      FranchisingGetStartedSectionSliceDefaultPrimary,
+      FranchisingGetStartedSectionSliceVariation,
+      FranchisingGetStartedSectionSliceDefault,
       FranchisingHeaderSlice,
       FranchisingHeaderSliceDefaultPrimary,
       FranchisingHeaderSliceDefaultItem,
@@ -1767,8 +2497,14 @@ declare module '@prismicio/client' {
       FranchisingHowToSectionSliceVariation,
       FranchisingHowToSectionSliceDefault,
       FranchisingMenuSectionSlice,
+      FranchisingMenuSectionSliceDefaultPrimary,
+      FranchisingMenuSectionSliceDefaultItem,
       FranchisingMenuSectionSliceVariation,
       FranchisingMenuSectionSliceDefault,
+      FranchisingPurposeSectionSlice,
+      FranchisingPurposeSectionSliceDefaultPrimary,
+      FranchisingPurposeSectionSliceVariation,
+      FranchisingPurposeSectionSliceDefault,
       FranchisingVideoSlice,
       FranchisingVideoSliceDefaultPrimary,
       FranchisingVideoSliceVariation,

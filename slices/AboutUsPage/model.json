@@ -95,6 +95,69 @@
             "label": "Form Title",
             "placeholder": ""
           }
+        },
+        "promotion_title": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Title",
+            "placeholder": ""
+          }
+        },
+        "promotion_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Subtitle",
+            "placeholder": ""
+          }
+        },
+        "promotion_subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Subtitle 2",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_title": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Title",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Subtitle",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_title_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Title 2",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Subtitle 2",
+            "placeholder": ""
+          }
+        },
+        "military_title": {
+          "type": "Text",
+          "config": {
+            "label": "Military Title",
+            "placeholder": ""
+          }
+        },
+        "military_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Military Subtitle",
+            "placeholder": ""
+          }
         }
       },
       "items": {}

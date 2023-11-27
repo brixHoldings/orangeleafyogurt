@@ -1,0 +1,229 @@
+{
+  "id": "franchising_get_started_section",
+  "type": "SharedSlice",
+  "name": "FranchisingGetStartedSection",
+  "description": "FranchisingGetStartedSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "card_1_title": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 Title",
+            "placeholder": ""
+          }
+        },
+        "card_1_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 Subtitle",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_1": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Title 1",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_subtitle_1": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Subtitle 1",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_title_2": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Title 2",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Subtitle 2",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_title_3": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Title 3",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_subtitle_3": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Subtitle 3",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_title_4": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Title 4",
+            "placeholder": ""
+          }
+        },
+        "card_1_list_item_subtitle_4": {
+          "type": "Text",
+          "config": {
+            "label": "Card 1 List Item Subtitle 4",
+            "placeholder": ""
+          }
+        },
+        "card_2_title": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 Title",
+            "placeholder": ""
+          }
+        },
+        "card_2_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 Subtitle",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_title_1": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Title 1",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_subtitle_1": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Subtitle 1",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_title_2": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Title 2",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Subtitle 2",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_title_3": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Title 3",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_subtitle_3": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Subtitle 3",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_title_4": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Title 4",
+            "placeholder": ""
+          }
+        },
+        "card_2_list_item_subtitle_4": {
+          "type": "Text",
+          "config": {
+            "label": "Card 2 List Item Subtitle 4",
+            "placeholder": ""
+          }
+        },
+        "military_title": {
+          "type": "Text",
+          "config": {
+            "label": "Military Title",
+            "placeholder": ""
+          }
+        },
+        "military_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Military Subtitle",
+            "placeholder": ""
+          }
+        },
+        "promotion_1": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 1",
+            "placeholder": ""
+          }
+        },
+        "promotion_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 2",
+            "placeholder": ""
+          }
+        },
+        "promotion_3": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 3",
+            "placeholder": ""
+          }
+        },
+        "promotion_4": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 4",
+            "placeholder": ""
+          }
+        },
+        "promotion_5": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 5",
+            "placeholder": ""
+          }
+        },
+        "promotion_6": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 6",
+            "placeholder": ""
+          }
+        },
+        "promotion_7": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion 7",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

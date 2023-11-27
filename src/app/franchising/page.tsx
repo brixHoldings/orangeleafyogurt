@@ -7,7 +7,16 @@ import MenuSection from '@components/pages/OrangeLeaf/Franchising/MenuSection';
 import PurposeSection from '@components/pages/OrangeLeaf/Franchising/PurposeSection';
 import VideoSection from '@components/pages/OrangeLeaf/Franchising/VideoSection';
 import { createClient } from 'prismicio';
-import { FranchisingHeaderSlice, FranchisingHowToSectionSlice, FranchisingVideoSlice } from 'prismicio-types';
+import {
+  FranchisingHeaderSlice,
+  FranchisingHowToSectionSlice,
+  FranchisingMenuSectionSlice,
+  FranchisingPurposeSectionSlice,
+  FranchisingVideoSlice,
+  FranchisingAboutSectionSlice,
+  FranchisingGetStartedSectionSlice,
+  FranchisingFormSectionSlice,
+} from 'prismicio-types';
 
 import type { FC } from 'react';
 
@@ -29,16 +38,36 @@ const Franchising: FC = async () => {
     | FranchisingHowToSectionSlice
     | undefined;
 
+  const menuSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_menu_section') as
+    | FranchisingMenuSectionSlice
+    | undefined;
+
+  const purposeSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_purpose_section') as
+    | FranchisingPurposeSectionSlice
+    | undefined;
+
+  const aboutSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_about_section') as
+    | FranchisingAboutSectionSlice
+    | undefined;
+
+  const getStartedSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_get_started_section') as
+    | FranchisingGetStartedSectionSlice
+    | undefined;
+
+  const formSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_form_section') as
+    | FranchisingFormSectionSlice
+    | undefined;
+
   return (
     <>
       {headerSlice ? <HeaderSection slice={headerSlice} /> : null}
       {videoSlice ? <VideoSection slice={videoSlice} /> : null}
       {howToSlice ? <HowToSection slice={howToSlice} /> : null}
-      <MenuSection />
-      <PurposeSection />
-      <AboutSection />
-      <GetStartedSection />
-      <FormSection />
+      {menuSection ? <MenuSection slice={menuSection} /> : null}
+      {purposeSection ? <PurposeSection slice={purposeSection} /> : null}
+      {aboutSection ? <AboutSection slice={aboutSection} /> : null}
+      {getStartedSection ? <GetStartedSection slice={getStartedSection} /> : null}
+      {formSection ? <FormSection slice={formSection} /> : null}
     </>
   );
 };

@@ -37,7 +37,6 @@ const HowToSection: FC<{ slice: FranchisingHowToSectionSlice }> = ({
   <Container>
     <TitlePartOne dangerouslySetInnerHTML={{ __html: title_first_part as string }}></TitlePartOne>
     <TitlePartTwo dangerouslySetInnerHTML={{ __html: title_second_part as string }}></TitlePartTwo>
-
     <StepContainer>
       <StepNumber>1.</StepNumber>
       <StepContent>

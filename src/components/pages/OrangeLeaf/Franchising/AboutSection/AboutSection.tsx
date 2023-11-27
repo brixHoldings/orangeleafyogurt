@@ -16,8 +16,21 @@ import {
 } from './AboutSection.styles';
 
 import type { FC } from 'react';
+import { FranchisingAboutSectionSlice } from 'prismicio-types';
 
-const AboutSection: FC = () => {
+const AboutSection: FC<{ slice: FranchisingAboutSectionSlice }> = ({
+  slice: {
+    primary: {
+      title,
+      section_1_title,
+      section_1_text,
+      section_2_title,
+      section_2_text,
+      section_3_title,
+      section_3_text,
+    },
+  },
+}) => {
   const onClickHandle = useCallback(() => {
     const contactElement = document.getElementById('contact');
     contactElement?.scrollIntoView();
@@ -25,14 +38,11 @@ const AboutSection: FC = () => {
 
   return (
     <Container>
-      <Title>Why us?</Title>
+      <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
       <Row>
         <ContentLeft>
-          <Subtitle>Outstanding product innovation and variety</Subtitle>
-          <Description>
-            Mixing and mashing up bites, flavors, toppings and more - this opportunity offers an experience that&apos;s
-            as fun and unique as you are.
-          </Description>
+          <Subtitle dangerouslySetInnerHTML={{ __html: section_1_title as string }}></Subtitle>
+          <Description dangerouslySetInnerHTML={{ __html: section_1_text as string }}></Description>
           <Button label="Learn more" onClick={onClickHandle} />
         </ContentLeft>
         <ImageContainer>
@@ -44,20 +54,15 @@ const AboutSection: FC = () => {
           <Image alt="first-row-image" height={400} src="/images/about_2.png" width={570} />
         </ImageContainer>
         <ContentRight>
-          <Subtitle>Flexible real estate options</Subtitle>
-          <Description>
-            Flexible platforms to fit most retails sizes that offer modern and fun retail experience for traditional and
-            non-traditional locations.
-          </Description>
+          <Subtitle dangerouslySetInnerHTML={{ __html: section_2_title as string }}></Subtitle>
+          <Description dangerouslySetInnerHTML={{ __html: section_2_text as string }}></Description>
           <Button label="Learn more" onClick={onClickHandle} />
         </ContentRight>
       </Row>
       <Row>
         <ContentLeft>
-          <Subtitle>Investing options</Subtitle>
-          <Description>
-            We have attractive labor models compared to other concepts and offer operational simplicity.
-          </Description>
+          <Subtitle dangerouslySetInnerHTML={{ __html: section_3_title as string }}></Subtitle>
+          <Description dangerouslySetInnerHTML={{ __html: section_3_text as string }}></Description>
           <Button label="Learn more" onClick={onClickHandle} />
         </ContentLeft>
         <ImageContainer>

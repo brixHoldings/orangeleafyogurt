@@ -62,6 +62,51 @@
 				"__TYPE__": "FieldContent",
 				"value": "aboard",
 				"type": "Text"
+			},
+			"promotion_title": {
+				"__TYPE__": "FieldContent",
+				"value": "air",
+				"type": "Text"
+			},
+			"promotion_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "sitting",
+				"type": "Text"
+			},
+			"promotion_subtitle_2": {
+				"__TYPE__": "FieldContent",
+				"value": "fireplace",
+				"type": "Text"
+			},
+			"promotion_option_title": {
+				"__TYPE__": "FieldContent",
+				"value": "personal",
+				"type": "Text"
+			},
+			"promotion_option_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "order",
+				"type": "Text"
+			},
+			"promotion_option_title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "heavy",
+				"type": "Text"
+			},
+			"promotion_option_subtitle_2": {
+				"__TYPE__": "FieldContent",
+				"value": "market",
+				"type": "Text"
+			},
+			"military_title": {
+				"__TYPE__": "FieldContent",
+				"value": "necessary",
+				"type": "Text"
+			},
+			"military_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "shade",
+				"type": "Text"
 			}
 		},
 		"items": []

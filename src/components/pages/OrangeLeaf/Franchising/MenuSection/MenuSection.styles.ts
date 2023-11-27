@@ -46,12 +46,6 @@ export const CopyrightTitle = styled.h2`
   line-height: 72px;
 `;
 
-export const CopyrightSubtitle = styled.p`
-  font-size: 52px;
-  line-height: 72px;
-  display: inline;
-`;
-
 export const SliderContainer = styled.div`
   width: 100%;
   z-index: 1;
@@ -129,7 +123,6 @@ export const SliderImageContent = styled.div`
     padding: 30px 25px;
     flex-direction: column-reverse;
     width: unset;
-    border: 1px solid red;
   }
 `;
 
