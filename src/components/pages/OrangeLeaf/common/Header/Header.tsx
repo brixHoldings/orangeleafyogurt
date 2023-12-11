@@ -21,6 +21,7 @@ import {
   CloseButton,
   HomeLink,
   ButtonLink,
+  ButtonLinkAsAnchor,
 } from './Header.styles';
 
 import type { FC } from 'react';
@@ -33,6 +34,8 @@ const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+
+  console.log(pathname);
 
   const { setNavigationHeight } = useStore();
   const mobileNavigationRef = useRef<HTMLElement>(null);
@@ -103,14 +106,14 @@ const Header: FC = () => {
         >
           Menu
         </ButtonLink>
-        <ButtonLink
-          data-is-active={pathname === '/locations'}
-          onClick={(): void => {
-            onClose('/locations');
-          }}
+        <ButtonLinkAsAnchor
+          data-is-active={
+            typeof window !== 'undefined' && window.location.origin.includes('https://locations.orangeleafyogurt.com')
+          }
+          href="https://locations.orangeleafyogurt.com/"
         >
           Locations
-        </ButtonLink>
+        </ButtonLinkAsAnchor>
         <ButtonLink
           data-is-active={pathname === '/e-club-signup'}
           onClick={(): void => {
@@ -178,9 +181,15 @@ const Header: FC = () => {
               </svg>
             </Link>
             <Separator />
-            <Link data-is-active={pathname === '/locations'} href="/locations">
+            <ButtonLinkAsAnchor
+              data-is-active={
+                typeof window !== 'undefined' &&
+                window.location.origin.includes('https://locations.orangeleafyogurt.com')
+              }
+              href="https://locations.orangeleafyogurt.com/"
+            >
               Locations
-            </Link>
+            </ButtonLinkAsAnchor>
           </Section>
           <LinkSection>
             <Link data-is-active={pathname === '/menu'} href="/menu">

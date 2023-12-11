@@ -16,17 +16,12 @@ const nextConfig = {
     styledComponents: true,
   },
 
-  async rewrites() {
+  async redirects() {
     return [
       {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'orangeleaffranchises.com',
-          },
-        ],
-        destination: '/orange-leaf/franchising',
+        source: '/locations',
+        destination: 'https://locations.orangeleafyogurt.com/',
+        permanent: true,
       },
     ];
   },

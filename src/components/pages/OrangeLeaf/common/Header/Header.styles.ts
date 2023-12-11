@@ -85,6 +85,33 @@ export const ButtonLink = styled.button`
   }
 `;
 
+export const ButtonLinkAsAnchor = styled.a`
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: var(--century-gothic);
+  font-size: 18px;
+  line-height: 25px;
+  color: #421b00;
+  text-transform: initial;
+  &[data-is-active='true'] {
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      background: #4e3629;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+    }
+  }
+`;
+
 export const Separator = styled.div`
   width: 2px;
   height: 30px;
