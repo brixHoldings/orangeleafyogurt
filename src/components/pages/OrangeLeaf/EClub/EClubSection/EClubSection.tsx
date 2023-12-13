@@ -44,6 +44,7 @@ import SuccessfulSubmit from '../../common/SuccessfulSubmit/SuccessfulSubmit';
 
 import type { FC, FormEventHandler } from 'react';
 import type { FieldValues } from 'react-hook-form';
+import { validateDateFormat } from '@utils/validateDateFormat';
 
 type EClubFormData = {
   birthday: string;
@@ -56,7 +57,11 @@ type EClubFormData = {
 };
 
 export const eClubFormSchema = object({
-  birthday: string().required('This field is obligatory'),
+  birthday: string().required('This field is obligatory').test({
+    message: 'Birthday must be in MM/DD format',
+    name: 'valid',
+    test: validateDateFormat,
+  }),
   email: string().email('Add a valid email').required('This field is obligatory'),
   favoriteLocation: string().required('This field is obligatory'),
   firstName: string().required('This field is obligatory'),
@@ -258,7 +263,7 @@ const EClubSection: FC<{ options: string[] }> = ({ options }) => {
                 <Label htmlFor="birthday">Birthday:</Label>
                 <Input
                   id="birthday"
-                  placeholder="month/day/year"
+                  placeholder="MM/DD"
                   {...register('birthday', { required: true })}
                   disabled={isDisabled}
                 />

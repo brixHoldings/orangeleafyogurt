@@ -5,11 +5,16 @@ import { string, object } from 'yup';
 import { NextResponse } from 'next/server';
 
 import { validatePhoneNumber } from '@utils/validatePhoneNumber';
+import { validateDateFormat } from '@utils/validateDateFormat';
 
 import type { NextRequest } from 'next/server';
 
 const schema = object({
-  birthday: string().required('This field is obligatory'),
+  birthday: string().required('This field is obligatory').test({
+    message: 'Birthday must be in MM/DD format',
+    name: 'valid',
+    test: validateDateFormat,
+  }),
   email: string().email('Add a valid email').required('This field is obligatory'),
   favoriteLocation: string().required('This field is obligatory'),
   firstName: string().required('This field is obligatory'),
