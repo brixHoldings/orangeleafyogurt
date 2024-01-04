@@ -12,22 +12,22 @@ import {
 } from './WhatsNew.styles';
 
 import type { FC } from 'react';
-import Image from 'next/image';
 
 import { ButtonRound } from '../Classics/Classics.styles';
 import Link from 'next/link';
 import { WhatsNewSlice } from 'prismicio-types';
+import { PrismicNextImage } from '@prismicio/next';
 
 const WhatsNew: FC<{ slice: WhatsNewSlice }> = ({
   slice: {
-    primary: { title, card_subtitle, card_text, card_title, card_button },
+    primary: { title, card_subtitle, card_text, card_title, card_button, image },
   },
 }) => (
   <>
     <MainTitle dangerouslySetInnerHTML={{ __html: title as string }}></MainTitle>
     <Container>
       <SideImage>
-        <Image alt="whats new" src="/images/ol-whatsnew.jpg" style={{ objectFit: 'cover' }} fill />
+        <PrismicNextImage field={image} style={{ objectFit: 'cover' }} fill />
       </SideImage>
       <SideText>
         <TinyTitle dangerouslySetInnerHTML={{ __html: card_subtitle as string }}></TinyTitle>

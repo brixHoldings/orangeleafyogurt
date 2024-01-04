@@ -2410,6 +2410,16 @@ export interface WhatsNewSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   card_text: prismic.KeyTextField;
+
+  /**
+   * Image field in *WhatsNew → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: whats_new.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
 }
 
 /**

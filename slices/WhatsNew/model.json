@@ -46,6 +46,14 @@
             "label": "Card Text",
             "placeholder": ""
           }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {}
