@@ -228,7 +228,7 @@ const MenuSection: FC<{ slice: MenuHeaderSlice }> = ({
       </NumberOfToppingsContainer>
       <ToppingsTitle dangerouslySetInnerHTML={{ __html: number_of_toppings_subtitle as string }}></ToppingsTitle>
     </MenuPageMaxWidthWrapper>
-    <MenuPageMaxWidthWrapper>
+    {/* <MenuPageMaxWidthWrapper>
       <SuperStarOfTheMonth>
         <GrayArea>
           <CardCircle />
@@ -255,7 +255,7 @@ const MenuSection: FC<{ slice: MenuHeaderSlice }> = ({
           </TextWrapper>
         </GrayArea>
       </SuperStarOfTheMonth>
-    </MenuPageMaxWidthWrapper>
+    </MenuPageMaxWidthWrapper> */}
     <MenuPageMaxWidthWrapper>
       <SmoothiesAndShakes>
         <SmoothiesAndShakesCircle>
