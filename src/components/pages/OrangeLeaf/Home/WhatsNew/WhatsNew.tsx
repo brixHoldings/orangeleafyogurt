@@ -12,28 +12,29 @@ import {
 } from './WhatsNew.styles';
 
 import type { FC } from 'react';
-import Image from 'next/image';
 
 import { ButtonRound } from '../Classics/Classics.styles';
 import Link from 'next/link';
+import { WhatsNewSlice } from 'prismicio-types';
+import { PrismicNextImage } from '@prismicio/next';
 
-const WhatsNew: FC = () => (
+const WhatsNew: FC<{ slice: WhatsNewSlice }> = ({
+  slice: {
+    primary: { title, card_subtitle, card_text, card_title, card_button, image },
+  },
+}) => (
   <>
-    <MainTitle>What&apos;s new?</MainTitle>
+    <MainTitle dangerouslySetInnerHTML={{ __html: title as string }}></MainTitle>
     <Container>
       <SideImage>
-        <Image alt="whats new" src="/images/ol-whatsnew.jpg" style={{ objectFit: 'cover' }} fill />
+        <PrismicNextImage field={image} style={{ objectFit: 'cover' }} fill />
       </SideImage>
       <SideText>
-        <TinyTitle>SUMMER IS HERE</TinyTitle>
-        <Title>WATERMELON FROYO</Title>
-        <Description>
-          Satisfy your summer cravings with our irresistible Watermelon Froyo. Experience the delightful blend of real
-          watermelon and creamy frozen yogurt, delivering a burst of refreshing flavors. Beat the heat and indulge in
-          this guilt-free treat that will keep you coming back for more.
-        </Description>
+        <TinyTitle dangerouslySetInnerHTML={{ __html: card_subtitle as string }}></TinyTitle>
+        <Title dangerouslySetInnerHTML={{ __html: card_title as string }}></Title>
+        <Description dangerouslySetInnerHTML={{ __html: card_text as string }}></Description>
         <Link href="/menu">
-          <ButtonRound>See the menu</ButtonRound>
+          <ButtonRound dangerouslySetInnerHTML={{ __html: card_button as string }}></ButtonRound>
         </Link>
       </SideText>
       <SplashImage alt="YogurtSplashImage" height={348} src="/images/yogurt_splash_2.png" width={365} />

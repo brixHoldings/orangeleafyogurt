@@ -1,0 +1,64 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"header_title": {
+				"__TYPE__": "FieldContent",
+				"value": "but",
+				"type": "Text"
+			},
+			"header_text": {
+				"__TYPE__": "FieldContent",
+				"value": "hurried",
+				"type": "Text"
+			},
+			"header_button": {
+				"__TYPE__": "FieldContent",
+				"value": "stone",
+				"type": "Text"
+			},
+			"section_title": {
+				"__TYPE__": "FieldContent",
+				"value": "able",
+				"type": "Text"
+			},
+			"section_text": {
+				"__TYPE__": "FieldContent",
+				"value": "recall",
+				"type": "Text"
+			},
+			"section_button": {
+				"__TYPE__": "FieldContent",
+				"value": "declared",
+				"type": "Text"
+			},
+			"step_1": {
+				"__TYPE__": "FieldContent",
+				"value": "path",
+				"type": "Text"
+			},
+			"step_2": {
+				"__TYPE__": "FieldContent",
+				"value": "level",
+				"type": "Text"
+			},
+			"step_3": {
+				"__TYPE__": "FieldContent",
+				"value": "basic",
+				"type": "Text"
+			},
+			"form_title": {
+				"__TYPE__": "FieldContent",
+				"value": "grass",
+				"type": "Text"
+			},
+			"form_text": {
+				"__TYPE__": "FieldContent",
+				"value": "till",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

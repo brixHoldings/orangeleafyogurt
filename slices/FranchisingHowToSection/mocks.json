@@ -1,0 +1,49 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title_first_part": {
+				"__TYPE__": "FieldContent",
+				"value": "balance",
+				"type": "Text"
+			},
+			"title_second_part": {
+				"__TYPE__": "FieldContent",
+				"value": "particular",
+				"type": "Text"
+			},
+			"step_1_title": {
+				"__TYPE__": "FieldContent",
+				"value": "date",
+				"type": "Text"
+			},
+			"step_1_text": {
+				"__TYPE__": "FieldContent",
+				"value": "dear",
+				"type": "Text"
+			},
+			"step_2_title": {
+				"__TYPE__": "FieldContent",
+				"value": "bend",
+				"type": "Text"
+			},
+			"step_2_text": {
+				"__TYPE__": "FieldContent",
+				"value": "wore",
+				"type": "Text"
+			},
+			"step_3_title": {
+				"__TYPE__": "FieldContent",
+				"value": "view",
+				"type": "Text"
+			},
+			"step_3_text": {
+				"__TYPE__": "FieldContent",
+				"value": "crack",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

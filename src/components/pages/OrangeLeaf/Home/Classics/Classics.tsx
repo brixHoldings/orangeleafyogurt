@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
+import { isEmpty } from 'lodash';
+
 import { MaxWidthWrapper } from '@styles/common';
 
 import {
@@ -35,18 +37,14 @@ import wave2 from '../../../../../../public/lottie/wave2.json';
 import wave3 from '../../../../../../public/lottie/wave3.json';
 import wave4 from '../../../../../../public/lottie/wave4.json';
 import wave5 from '../../../../../../public/lottie/wave5.json';
+import { HomeGallerySlice } from 'prismicio-types';
 
 const sliders = [
   {
     circle: 'linear-gradient(180deg, #D9D32F 0%, rgba(217, 211, 47, 0) 100%);',
     color: '#D9D32F',
-    description:
-      "Our froyo flavors are the best, because we make them that way. No really, we do. Each flavor recipe is uniquely ours and you can't get it anywhere else!",
     height: 'clamp(224px,44.17vw, 668px)',
-    image: '/images/home-slider1.png',
     left: '-17%',
-    name: 'Frozen yogurt',
-    title: 'Creative delight',
     top: '35%',
     wave: wave1,
     width: 'clamp(166px,32.80vw, 496px)',
@@ -54,13 +52,8 @@ const sliders = [
   {
     circle: 'linear-gradient(180deg, #8BA726 0%, rgba(139, 167, 38, 0) 100%);',
     color: '#8BA726',
-    description:
-      'Super Food Bowls are not only tasty, but also good for you. They provide you with energy, vitamins, minerals, and antioxidants to support your health and wellness.',
     height: 'clamp(179px,32.87vw, 497px)',
-    image: '/images/home-slider2.png',
     left: '-9%',
-    name: 'Bowls',
-    title: 'Super Food Bowls',
     top: '53%',
     wave: wave2,
     width: 'clamp(206px ,37.96vw, 574px)',
@@ -68,13 +61,8 @@ const sliders = [
   {
     circle: 'linear-gradient(180deg, #FF8A0C 0%, rgba(255, 152, 40, 0) 100%);',
     color: '#FF8A0C',
-    description:
-      'Made fresh to order, just for you. Choose from our menu of favorites or create a masterpiece of your own. Flavor freedom is yours.',
     height: 'clamp(259px,49.4vw, 747px)',
-    image: '/images/home-slider3.png',
     left: '-19%',
-    name: 'Smoothies & shakes',
-    title: 'Flavor freedom',
     top: '21%',
     wave: wave3,
     width: 'clamp(184px ,34.92vw, 528px)',
@@ -82,13 +70,8 @@ const sliders = [
   {
     circle: 'linear-gradient(180deg, #FFDB31 0%, rgba(255, 219, 49, 0) 100%);',
     color: '#FFDB31',
-    description:
-      'Make your next event extraordinary! Choose from one of our four signature froyo cakes or customize your own with your favorite froyo flavors and toppings.',
     height: 'clamp(234px,55.15vw, 834px)',
-    image: '/images/home-slider4.png',
     left: '-5%',
-    name: 'Cakes',
-    title: 'Froyo cake?!',
     top: '24%',
     wave: wave4,
     width: 'clamp(311px ,41.66vw, 630px)',
@@ -96,14 +79,8 @@ const sliders = [
   {
     circle: 'linear-gradient(180deg, #FF6034 0%, rgba(255, 96, 52, 0) 100%);',
     color: '#FF6034',
-    description:
-      'Say hello to the Pop-Up Party Box. Perfect for birthday parties, school fundraisers and meet ups with friends. The box offers froyo lovers a convenient and easy way to enjoy Orange Leaf at home, at play or even at school—whether it is 12, 25 or 50 8oz cups of froyo (plus toppings).',
     height: 'clamp(171px,38.29vw, 579px)',
-    image: '/images/home-slider5.png',
     left: '-30%',
-    mobileImage: '/images/image31.png',
-    name: 'Pop UP Party Boxes',
-    title: 'Bring fun home',
     top: '46%',
     wave: wave5,
     width: 'clamp(241px,77.57vw, 1173px)',
@@ -113,7 +90,12 @@ const sliders = [
 const sliderDefaultInterval = 4000;
 const sliderAfterClickInterval = 10000;
 
-const Classics: FC = () => {
+const Classics: FC<{ slice: HomeGallerySlice }> = ({
+  slice: {
+    items,
+    primary: { title },
+  },
+}) => {
   const { width } = useWindowSize();
   const isMobile = width <= theme.breakpoints.mobile;
   const [activeSliderIndex, setActiveSliderIndex] = useState(0);
@@ -174,25 +156,27 @@ const Classics: FC = () => {
   }, [startSliderInterval]);
 
   const content = isMobile ? (
-    sliders.map((slider, index) => (
-      <MaxWidthWrapper key={slider.name} style={{ position: 'relative' }}>
+    items.map((slider, index) => (
+      <MaxWidthWrapper key={slider.title} style={{ position: 'relative' }}>
         <LottieWrapper>
-          <Lottie animationData={slider.wave} />
+          <Lottie animationData={sliders[index].wave} />
         </LottieWrapper>
         <MobileSliderContent>
-          <SliderName style={{ color: slider.color }}>{slider.name}</SliderName>
-          <SliderTitle>{slider.title}</SliderTitle>
-          <SliderDescription>{slider.description}</SliderDescription>
+          <SliderName
+            style={{ color: sliders[index].color }}
+            dangerouslySetInnerHTML={{ __html: slider.subtitle as string }}
+          ></SliderName>
+          <SliderTitle dangerouslySetInnerHTML={{ __html: slider.title as string }}></SliderTitle>
+          <SliderDescription dangerouslySetInnerHTML={{ __html: slider.text as string }}></SliderDescription>
           <Link href="/menu" style={{ marginLeft: index % 2 ? 'initial' : 'auto' }}>
             <ButtonRound>See the menu</ButtonRound>
           </Link>
-          <MobileCircle background={slider.circle} isRightAligned={Boolean(index % 2)}>
+          <MobileCircle background={sliders[activeSliderIndex].circle} isRightAligned={Boolean(index % 2)}>
             <FloatingImage
-              alt={slider.name}
               bottom="-19px"
-              height={slider.height}
-              src={slider.mobileImage ?? slider.image}
-              width={slider.width}
+              height={sliders[index].height}
+              field={isEmpty(slider.mobile_image) ? slider.image : slider.mobile_image}
+              width={sliders[index].width}
               {...(index % 2 ? { left: '0px' } : { right: '-44px' })}
             />
           </MobileCircle>
@@ -202,11 +186,16 @@ const Classics: FC = () => {
   ) : (
     <>
       <MaxWidthWrapper>
-        <Title>... or try the classics</Title>
+        <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
         <SliderContent>
-          <SliderName style={{ color: sliders[activeSliderIndex].color }}>{sliders[activeSliderIndex].name}</SliderName>
-          <SliderTitle>{sliders[activeSliderIndex].title}</SliderTitle>
-          <SliderDescription>{sliders[activeSliderIndex].description}</SliderDescription>
+          <SliderName
+            style={{ color: sliders[activeSliderIndex].color }}
+            dangerouslySetInnerHTML={{ __html: items[activeSliderIndex].subtitle as string }}
+          ></SliderName>
+          <SliderTitle dangerouslySetInnerHTML={{ __html: items[activeSliderIndex].title as string }}></SliderTitle>
+          <SliderDescription
+            dangerouslySetInnerHTML={{ __html: items[activeSliderIndex].text as string }}
+          ></SliderDescription>
           <Link href="/menu">
             <ButtonRound>See the menu</ButtonRound>
           </Link>
@@ -216,17 +205,16 @@ const Classics: FC = () => {
         <Lottie animationData={sliders[activeSliderIndex].wave} />
       </LottieWrapper>
       <SideContent>
-        {sliders.map((slider, index) => (
+        {items.map((slider, index) => (
           <Image
             key={index}
-            alt={slider.title}
-            height={slider.height}
+            field={slider.image}
+            height={sliders[index].height}
             isActive={index === activeSliderIndex}
-            left={slider.left}
-            src={slider.image}
+            left={sliders[index].left}
             style={{ zIndex: 1 }}
-            top={slider.top}
-            width={slider.width}
+            top={sliders[index].top}
+            width={sliders[index].width}
           />
         ))}
         <Circle background={sliders[activeSliderIndex].circle} />

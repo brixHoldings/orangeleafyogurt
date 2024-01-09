@@ -1,0 +1,70 @@
+{
+  "id": "franchising",
+  "label": "Franchising",
+  "format": "page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "franchising_form_section": {
+              "type": "SharedSlice"
+            },
+            "franchising_get_started_section": {
+              "type": "SharedSlice"
+            },
+            "franchising_about_section": {
+              "type": "SharedSlice"
+            },
+            "franchising_purpose_section": {
+              "type": "SharedSlice"
+            },
+            "franchising_menu_section": {
+              "type": "SharedSlice"
+            },
+            "franchising_how_to_section": {
+              "type": "SharedSlice"
+            },
+            "franchising_video": {
+              "type": "SharedSlice"
+            },
+            "franchising_header": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "receive",
+				"type": "Text"
+			},
+			"section_1_title": {
+				"__TYPE__": "FieldContent",
+				"value": "daughter",
+				"type": "Text"
+			},
+			"section_1_text": {
+				"__TYPE__": "FieldContent",
+				"value": "command",
+				"type": "Text"
+			},
+			"section_2_title": {
+				"__TYPE__": "FieldContent",
+				"value": "mass",
+				"type": "Text"
+			},
+			"section_2_text": {
+				"__TYPE__": "FieldContent",
+				"value": "coal",
+				"type": "Text"
+			},
+			"section_3_title": {
+				"__TYPE__": "FieldContent",
+				"value": "route",
+				"type": "Text"
+			},
+			"section_3_text": {
+				"__TYPE__": "FieldContent",
+				"value": "say",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -20,12 +20,17 @@ import {
 
 import froyo from '../../../../../../public/lottie/froyo-anim.json';
 import sloganRotate from '../../../../../../public/lottie/slogan-rotate.json';
+import { HomeHeadingSlice } from 'prismicio-types';
 
-const HowToOrangeLeaf: FC = () => (
+const HowToOrangeLeaf: FC<{ slice: HomeHeadingSlice }> = ({
+  slice: {
+    primary: { title, subtitle, subtitle_2 },
+  },
+}) => (
   <>
     <Wrapper>
-      <Title>More Than Just Froyo</Title>
-      <Subtitle>...It’s a place where... </Subtitle>
+      <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+      <Subtitle dangerouslySetInnerHTML={{ __html: subtitle as string }}></Subtitle>
     </Wrapper>
     <FloatingImage
       alt="background"
@@ -48,9 +53,7 @@ const HowToOrangeLeaf: FC = () => (
         </ImageWrapper>
       </ImageOuterWrapper>
       <Card>
-        <CardText>
-          ...you can express your flavor freedom and enjoy a delicious treat with your friends and family.
-        </CardText>
+        <CardText dangerouslySetInnerHTML={{ __html: subtitle_2 as string }}></CardText>
       </Card>
     </Circle>
   </>

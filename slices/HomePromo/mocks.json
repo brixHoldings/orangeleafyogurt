@@ -1,0 +1,34 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title_1": {
+				"__TYPE__": "FieldContent",
+				"value": "operation",
+				"type": "Text"
+			},
+			"subtitle_1": {
+				"__TYPE__": "FieldContent",
+				"value": "ordinary",
+				"type": "Text"
+			},
+			"button_1": {
+				"__TYPE__": "FieldContent",
+				"value": "wonder",
+				"type": "Text"
+			},
+			"subtitle_2": {
+				"__TYPE__": "FieldContent",
+				"value": "queen",
+				"type": "Text"
+			},
+			"title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "brave",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

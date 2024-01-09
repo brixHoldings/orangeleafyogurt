@@ -1,0 +1,114 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"header_title": {
+				"__TYPE__": "FieldContent",
+				"value": "quite",
+				"type": "Text"
+			},
+			"header_text": {
+				"__TYPE__": "FieldContent",
+				"value": "stems",
+				"type": "Text"
+			},
+			"section_title": {
+				"__TYPE__": "FieldContent",
+				"value": "pain",
+				"type": "Text"
+			},
+			"section_text": {
+				"__TYPE__": "FieldContent",
+				"value": "available",
+				"type": "Text"
+			},
+			"section_2_title": {
+				"__TYPE__": "FieldContent",
+				"value": "place",
+				"type": "Text"
+			},
+			"banner_1_title": {
+				"__TYPE__": "FieldContent",
+				"value": "bread",
+				"type": "Text"
+			},
+			"banner_1_text": {
+				"__TYPE__": "FieldContent",
+				"value": "coat",
+				"type": "Text"
+			},
+			"banner_2_title": {
+				"__TYPE__": "FieldContent",
+				"value": "iron",
+				"type": "Text"
+			},
+			"banner_2_text": {
+				"__TYPE__": "FieldContent",
+				"value": "last",
+				"type": "Text"
+			},
+			"banner_3_title": {
+				"__TYPE__": "FieldContent",
+				"value": "we",
+				"type": "Text"
+			},
+			"banner_3_text": {
+				"__TYPE__": "FieldContent",
+				"value": "fight",
+				"type": "Text"
+			},
+			"form_title": {
+				"__TYPE__": "FieldContent",
+				"value": "aboard",
+				"type": "Text"
+			},
+			"promotion_title": {
+				"__TYPE__": "FieldContent",
+				"value": "air",
+				"type": "Text"
+			},
+			"promotion_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "sitting",
+				"type": "Text"
+			},
+			"promotion_subtitle_2": {
+				"__TYPE__": "FieldContent",
+				"value": "fireplace",
+				"type": "Text"
+			},
+			"promotion_option_title": {
+				"__TYPE__": "FieldContent",
+				"value": "personal",
+				"type": "Text"
+			},
+			"promotion_option_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "order",
+				"type": "Text"
+			},
+			"promotion_option_title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "heavy",
+				"type": "Text"
+			},
+			"promotion_option_subtitle_2": {
+				"__TYPE__": "FieldContent",
+				"value": "market",
+				"type": "Text"
+			},
+			"military_title": {
+				"__TYPE__": "FieldContent",
+				"value": "necessary",
+				"type": "Text"
+			},
+			"military_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "shade",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

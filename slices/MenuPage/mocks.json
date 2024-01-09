@@ -1,0 +1,94 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "else",
+				"type": "Text"
+			},
+			"headline": {
+				"__TYPE__": "FieldContent",
+				"value": "television",
+				"type": "Text"
+			},
+			"caption": {
+				"__TYPE__": "FieldContent",
+				"value": "shade",
+				"type": "Text"
+			},
+			"title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "was",
+				"type": "Text"
+			},
+			"number_of_toppings": {
+				"__TYPE__": "FieldContent",
+				"value": "eager",
+				"type": "Text"
+			},
+			"number_of_toppings_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "which",
+				"type": "Text"
+			},
+			"card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "offer",
+				"type": "Text"
+			},
+			"card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "ourselves",
+				"type": "Text"
+			},
+			"menu_items_main_title": {
+				"__TYPE__": "FieldContent",
+				"value": "shoot",
+				"type": "Text"
+			},
+			"menu_item_title_1": {
+				"__TYPE__": "FieldContent",
+				"value": "later",
+				"type": "Text"
+			},
+			"menu_item_text_1": {
+				"__TYPE__": "FieldContent",
+				"value": "soap",
+				"type": "Text"
+			},
+			"menu_item_title_2": {
+				"__TYPE__": "FieldContent",
+				"value": "paint",
+				"type": "Text"
+			},
+			"menu_item_text_2": {
+				"__TYPE__": "FieldContent",
+				"value": "date",
+				"type": "Text"
+			},
+			"menu_item_title_3": {
+				"__TYPE__": "FieldContent",
+				"value": "neck",
+				"type": "Text"
+			},
+			"menu_item_text_3": {
+				"__TYPE__": "FieldContent",
+				"value": "support",
+				"type": "Text"
+			},
+			"menu_item_title_4": {
+				"__TYPE__": "FieldContent",
+				"value": "throughout",
+				"type": "Text"
+			},
+			"menu_item_text_4": {
+				"__TYPE__": "FieldContent",
+				"value": "total",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

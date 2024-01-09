@@ -1,0 +1,64 @@
+{
+  "id": "home_gallery",
+  "type": "SharedSlice",
+  "name": "HomeGallery",
+  "description": "HomeGallery",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          }
+        },
+        "mobile_image": {
+          "type": "Image",
+          "config": {
+            "label": "Mobile Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

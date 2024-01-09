@@ -1,0 +1,68 @@
+{
+  "id": "gift_cards_page",
+  "type": "SharedSlice",
+  "name": "GiftCardsPage",
+  "description": "GiftCardsPage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header_title": {
+          "type": "Text",
+          "config": {
+            "label": "Header Title",
+            "placeholder": ""
+          }
+        },
+        "header_text": {
+          "type": "Text",
+          "config": {
+            "label": "Header Text",
+            "placeholder": ""
+          }
+        },
+        "header_button": {
+          "type": "Text",
+          "config": {
+            "label": "Header Button",
+            "placeholder": ""
+          }
+        },
+        "section_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section Title",
+            "placeholder": ""
+          }
+        },
+        "card_title": {
+          "type": "Text",
+          "config": {
+            "label": "Card Title",
+            "placeholder": ""
+          }
+        },
+        "card_text": {
+          "type": "Text",
+          "config": {
+            "label": "Card Text",
+            "placeholder": ""
+          }
+        },
+        "card_button": {
+          "type": "Text",
+          "config": {
+            "label": "Card Button",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

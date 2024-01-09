@@ -73,10 +73,6 @@ export const ButtonRound = styled.button`
   cursor: pointer;
 `;
 
-export const ButtonRoundMobile = styled(ButtonRound)`
- margin-left
-`;
-
 export const SliderTitle = styled.h1`
   margin-bottom: 4px;
   font-size: clamp(35px, 3.43vw, 52px);

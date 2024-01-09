@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import {
@@ -16,35 +18,46 @@ import {
 } from './HowToSection.styles';
 
 import type { FC } from 'react';
+import { FranchisingHowToSectionSlice } from 'prismicio-types';
 
-const steps = [
-  {
-    description:
-      'Froyo, Mix It & Go, Froyo Cakes & Slices, Smoothies, Shakes, Waffle Cones, Super Food Bowls and Party Boxes.',
-    title: 'Menu variety',
+const HowToSection: FC<{ slice: FranchisingHowToSectionSlice }> = ({
+  slice: {
+    primary: {
+      title_first_part,
+      title_second_part,
+      step_1_title,
+      step_1_text,
+      step_2_title,
+      step_2_text,
+      step_3_title,
+      step_3_text,
+    },
   },
-  {
-    description:
-      '8 flavors of yogurt, including rotating seasonal flavors.<br/>Over 20 toppings and flavors - textures, colors and more!',
-    title: 'Layers',
-  },
-  { description: 'From square footage to orange furniture.', title: 'Space / Layout' },
-];
-
-const HowToSection: FC = () => (
+}) => (
   <Container>
-    <TitlePartOne>#How to</TitlePartOne>
-    <TitlePartTwo>ORANGE LEAF</TitlePartTwo>
-
-    {steps.map(({ title, description }, index) => (
-      <StepContainer key={index}>
-        <StepNumber>{index + 1}.</StepNumber>
-        <StepContent>
-          <StepTitle>{title}</StepTitle>
-          <StepDescription dangerouslySetInnerHTML={{ __html: description }} />
-        </StepContent>
-      </StepContainer>
-    ))}
+    <TitlePartOne dangerouslySetInnerHTML={{ __html: title_first_part as string }}></TitlePartOne>
+    <TitlePartTwo dangerouslySetInnerHTML={{ __html: title_second_part as string }}></TitlePartTwo>
+    <StepContainer>
+      <StepNumber>1.</StepNumber>
+      <StepContent>
+        <StepTitle dangerouslySetInnerHTML={{ __html: step_1_title as string }}></StepTitle>
+        <StepDescription dangerouslySetInnerHTML={{ __html: step_1_text as string }} />
+      </StepContent>
+    </StepContainer>
+    <StepContainer>
+      <StepNumber>2.</StepNumber>
+      <StepContent>
+        <StepTitle dangerouslySetInnerHTML={{ __html: step_2_title as string }}></StepTitle>
+        <StepDescription dangerouslySetInnerHTML={{ __html: step_2_text as string }} />
+      </StepContent>
+    </StepContainer>
+    <StepContainer>
+      <StepNumber>3.</StepNumber>
+      <StepContent>
+        <StepTitle dangerouslySetInnerHTML={{ __html: step_3_title as string }}></StepTitle>
+        <StepDescription dangerouslySetInnerHTML={{ __html: step_3_text as string }} />
+      </StepContent>
+    </StepContainer>
 
     <Splash>
       <Image alt="splash-image" height={447} src="/images/yogurt_splash.png" width={439} />

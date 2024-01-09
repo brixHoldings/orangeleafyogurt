@@ -1,3 +1,4 @@
+'use client';
 import { useCallback, useMemo, useState } from 'react';
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
@@ -25,8 +26,13 @@ import {
 } from './FormSection.styles';
 
 import type { FC, FormEventHandler } from 'react';
+import { FranchisingFormSectionSlice } from 'prismicio-types';
 
-const FormSection: FC = () => {
+const FormSection: FC<{ slice: FranchisingFormSectionSlice }> = ({
+  slice: {
+    primary: { title, text },
+  },
+}) => {
   const {
     formState: { errors },
     handleSubmit,
@@ -59,12 +65,8 @@ const FormSection: FC = () => {
       <Container>
         <Content>
           <ContentText>
-            <Title>Let&apos;s make a plan!</Title>
-            <Description>
-              At Orange Leaf, we consider every store a strategic-partnership and we empower those relationships by
-              maintaining the lowest fees in the industry, supporting veterans through our partnership with VetFran, and
-              encouraging stores to provide value to their communities.
-            </Description>
+            <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
+            <Description dangerouslySetInnerHTML={{ __html: text as string }}></Description>
 
             {!isSmallScreen && (
               <CtaText>

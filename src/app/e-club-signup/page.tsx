@@ -1,4 +1,6 @@
 import EClubSection from '@components/pages/OrangeLeaf/EClub/EClubSection/EClubSection';
+import { createClient } from 'prismicio';
+import { EClubPageSlice } from 'prismicio-types';
 
 import type { FC } from 'react';
 
@@ -37,11 +39,19 @@ const getOptions = async (): Promise<GetOptionsResponse> => {
 const EClub: FC = async () => {
   const data = await getOptions();
 
+  const client = createClient();
+
+  const page = await client.getSingle('eclubsignup');
+
+  const eClubPageSlice = page.data.slices.find((slice) => slice.slice_type === 'e_club_page') as
+    | EClubPageSlice
+    | undefined;
+
   const optionMatch = data.merge_fields.find((field) => field.tag === 'MMERGE3');
 
   const choices = optionMatch === undefined ? [] : optionMatch.options.choices;
 
-  return <EClubSection options={choices} />;
+  return eClubPageSlice ? <EClubSection options={choices} slice={eClubPageSlice} /> : null;
 };
 
 export default EClub;

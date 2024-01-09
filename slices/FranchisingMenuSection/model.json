@@ -1,0 +1,63 @@
+{
+  "id": "franchising_menu_section",
+  "type": "SharedSlice",
+  "name": "FranchisingMenuSection",
+  "description": "FranchisingMenuSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "partners_title": {
+          "type": "Text",
+          "config": {
+            "label": "Partners Title",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "color": {
+          "type": "Color",
+          "config": {
+            "label": "Color",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

@@ -23,8 +23,13 @@ import theme from '@styles/theme';
 import useWindowSize from '@hooks/useWindowSize';
 
 import type { FC } from 'react';
+import { HomePromoSlice } from 'prismicio-types';
 
-const Promo: FC = () => {
+const Promo: FC<{ slice: HomePromoSlice }> = ({
+  slice: {
+    primary: { title_1, subtitle_1, button_1, title_2, subtitle_2 },
+  },
+}) => {
   const { width } = useWindowSize();
 
   const isTablet = width <= theme.breakpoints.tablet;
@@ -48,11 +53,11 @@ const Promo: FC = () => {
         width="clamp(162px, 42.92vw, 649px)"
       />
       <JoinClubContainer>
-        <Title>Join our club</Title>
+        <Title dangerouslySetInnerHTML={{ __html: title_1 as string }}></Title>
         <FlexWrapper>
-          <Subtitle>to get special offers</Subtitle>
+          <Subtitle dangerouslySetInnerHTML={{ __html: subtitle_1 as string }}></Subtitle>
           <Link href="/e-club-signup">
-            <Button>JOIN E-CLUB</Button>
+            <Button dangerouslySetInnerHTML={{ __html: button_1 as string }}></Button>
           </Link>
         </FlexWrapper>
 
@@ -67,8 +72,8 @@ const Promo: FC = () => {
       </JoinClubContainer>
       <GiftCardContainer>
         <MainContentWrapper>
-          <CardSubtitle>... or get a</CardSubtitle>
-          <Title>Gift card</Title>
+          <CardSubtitle dangerouslySetInnerHTML={{ __html: subtitle_2 as string }}></CardSubtitle>
+          <Title dangerouslySetInnerHTML={{ __html: title_2 as string }}></Title>
         </MainContentWrapper>
         {isTablet ? card : <CardPalaceHolder>{card}</CardPalaceHolder>}
       </GiftCardContainer>

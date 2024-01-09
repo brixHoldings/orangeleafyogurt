@@ -34,8 +34,13 @@ import card from '../../../../../../public/lottie/cards-anim.json';
 import wave1 from '../../../../../../public/lottie/wave1.json';
 
 import type { FC } from 'react';
+import { GiftCardsPageSlice } from 'prismicio-types';
 
-const GiftCardsSection: FC = () => (
+const GiftCardsSection: FC<{ slice: GiftCardsPageSlice }> = ({
+  slice: {
+    primary: { header_title, header_text, header_button, section_title, card_button, card_text, card_title },
+  },
+}) => (
   <>
     <HeaderBg>
       <ImageWrapper>
@@ -44,14 +49,10 @@ const GiftCardsSection: FC = () => (
       <HeaderPaperWrapper>
         <GiftCardsMaxWidthWrapper>
           <HeaderPaper>
-            <HeaderTitle>Gift an EXPERIENCE!</HeaderTitle>
-            <HeaderText>
-              Unlock a world of delightful experiences with Orange Leaf gift cards. Treat yourself or a loved one to the
-              ultimate creative treat—customizable frozen yogurt creations that tantalize your taste buds. The gift of
-              Orange Leaf is a ticket to a blissful journey of flavors and toppings. It&apos;s the tastiest gift idea!
-            </HeaderText>
+            <HeaderTitle dangerouslySetInnerHTML={{ __html: header_title as string }}></HeaderTitle>
+            <HeaderText dangerouslySetInnerHTML={{ __html: header_text as string }}></HeaderText>
             <a href="https://orangeleaf.myguestaccount.com/guest/egift?page=cardInfo" target="_blank">
-              <Button>Get a gift card!</Button>
+              <Button dangerouslySetInnerHTML={{ __html: header_button as string }}></Button>
             </a>
           </HeaderPaper>
         </GiftCardsMaxWidthWrapper>
@@ -59,10 +60,9 @@ const GiftCardsSection: FC = () => (
       <YellowBar />
     </HeaderBg>
     <GiftCardsMaxWidthWrapper>
-      <ChoseFromMultipleDesigns>
-        Choose from
-        <br /> multiple designs...
-      </ChoseFromMultipleDesigns>
+      <ChoseFromMultipleDesigns
+        dangerouslySetInnerHTML={{ __html: section_title as string }}
+      ></ChoseFromMultipleDesigns>
     </GiftCardsMaxWidthWrapper>
     <Cards>
       <CardWrapper>
@@ -78,12 +78,14 @@ const GiftCardsSection: FC = () => (
     <PinkBg>
       <AlreadyHaveAGiftCardWrapper>
         <AlreadyHaveAGiftCard>
-          <AlreadyHaveAGiftCardTitle>Already have a giftcard?</AlreadyHaveAGiftCardTitle>
-          <AlreadyHaveAGiftCardText>
-            It’s easy to check your balance and review <br /> transactions.
-          </AlreadyHaveAGiftCardText>
+          <AlreadyHaveAGiftCardTitle
+            dangerouslySetInnerHTML={{ __html: card_title as string }}
+          ></AlreadyHaveAGiftCardTitle>
+          <AlreadyHaveAGiftCardText
+            dangerouslySetInnerHTML={{ __html: card_text as string }}
+          ></AlreadyHaveAGiftCardText>
           <a href="https://orangeleaf.myguestaccount.com/guest/nologin/account-balance" target="_blank">
-            <Button>Check your balance</Button>
+            <Button dangerouslySetInnerHTML={{ __html: card_button as string }}></Button>
           </a>
         </AlreadyHaveAGiftCard>
         <FloatingImage

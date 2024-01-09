@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback, useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 
@@ -8,7 +10,6 @@ import {
   CircularDiv,
   Container,
   CopyrightContainer,
-  CopyrightSubtitle,
   CopyrightTitle,
   Icon,
   PartnerIconsLocation,
@@ -27,57 +28,8 @@ import {
 } from './MenuSection.styles';
 
 import type { FC, MouseEventHandler } from 'react';
-
-type SliderInfo = {
-  imageAlt: string;
-  imagePath: string;
-  menuTitle: string;
-  sliderText: string;
-  titleColor: string;
-};
-
-const sliderInfoArray: SliderInfo[] = [
-  {
-    imageAlt: 'menuImage',
-    imagePath: '/images/Smoothies_menu.png',
-    menuTitle: 'Smoothies',
-    sliderText:
-      'Made fresh to order, just for you. Choose from our menu of favorites or create a masterpiece of your own. Flavor freedom is yours.',
-    titleColor: '#D9D32F',
-  },
-  {
-    imageAlt: 'menuImage',
-    imagePath: '/images/Yogurt_menu.png',
-    menuTitle: 'Froyo',
-    sliderText:
-      "Our froyo flavors are the best, because we make them that way. No really, we do. Each flavor recipe is uniquely ours and you can't get it anywhere else!",
-    titleColor: '#D9D32F',
-  },
-  {
-    imageAlt: 'menuImage',
-    imagePath: '/images/Shakes_menu.png',
-    menuTitle: 'Shakes',
-    sliderText:
-      "Shake it up with this creamy decadent dessert beverage. That's right, DESSERT beverage. You choose the froyo, you choose the toppings, we'll do the rest.",
-    titleColor: '#D9D32F',
-  },
-  {
-    imageAlt: 'menuImage',
-    imagePath: '/images/Cakes_menu.png',
-    menuTitle: 'Cakes',
-    sliderText:
-      'Make your next event extraordinary! Choose from one of our four signature froyo cakes or customize your own with your favorite froyo flavors and toppings.',
-    titleColor: '#D9D32F',
-  },
-  {
-    imageAlt: 'menuImage',
-    imagePath: '/images/PartyBoxes_menu.png',
-    menuTitle: 'Party boxes',
-    sliderText:
-      'Say hello to the Pop-Up Party Box. Perfect for birthday parties, school fundraisers and meet ups with friends.',
-    titleColor: '#D9D32F',
-  },
-];
+import { FranchisingMenuSectionSlice } from 'prismicio-types';
+import { PrismicImage } from '@prismicio/react';
 
 const partnerIconsArray = [
   {
@@ -103,25 +55,28 @@ const partnerIconsArray = [
 const sliderDefaultInterval = 4000;
 const sliderAfterClickInterval = 10000;
 
-const MenuSection: FC = () => {
+const MenuSection: FC<{ slice: FranchisingMenuSectionSlice }> = ({
+  slice: {
+    primary: { title, partners_title },
+    items,
+  },
+}) => {
   const { width } = useWindowSize();
   const intervalReference = useRef<ReturnType<typeof setInterval> | null>(null);
-  const [activeSliderTitle, setActiveSliderTitle] = useState(sliderInfoArray[0].menuTitle);
+  const [activeSliderTitle, setActiveSliderTitle] = useState(items[0].title);
 
   const isDesktop = useMemo(() => (width ? width >= theme.breakpoints.desktop : false), [width]);
   const isTablet = width <= theme.breakpoints.tablet;
 
   const changeSlide = useCallback(() => {
     setActiveSliderTitle((previousValue) => {
-      if (previousValue === sliderInfoArray[sliderInfoArray.length - 1].menuTitle) {
-        return sliderInfoArray[0].menuTitle;
+      if (previousValue === items[items.length - 1].title) {
+        return items[0].title;
       }
 
-      const previousValueIndex = sliderInfoArray.findIndex(
-        (sliderInfo: SliderInfo) => sliderInfo.menuTitle === previousValue,
-      );
+      const previousValueIndex = items.findIndex((sliderInfo) => sliderInfo.title === previousValue);
 
-      return sliderInfoArray[previousValueIndex + 1].menuTitle;
+      return items[previousValueIndex + 1].title;
     });
   }, []);
 
@@ -173,38 +128,29 @@ const MenuSection: FC = () => {
   return (
     <Container>
       <CopyrightContainer>
-        <CopyrightTitle>
-          Orange Leaf &nbsp;&#174;&nbsp;
-          <CopyrightSubtitle>menu</CopyrightSubtitle>
-        </CopyrightTitle>
+        <CopyrightTitle dangerouslySetInnerHTML={{ __html: title as string }}></CopyrightTitle>
       </CopyrightContainer>
 
       <SliderContainer>
         <SliderImageContainer>
-          {sliderInfoArray.map((sliderInfo, index) => {
+          {items.map((item, index) => {
             if (index === 0) {
               return (
-                <SliderFirstImageWrapper
-                  key={sliderInfo.menuTitle}
-                  isActive={sliderInfo.menuTitle === activeSliderTitle}
-                >
+                <SliderFirstImageWrapper key={item.title} isActive={item.title === activeSliderTitle}>
                   {isDesktop ? null : (
                     <SliderImageContent>
-                      <SliderImageContentMainText>{sliderInfo.sliderText}</SliderImageContentMainText>
+                      <SliderImageContentMainText>{item.text}</SliderImageContentMainText>
                       <SliderImageContentTitleContainer>
-                        <SliderImageContentTitle color={sliderInfo.titleColor}>
-                          {sliderInfo.menuTitle}
-                        </SliderImageContentTitle>
+                        <SliderImageContentTitle color={item.color as string}>{item.title}</SliderImageContentTitle>
                       </SliderImageContentTitleContainer>
                     </SliderImageContent>
                   )}
 
                   <SliderImageRelativeContainer>
-                    <Image
-                      alt={sliderInfo.imageAlt}
+                    <PrismicImage
                       height={654}
                       sizes="100vw"
-                      src={sliderInfo.imagePath}
+                      field={item.image}
                       style={{
                         height: 'auto',
                         width: '100%',
@@ -215,11 +161,9 @@ const MenuSection: FC = () => {
 
                   {isTablet ? null : (
                     <SliderImageContent>
-                      <SliderImageContentMainText>{sliderInfo.sliderText}</SliderImageContentMainText>
+                      <SliderImageContentMainText>{item.text}</SliderImageContentMainText>
                       <SliderImageContentTitleContainer>
-                        <SliderImageContentTitle color={sliderInfo.titleColor}>
-                          {sliderInfo.menuTitle}
-                        </SliderImageContentTitle>
+                        <SliderImageContentTitle color={item.color as string}>{item.title}</SliderImageContentTitle>
                       </SliderImageContentTitleContainer>
                     </SliderImageContent>
                   )}
@@ -228,28 +172,22 @@ const MenuSection: FC = () => {
             }
 
             return (
-              <SliderAbsoluteContentWrapper
-                key={sliderInfo.menuTitle}
-                isActive={sliderInfo.menuTitle === activeSliderTitle}
-              >
+              <SliderAbsoluteContentWrapper key={item.title} isActive={item.title === activeSliderTitle}>
                 {isDesktop ? null : (
                   <SliderImageContent>
-                    <SliderImageContentMainText>{sliderInfo.sliderText}</SliderImageContentMainText>
+                    <SliderImageContentMainText>{item.text}</SliderImageContentMainText>
 
                     <SliderImageContentTitleContainer>
-                      <SliderImageContentTitle color={sliderInfo.titleColor}>
-                        {sliderInfo.menuTitle}
-                      </SliderImageContentTitle>
+                      <SliderImageContentTitle color={item.color as string}>{item.title}</SliderImageContentTitle>
                     </SliderImageContentTitleContainer>
                   </SliderImageContent>
                 )}
 
                 <SliderImageRelativeContainer>
-                  <Image
-                    alt={sliderInfo.imageAlt}
+                  <PrismicImage
                     height={654}
                     sizes="100vw"
-                    src={sliderInfo.imagePath}
+                    field={item.image}
                     style={{
                       height: 'auto',
                       width: '100%',
@@ -260,12 +198,10 @@ const MenuSection: FC = () => {
 
                 {isDesktop ? (
                   <SliderImageContent>
-                    <SliderImageContentMainText>{sliderInfo.sliderText}</SliderImageContentMainText>
+                    <SliderImageContentMainText>{item.text}</SliderImageContentMainText>
 
                     <SliderImageContentTitleContainer>
-                      <SliderImageContentTitle color={sliderInfo.titleColor}>
-                        {sliderInfo.menuTitle}
-                      </SliderImageContentTitle>
+                      <SliderImageContentTitle color={item.color as string}>{item.title}</SliderImageContentTitle>
                     </SliderImageContentTitleContainer>
                   </SliderImageContent>
                 ) : null}
@@ -275,18 +211,18 @@ const MenuSection: FC = () => {
         </SliderImageContainer>
 
         <SliderButtonsContainer>
-          {sliderInfoArray.map(({ menuTitle }) => (
+          {items.map(({ title }) => (
             <SliderButton
-              key={menuTitle}
-              id={menuTitle}
-              isActive={menuTitle === activeSliderTitle}
+              key={title}
+              id={title as string}
+              isActive={title === activeSliderTitle}
               onClick={handleSliderButtonClick as MouseEventHandler<HTMLButtonElement> & (() => void)}
             />
           ))}
         </SliderButtonsContainer>
       </SliderContainer>
 
-      <PartnersText>We have partnered with:</PartnersText>
+      <PartnersText dangerouslySetInnerHTML={{ __html: partners_title as string }}></PartnersText>
 
       <PartnerIconsLocation>
         {partnerIconsArray.map(({ imageAlt, imageHeight, imagePath, imageWidth }) => (

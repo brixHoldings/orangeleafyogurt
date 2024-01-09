@@ -1,0 +1,55 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "hole",
+				"type": "Text"
+			},
+			"card_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "throat",
+				"type": "Text"
+			},
+			"card_title": {
+				"__TYPE__": "FieldContent",
+				"value": "time",
+				"type": "Text"
+			},
+			"card_button": {
+				"__TYPE__": "FieldContent",
+				"value": "for",
+				"type": "Text"
+			},
+			"card_text": {
+				"__TYPE__": "FieldContent",
+				"value": "hole",
+				"type": "Text"
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
+					"width": 4272,
+					"height": 2848
+				},
+				"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
+				"width": 4272,
+				"height": 2848,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

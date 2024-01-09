@@ -1,0 +1,68 @@
+{
+  "id": "franchising_about_section",
+  "type": "SharedSlice",
+  "name": "FranchisingAboutSection",
+  "description": "FranchisingAboutSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "section_1_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section 1 Title",
+            "placeholder": ""
+          }
+        },
+        "section_1_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section 1 Text",
+            "placeholder": ""
+          }
+        },
+        "section_2_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section 2 Title",
+            "placeholder": ""
+          }
+        },
+        "section_2_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section 2 Text",
+            "placeholder": ""
+          }
+        },
+        "section_3_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section 3 Title",
+            "placeholder": ""
+          }
+        },
+        "section_3_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section 3 Text",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

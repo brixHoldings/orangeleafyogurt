@@ -1,0 +1,56 @@
+{
+  "id": "share_photos",
+  "type": "SharedSlice",
+  "name": "SharePhotos",
+  "description": "SharePhotos",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "hashtag": {
+          "type": "Text",
+          "config": {
+            "label": "Hashtag",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

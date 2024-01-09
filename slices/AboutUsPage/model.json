@@ -1,0 +1,166 @@
+{
+  "id": "about_us_page",
+  "type": "SharedSlice",
+  "name": "AboutUsPage",
+  "description": "AboutUsPage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header_title": {
+          "type": "Text",
+          "config": {
+            "label": "Header Title",
+            "placeholder": ""
+          }
+        },
+        "header_text": {
+          "type": "Text",
+          "config": {
+            "label": "Header Text",
+            "placeholder": ""
+          }
+        },
+        "section_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section Title",
+            "placeholder": ""
+          }
+        },
+        "section_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section Text",
+            "placeholder": ""
+          }
+        },
+        "section_2_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section 2 Title",
+            "placeholder": ""
+          }
+        },
+        "banner_1_title": {
+          "type": "Text",
+          "config": {
+            "label": "Banner 1 Title",
+            "placeholder": ""
+          }
+        },
+        "banner_1_text": {
+          "type": "Text",
+          "config": {
+            "label": "Banner 1 Text",
+            "placeholder": ""
+          }
+        },
+        "banner_2_title": {
+          "type": "Text",
+          "config": {
+            "label": "Banner 2 Title",
+            "placeholder": ""
+          }
+        },
+        "banner_2_text": {
+          "type": "Text",
+          "config": {
+            "label": "Banner 2 Text",
+            "placeholder": ""
+          }
+        },
+        "banner_3_title": {
+          "type": "Text",
+          "config": {
+            "label": "Banner 3 Title",
+            "placeholder": ""
+          }
+        },
+        "banner_3_text": {
+          "type": "Text",
+          "config": {
+            "label": "Banner 3 Text",
+            "placeholder": ""
+          }
+        },
+        "form_title": {
+          "type": "Text",
+          "config": {
+            "label": "Form Title",
+            "placeholder": ""
+          }
+        },
+        "promotion_title": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Title",
+            "placeholder": ""
+          }
+        },
+        "promotion_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Subtitle",
+            "placeholder": ""
+          }
+        },
+        "promotion_subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Subtitle 2",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_title": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Title",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Subtitle",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_title_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Title 2",
+            "placeholder": ""
+          }
+        },
+        "promotion_option_subtitle_2": {
+          "type": "Text",
+          "config": {
+            "label": "Promotion Option Subtitle 2",
+            "placeholder": ""
+          }
+        },
+        "military_title": {
+          "type": "Text",
+          "config": {
+            "label": "Military Title",
+            "placeholder": ""
+          }
+        },
+        "military_subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Military Subtitle",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

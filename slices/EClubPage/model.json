@@ -1,0 +1,96 @@
+{
+  "id": "e_club_page",
+  "type": "SharedSlice",
+  "name": "EClubPage",
+  "description": "EClubPage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header_title": {
+          "type": "Text",
+          "config": {
+            "label": "Header Title",
+            "placeholder": ""
+          }
+        },
+        "header_text": {
+          "type": "Text",
+          "config": {
+            "label": "Header Text",
+            "placeholder": ""
+          }
+        },
+        "header_button": {
+          "type": "Text",
+          "config": {
+            "label": "Header Button",
+            "placeholder": ""
+          }
+        },
+        "section_title": {
+          "type": "Text",
+          "config": {
+            "label": "Section Title",
+            "placeholder": ""
+          }
+        },
+        "section_text": {
+          "type": "Text",
+          "config": {
+            "label": "Section Text",
+            "placeholder": ""
+          }
+        },
+        "section_button": {
+          "type": "Text",
+          "config": {
+            "label": "Section Button",
+            "placeholder": ""
+          }
+        },
+        "step_1": {
+          "type": "Text",
+          "config": {
+            "label": "Step 1",
+            "placeholder": ""
+          }
+        },
+        "step_2": {
+          "type": "Text",
+          "config": {
+            "label": "Step 2",
+            "placeholder": ""
+          }
+        },
+        "step_3": {
+          "type": "Text",
+          "config": {
+            "label": "Step 3",
+            "placeholder": ""
+          }
+        },
+        "form_title": {
+          "type": "Text",
+          "config": {
+            "label": "Form Title",
+            "placeholder": ""
+          }
+        },
+        "form_text": {
+          "type": "Text",
+          "config": {
+            "label": "Form Text",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

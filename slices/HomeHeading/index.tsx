@@ -2,19 +2,19 @@ import { Content } from '@prismicio/client';
 import { SliceComponentProps } from '@prismicio/react';
 
 /**
- * Props for `MainTitle`.
+ * Props for `HomeHeading`.
  */
-export type MainTitleProps = SliceComponentProps<Content.MainTitleSlice>;
+export type HomeHeadingProps = SliceComponentProps<Content.HomeHeadingSlice>;
 
 /**
- * Component for "MainTitle" Slices.
+ * Component for "HomeHeading" Slices.
  */
-const MainTitle = ({ slice }: MainTitleProps): JSX.Element => {
+const HomeHeading = ({ slice }: HomeHeadingProps): JSX.Element => {
   return (
     <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-      Placeholder component for main_title (variation: {slice.variation}) Slices
+      Placeholder component for home_heading (variation: {slice.variation}) Slices
     </section>
   );
 };
 
-export default MainTitle;
+export default HomeHeading;
