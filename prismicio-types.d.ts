@@ -68,6 +68,70 @@ export type AboutUsDocument<Lang extends string = string> = prismic.PrismicDocum
   Lang
 >;
 
+type CareersDocumentDataSlicesSlice = JoinOurTeamSectionSlice;
+
+/**
+ * Content for Careers documents
+ */
+interface CareersDocumentData {
+  /**
+   * Slice Zone field in *Careers*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: careers.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<CareersDocumentDataSlicesSlice> /**
+   * Meta Description field in *Careers*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: careers.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Careers*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: careers.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Careers*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: careers.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Careers document from Prismic
+ *
+ * - **API ID**: `careers`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type CareersDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<CareersDocumentData>,
+  'careers',
+  Lang
+>;
+
 type EclubsignupDocumentDataSlicesSlice = EClubPageSlice;
 
 /**
@@ -420,6 +484,7 @@ export type NavigationDocument<Lang extends string = string> = prismic.PrismicDo
 
 export type AllDocumentTypes =
   | AboutUsDocument
+  | CareersDocument
   | EclubsignupDocument
   | FranchisingDocument
   | GiftCardsDocument
@@ -640,6 +705,36 @@ export interface AboutUsPageSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   military_subtitle: prismic.KeyTextField;
+
+  /**
+   * Join Us Title field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.join_us_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  join_us_title: prismic.KeyTextField;
+
+  /**
+   * Join Us Text field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.join_us_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  join_us_text: prismic.KeyTextField;
+
+  /**
+   * Join Us Button field in *AboutUsPage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_us_page.primary.join_us_button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  join_us_button: prismic.KeyTextField;
 }
 
 /**
@@ -2069,6 +2164,88 @@ type HomePromoSliceVariation = HomePromoSliceDefault;
 export type HomePromoSlice = prismic.SharedSlice<'home_promo', HomePromoSliceVariation>;
 
 /**
+ * Primary content in *JoinOurTeamSection → Primary*
+ */
+export interface JoinOurTeamSectionSliceDefaultPrimary {
+  /**
+   * Title field in *JoinOurTeamSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: join_our_team_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Text field in *JoinOurTeamSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: join_our_team_section.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Button field in *JoinOurTeamSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: join_our_team_section.primary.button
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *JoinOurTeamSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: join_our_team_section.primary.button_link
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_link: prismic.KeyTextField;
+
+  /**
+   * Disclaimer field in *JoinOurTeamSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: join_our_team_section.primary.disclaimer
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  disclaimer: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for JoinOurTeamSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type JoinOurTeamSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<JoinOurTeamSectionSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *JoinOurTeamSection*
+ */
+type JoinOurTeamSectionSliceVariation = JoinOurTeamSectionSliceDefault;
+
+/**
+ * JoinOurTeamSection Shared Slice
+ *
+ * - **API ID**: `join_our_team_section`
+ * - **Description**: JoinOurTeamSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type JoinOurTeamSectionSlice = prismic.SharedSlice<'join_our_team_section', JoinOurTeamSectionSliceVariation>;
+
+/**
  * Primary content in *MenuPage → Primary*
  */
 export interface MenuHeaderSliceDefaultPrimary {
@@ -2459,6 +2636,9 @@ declare module '@prismicio/client' {
       AboutUsDocument,
       AboutUsDocumentData,
       AboutUsDocumentDataSlicesSlice,
+      CareersDocument,
+      CareersDocumentData,
+      CareersDocumentDataSlicesSlice,
       EclubsignupDocument,
       EclubsignupDocumentData,
       EclubsignupDocumentDataSlicesSlice,
@@ -2536,6 +2716,10 @@ declare module '@prismicio/client' {
       HomePromoSliceDefaultPrimary,
       HomePromoSliceVariation,
       HomePromoSliceDefault,
+      JoinOurTeamSectionSlice,
+      JoinOurTeamSectionSliceDefaultPrimary,
+      JoinOurTeamSectionSliceVariation,
+      JoinOurTeamSectionSliceDefault,
       MenuHeaderSlice,
       MenuHeaderSliceDefaultPrimary,
       MenuHeaderSliceVariation,

@@ -115,7 +115,7 @@ export const ButtonLinkAsAnchor = styled.a`
 export const Separator = styled.div`
   width: 2px;
   height: 30px;
-  background: #ff6034;
+  background: #ff6b00;
   border-radius: 1px;
   margin: 0 20px;
 `;

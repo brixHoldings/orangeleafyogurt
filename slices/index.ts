@@ -17,6 +17,7 @@ export const components = {
   home_gallery: dynamic(() => import('./HomeGallery')),
   home_heading: dynamic(() => import('./HomeHeading')),
   home_promo: dynamic(() => import('./HomePromo')),
+  join_our_team_section: dynamic(() => import('./JoinOurTeamSection')),
   menu_header: dynamic(() => import('./MenuPage')),
   share_photos: dynamic(() => import('./SharePhotos')),
   whats_new: dynamic(() => import('./WhatsNew')),

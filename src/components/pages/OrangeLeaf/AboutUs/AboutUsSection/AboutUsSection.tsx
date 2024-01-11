@@ -44,6 +44,7 @@ import {
   LottyWrapper,
   FormLottyWrapper,
   LottieRotatingWords,
+  MeetOurTeamTitle,
 } from './AboutUsSection.style';
 
 import { Input, Label } from '../../EClub/EClubSection/EClubSection.style';
@@ -57,6 +58,8 @@ import type { FieldValues } from 'react-hook-form';
 import sloganRotate from '../../../../../../public/lottie/slogan-rotate.json';
 import wave1 from '../../../../../../public/lottie/wave1.json';
 import { AboutUsPageSlice } from 'prismicio-types';
+import Button from '@components/pages/OrangeLeaf/common/Button';
+import Link from 'next/link';
 
 type AboutUsFormData = {
   email: string;
@@ -93,6 +96,9 @@ const AboutUsSection: FC<{ slice: AboutUsPageSlice }> = ({
       banner_3_title,
       banner_3_text,
       form_title,
+      join_us_button,
+      join_us_text,
+      join_us_title,
     },
   },
 }) => {
@@ -240,7 +246,7 @@ const AboutUsSection: FC<{ slice: AboutUsPageSlice }> = ({
           top="-67%"
           width="clamp(148px,20.50vw, 310px)"
         />
-        <Paper>
+        <Paper id="contact-us">
           <FloatingGummyWormsImage
             alt="text"
             height=" 116px"
@@ -317,7 +323,22 @@ const AboutUsSection: FC<{ slice: AboutUsPageSlice }> = ({
           )}
         </Paper>
       </FormBg>
-      <MeetOurTeam />
+      <MeetOurTeam>
+        <MeetOurTeamTitle dangerouslySetInnerHTML={{ __html: join_us_title as string }}></MeetOurTeamTitle>
+        <WeAreExperienceText dangerouslySetInnerHTML={{ __html: join_us_text as string }}></WeAreExperienceText>
+        <Link
+          href="/careers"
+          style={{
+            maxWidth: '410px',
+            width: '100%',
+          }}
+        >
+          <Button
+            label={join_us_button as string}
+            style={{ backgroundColor: '#77BC1F', border: '2px solid #77BC1F', marginBottom: '40px', width: '100%' }}
+          ></Button>
+        </Link>
+      </MeetOurTeam>
     </>
   );
 };

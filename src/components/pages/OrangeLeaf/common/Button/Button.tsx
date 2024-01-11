@@ -1,6 +1,6 @@
 import { ButtonContainer } from './Button.styles';
 
-import type { FC, MouseEventHandler } from 'react';
+import type { CSSProperties, FC, MouseEventHandler } from 'react';
 
 import type { ButtonContainerProps } from './Button.styles';
 
@@ -9,6 +9,7 @@ type ButtonProps = ButtonContainerProps & {
   label: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   type?: 'button' | 'submit';
+  style?: CSSProperties;
 };
 
 const Button: FC<ButtonProps> = ({
@@ -19,6 +20,7 @@ const Button: FC<ButtonProps> = ({
   size = 'm',
   variant = 'primary',
   type = 'button',
+  style,
   ...rest
 }) => (
   <ButtonContainer
@@ -28,6 +30,7 @@ const Button: FC<ButtonProps> = ({
     size={size}
     type={type}
     variant={variant}
+    style={style}
     {...rest}
   >
     {label}

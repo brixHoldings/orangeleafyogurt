@@ -1,0 +1,54 @@
+{
+  "id": "join_our_team_section",
+  "type": "SharedSlice",
+  "name": "JoinOurTeamSection",
+  "description": "JoinOurTeamSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          }
+        },
+        "button": {
+          "type": "Text",
+          "config": {
+            "label": "Button",
+            "placeholder": ""
+          }
+        },
+        "button_link": {
+          "type": "Text",
+          "config": {
+            "label": "Button Link",
+            "placeholder": ""
+          }
+        },
+        "disclaimer": {
+          "type": "Text",
+          "config": {
+            "label": "Disclaimer",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

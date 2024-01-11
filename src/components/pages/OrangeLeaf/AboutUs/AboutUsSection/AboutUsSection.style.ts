@@ -27,9 +27,11 @@ export const WeAreExperienceTitle = styled.h1`
 `;
 
 export const WeAreExperienceText = styled.p`
-  max-width: clamp(383px, 37.43vw, 566px);
+  max-width: clamp(383px, 39.88vw, 603px);
   font-size: clamp(14px, 1.05vw, 16px);
   line-height: clamp(22px, 2.11vw, 32px);
+  text-align: center;
+  margin-bottom: 24px;
 `;
 
 export const RelativeWrapper = styled.div`
@@ -397,6 +399,8 @@ export const MeetOurTeam = styled.section`
   padding-inline: 32px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: clamp(169px, 14.21vw, 215px);
   @media (max-width: ${theme.breakpoints.mobile}px) {
     margin-bottom: 167px;

@@ -1,0 +1,34 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "remain",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "first",
+				"type": "Text"
+			},
+			"button": {
+				"__TYPE__": "FieldContent",
+				"value": "pet",
+				"type": "Text"
+			},
+			"button_link": {
+				"__TYPE__": "FieldContent",
+				"value": "west",
+				"type": "Text"
+			},
+			"disclaimer": {
+				"__TYPE__": "FieldContent",
+				"value": "special",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

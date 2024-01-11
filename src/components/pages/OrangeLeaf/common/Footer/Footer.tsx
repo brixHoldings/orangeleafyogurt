@@ -19,6 +19,7 @@ import {
   TermsAndConditions,
   FloatingIceCreamImage,
   OuterWrapper,
+  LinksWrapper,
 } from './Footer.styles';
 
 import type { FC } from 'react';
@@ -89,10 +90,22 @@ const Footer: FC = () => {
               <Trademark>ORANGE LEAF name, design and related marks are trademarks of Orange Leaf, LLC</Trademark>
             </Disclaimer>
           </CopyrightSection>
+
           <TermsAndConditions>
-            <Link href="/privacy">Privacy</Link>
-            <Separator />
-            <Link href="/terms-of-use">Terms & Conditions</Link>
+            <LinksWrapper>
+              <Link href="/about-us#contact-us" style={{ color: '#421B00' }}>
+                Contact
+              </Link>
+              <Separator style={{ background: '#421B00' }} />
+              <Link href="/careers" style={{ color: '#421B00' }}>
+                Join our team
+              </Link>
+            </LinksWrapper>
+            <LinksWrapper>
+              <Link href="/privacy">Privacy</Link>
+              <Separator />
+              <Link href="/terms-of-use">Terms & Conditions</Link>
+            </LinksWrapper>
           </TermsAndConditions>
         </Container>
       </Wrapper>

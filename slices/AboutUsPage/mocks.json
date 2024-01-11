@@ -107,6 +107,21 @@
 				"__TYPE__": "FieldContent",
 				"value": "shade",
 				"type": "Text"
+			},
+			"join_us_title": {
+				"__TYPE__": "FieldContent",
+				"value": "section",
+				"type": "Text"
+			},
+			"join_us_text": {
+				"__TYPE__": "FieldContent",
+				"value": "suggest",
+				"type": "Text"
+			},
+			"join_us_button": {
+				"__TYPE__": "FieldContent",
+				"value": "outer",
+				"type": "Text"
 			}
 		},
 		"items": []

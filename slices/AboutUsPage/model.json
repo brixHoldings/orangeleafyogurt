@@ -158,6 +158,27 @@
             "label": "Military Subtitle",
             "placeholder": ""
           }
+        },
+        "join_us_title": {
+          "type": "Text",
+          "config": {
+            "label": "Join Us Title",
+            "placeholder": ""
+          }
+        },
+        "join_us_text": {
+          "type": "Text",
+          "config": {
+            "label": "Join Us Text",
+            "placeholder": ""
+          }
+        },
+        "join_us_button": {
+          "type": "Text",
+          "config": {
+            "label": "Join Us Button",
+            "placeholder": ""
+          }
         }
       },
       "items": {}
