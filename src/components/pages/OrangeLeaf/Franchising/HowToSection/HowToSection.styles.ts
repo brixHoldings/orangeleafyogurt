@@ -5,7 +5,6 @@ import theme from '@styles/theme';
 export const Container = styled.div`
   padding-top: 100px;
   position: relative;
-  overflow-x: hidden;
 
   @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
   }
