@@ -12,6 +12,7 @@ import { StoreProvider } from 'src/context/StoreProvider';
 import GlobalStyle from './GlobalStyle';
 
 import type { FC, ReactNode } from 'react';
+import Script from 'next/script';
 
 const gothamUltra = localFont({
   src: '../../public/fonts/GothamUltra.otf',
@@ -26,6 +27,20 @@ const centuryGothic = localFont({
 const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <html className={`${gothamUltra.variable} ${centuryGothic.variable}`} lang="en">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-H4J8CGKGZF"
+        id="google-tag-manager"
+        strategy="afterInteractive"
+      >
+        {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', ''G-H4J8CGKGZF');
+        `}
+      </Script>
       <body>
         <StoreProvider>
           <StyledComponentsRegistry>
