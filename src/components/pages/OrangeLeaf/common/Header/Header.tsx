@@ -136,6 +136,14 @@ const Header: FC = () => {
         >
           About us
         </ButtonLink>
+        <ButtonLink
+          data-is-active={pathname === '/franchising'}
+          onClick={(): void => {
+            onClose('/franchising');
+          }}
+        >
+          Franchising
+        </ButtonLink>
         <Button
           onClick={(): void => {
             onClose('/order');
