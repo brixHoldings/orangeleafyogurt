@@ -11,9 +11,6 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "franchising_form_section": {
-              "type": "SharedSlice"
-            },
             "franchising_get_started_section": {
               "type": "SharedSlice"
             },

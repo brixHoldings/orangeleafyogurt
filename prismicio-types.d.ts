@@ -197,7 +197,6 @@ export type EclubsignupDocument<Lang extends string = string> = prismic.PrismicD
 >;
 
 type FranchisingDocumentDataSlicesSlice =
-  | FranchisingFormSectionSlice
   | FranchisingGetStartedSectionSlice
   | FranchisingAboutSectionSlice
   | FranchisingPurposeSectionSlice
@@ -1369,6 +1368,17 @@ export interface FranchisingGetStartedSectionSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   promotion_7: prismic.KeyTextField;
+
+  /**
+   * Show Promotion field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: franchising_get_started_section.primary.show_promotion
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  show_promotion: prismic.BooleanField;
 }
 
 /**

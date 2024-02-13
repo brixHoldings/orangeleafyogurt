@@ -152,7 +152,9 @@ const VideoSection: FC<{ slice: FranchisingVideoSlice }> = ({
         <VideoOverlayContent>
           <VideoOverlayTitle dangerouslySetInnerHTML={{ __html: title as string }}></VideoOverlayTitle>
           <VideoOverlayQuote dangerouslySetInnerHTML={{ __html: text as string }}></VideoOverlayQuote>
-          <Button label={button as string} onClick={handlePlayVideo} size="s" variant="outlined-inverted" />
+          <a href="#contact">
+            <Button label={button as string} size="s" variant="outlined-inverted" />
+          </a>
         </VideoOverlayContent>
       </VideoOverlayContainer>
     </Container>

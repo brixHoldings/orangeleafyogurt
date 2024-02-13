@@ -54,10 +54,6 @@ const Franchising: FC = async () => {
     | FranchisingGetStartedSectionSlice
     | undefined;
 
-  const formSection = page.data.slices.find((slice) => slice.slice_type === 'franchising_form_section') as
-    | FranchisingFormSectionSlice
-    | undefined;
-
   return (
     <>
       {headerSlice ? <HeaderSection slice={headerSlice} /> : null}
@@ -67,7 +63,6 @@ const Franchising: FC = async () => {
       {purposeSection ? <PurposeSection slice={purposeSection} /> : null}
       {aboutSection ? <AboutSection slice={aboutSection} /> : null}
       {getStartedSection ? <GetStartedSection slice={getStartedSection} /> : null}
-      {formSection ? <FormSection slice={formSection} /> : null}
     </>
   );
 };

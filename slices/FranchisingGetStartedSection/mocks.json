@@ -152,6 +152,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "or",
 				"type": "Text"
+			},
+			"show_promotion": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": []

@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 
-import { ButtonContainer } from '@components/pages/OrangeLeaf/common/Button/Button.styles';
-import { ContentContainer as ImportedContainer } from '@components/ui/Card/Card.styles';
 import MobileContainer from '@components/ui/MobileContainer';
 import theme from '@styles/theme';
 
@@ -36,13 +34,6 @@ export const SectionContainer = styled.div`
   width: 100%;
 `;
 
-export const FullWidthContentContainer = styled.div`
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  overflow-y: visible;
-`;
-
 export const FullWidthCircularDiv = styled.div`
   border-radius: 0 0 30% 0;
   background-color: #f4f4f4;
@@ -55,58 +46,6 @@ export const FullWidthCircularDiv = styled.div`
 
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     background-color: #ffffff;
-  }
-`;
-
-export const ContentContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  padding: 100px 140px 0 172px;
-  display: flex;
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    padding: 100px 0;
-    align-items: center;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    flex-direction: column;
-    padding: 100px 0 0;
-    align-items: center;
-  }
-`;
-
-export const TextContent = styled.div`
-  padding: 100px 52px 0 0;
-  display: flex;
-  flex-direction: column;
-  z-index: 3;
-  max-width: 599px;
-
-  ${ButtonContainer} {
-    @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    padding: 100px 0 0;
-    max-width: none;
-  }
-`;
-
-export const MainContentImage = styled.img`
-  width: 545px;
-  height: 727px;
-  z-index: 2;
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    margin-top: -75px;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    width: 348px;
-    height: 464px;
   }
 `;
 
@@ -131,121 +70,78 @@ export const CircularDiv = styled.div`
   }
 `;
 
-export const MainText = styled.h2`
-  color: #421b00;
-  font-size: 52px;
-  line-height: 63px;
-  margin-bottom: 20px;
-  font-family: var(--gotham-ultra);
-
-  span {
-    font-family: var(--gotham-ultra);
-    color: #421b00;
-    font-size: 52px;
-    line-height: 63px;
-    margin-bottom: 20px;
-
-    @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-      color: #ff6034;
-    }
-  }
-`;
-
 export const Text = styled.p`
   color: #421b00;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
-  margin-bottom: 32px;
-`;
-
-export const BottomContentImage = styled.img`
-  width: 485px;
-  height: 425px;
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    position: absolute;
-    bottom: 0;
-    right: -25%;
-  }
+  max-width: 447px;
 `;
 
 export const CardsContainer = styled.div`
-  position: absolute;
   z-index: 2;
-  left: 50%;
-  top: -25%;
-  transform: translateX(-50%);
+  gap: 32px;
   display: flex;
-  flex-wrap: nowrap;
+  padding-inline: 32px;
+  transform: translateY(-30%);
   justify-content: center;
-
-  ${ImportedContainer} {
-    &:not(:last-child) {
-      margin-right: 36px;
-
-      @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-        margin-right: 0;
-        margin-bottom: 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    top: -10%;
-  }
-
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
     flex-direction: column;
-    position: relative;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
-    width: 100%;
   }
 `;
 
 export const CardText = styled.h2<CardTextProps>`
-  font-size: 52px;
-  line-height: 54px;
-
+  font-size: clamp(30px, 3.43vw, 52px);
+  line-height: clamp(35px, 3.57vw, 54px);
   ${({ color }): CSSProp =>
     css`
       color: ${color};
     `}
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    font-size: 36px;
-  }
-
-  @media only screen and (max-width: 960px) {
-    font-size: 32px;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    font-size: 52px;
-  }
 `;
 
 export const CardContentContainer = styled.div`
-  width: 280px;
-
-  @media only screen and (max-width: ${theme.breakpoints.desktop}px) {
-    width: 230px;
-  }
-
-  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
-    width: 180px;
-  }
-
-  @media only screen and (max-width: 960px) {
-    width: 140px;
-  }
-
+  max-width: 368px;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 29px;
+  padding: clamp(20px, 2.31vw, 35px) clamp(20px, 2.64vw, 40px);
+  box-shadow: 0px 5px 10px 0px rgba(66, 27, 0, 0.25);
   @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    width: 380px;
+    max-width: initial;
   }
+`;
 
-  @media only screen and (max-width: ${theme.breakpoints.mobile}px) {
-    width: 100%;
+export const Content = styled.div`
+  padding-block: 143px 137px;
+  padding-left: 61px;
+  display: flex;
+  position: relative;
+  gap: 35px;
+  @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {
+    flex-direction: column;
+    padding-inline: 32px;
   }
+`;
+
+export const TextColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const YellowBg = styled.div`
+  background-color: #ffdb31;
+  width: 54.1%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  left: 0;
+`;
+
+export const Title = styled.h1`
+  color: #421b00;
+  font-size: clamp(35px, 3.43vw, 52px);
+  line-height: clamp(32px, 4.1vw, 62px);
+  margin-bottom: 22px;
+  font-family: var(--gotham-ultra);
+  max-width: 531px;
 `;

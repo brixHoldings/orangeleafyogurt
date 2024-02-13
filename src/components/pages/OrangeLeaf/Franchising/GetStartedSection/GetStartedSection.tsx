@@ -77,6 +77,7 @@ const GetStartedSection: FC<{ slice: FranchisingGetStartedSectionSlice }> = ({
       promotion_5,
       promotion_6,
       promotion_7,
+      show_promotion,
     },
   },
 }) => (
@@ -174,26 +175,28 @@ const GetStartedSection: FC<{ slice: FranchisingGetStartedSectionSlice }> = ({
         </Card>
       </Column>
     </OptionsContainer>
-    <PromotionContainer>
-      <PromotionTitle dangerouslySetInnerHTML={{ __html: promotion_1 as string }}></PromotionTitle>
-      <PromotionSubtitle dangerouslySetInnerHTML={{ __html: promotion_2 as string }}></PromotionSubtitle>
-      <PromotionDescription dangerouslySetInnerHTML={{ __html: promotion_3 as string }}></PromotionDescription>
-      <PromoOptions>
-        <div>
-          <PromotionOptionTitle dangerouslySetInnerHTML={{ __html: promotion_4 as string }}></PromotionOptionTitle>
-          <PromotionOptionDescription
-            dangerouslySetInnerHTML={{ __html: promotion_5 as string }}
-          ></PromotionOptionDescription>
-        </div>
-        <LineSeparator />
-        <div>
-          <PromotionOptionTitle dangerouslySetInnerHTML={{ __html: promotion_6 as string }}></PromotionOptionTitle>
-          <PromotionOptionDescription
-            dangerouslySetInnerHTML={{ __html: promotion_7 as string }}
-          ></PromotionOptionDescription>
-        </div>
-      </PromoOptions>
-    </PromotionContainer>
+    {show_promotion ? (
+      <PromotionContainer>
+        <PromotionTitle dangerouslySetInnerHTML={{ __html: promotion_1 as string }}></PromotionTitle>
+        <PromotionSubtitle dangerouslySetInnerHTML={{ __html: promotion_2 as string }}></PromotionSubtitle>
+        <PromotionDescription dangerouslySetInnerHTML={{ __html: promotion_3 as string }}></PromotionDescription>
+        <PromoOptions>
+          <div>
+            <PromotionOptionTitle dangerouslySetInnerHTML={{ __html: promotion_4 as string }}></PromotionOptionTitle>
+            <PromotionOptionDescription
+              dangerouslySetInnerHTML={{ __html: promotion_5 as string }}
+            ></PromotionOptionDescription>
+          </div>
+          <LineSeparator />
+          <div>
+            <PromotionOptionTitle dangerouslySetInnerHTML={{ __html: promotion_6 as string }}></PromotionOptionTitle>
+            <PromotionOptionDescription
+              dangerouslySetInnerHTML={{ __html: promotion_7 as string }}
+            ></PromotionOptionDescription>
+          </div>
+        </PromoOptions>
+      </PromotionContainer>
+    ) : null}
     <MilitaryContainer>
       <MilitaryContent>
         <MilitaryTitle dangerouslySetInnerHTML={{ __html: military_title as string }}></MilitaryTitle>
