@@ -51,6 +51,12 @@ export const Link = styled(NextLink)`
   white-space: nowrap;
 `;
 
+export const NativeLink = styled.a`
+  color: #ff6034;
+  font-size: 14px;
+  white-space: nowrap;
+`;
+
 export const Separator = styled.div`
   width: 1px;
   height: 12px;

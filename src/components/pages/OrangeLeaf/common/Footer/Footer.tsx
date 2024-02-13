@@ -20,6 +20,7 @@ import {
   FloatingIceCreamImage,
   OuterWrapper,
   LinksWrapper,
+  NativeLink,
 } from './Footer.styles';
 
 import type { FC } from 'react';
@@ -105,6 +106,10 @@ const Footer: FC = () => {
               <Link href="/privacy">Privacy</Link>
               <Separator />
               <Link href="/terms-of-use">Terms & Conditions</Link>
+              <Separator />
+              <NativeLink download href="/files/Orange Leaf - Nutritional Chart 2023.pdf">
+                Nutritional Info
+              </NativeLink>
             </LinksWrapper>
           </TermsAndConditions>
         </Container>
