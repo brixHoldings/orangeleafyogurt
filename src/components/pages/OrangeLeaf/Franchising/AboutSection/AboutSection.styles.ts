@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 50px;
 
   @media only screen and (max-width: ${theme.breakpoints.smallScreen}px) {

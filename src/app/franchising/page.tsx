@@ -1,11 +1,11 @@
 import AboutSection from '@components/pages/OrangeLeaf/Franchising/AboutSection';
-import FormSection from '@components/pages/OrangeLeaf/Franchising/FormSection';
 import GetStartedSection from '@components/pages/OrangeLeaf/Franchising/GetStartedSection';
 import HeaderSection from '@components/pages/OrangeLeaf/Franchising/HeaderSection';
 import HowToSection from '@components/pages/OrangeLeaf/Franchising/HowToSection';
 import MenuSection from '@components/pages/OrangeLeaf/Franchising/MenuSection';
 import PurposeSection from '@components/pages/OrangeLeaf/Franchising/PurposeSection';
 import VideoSection from '@components/pages/OrangeLeaf/Franchising/VideoSection';
+import { Metadata } from 'next';
 import { createClient } from 'prismicio';
 import {
   FranchisingHeaderSlice,
@@ -15,10 +15,19 @@ import {
   FranchisingVideoSlice,
   FranchisingAboutSectionSlice,
   FranchisingGetStartedSectionSlice,
-  FranchisingFormSectionSlice,
 } from 'prismicio-types';
 
 import type { FC } from 'react';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('franchising');
+
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}
 
 /* @ts-expect-error Server Component */
 const Franchising: FC = async () => {

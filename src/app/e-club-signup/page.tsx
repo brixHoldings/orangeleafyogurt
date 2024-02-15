@@ -1,12 +1,9 @@
 import EClubSection from '@components/pages/OrangeLeaf/EClub/EClubSection/EClubSection';
+import { Metadata } from 'next';
 import { createClient } from 'prismicio';
 import { EClubPageSlice } from 'prismicio-types';
 
 import type { FC } from 'react';
-
-export const metadata = {
-  title: 'E-Club Signup | Orange Leaf Frozen Yogurt',
-};
 
 type MergeField = {
   tag: string;
@@ -18,6 +15,16 @@ type MergeField = {
 type GetOptionsResponse = {
   merge_fields: MergeField[];
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('eclubsignup');
+
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}
 
 const getOptions = async (): Promise<GetOptionsResponse> => {
   const res = await fetch(`https://us21.api.mailchimp.com/3.0/lists/6ba144ea7f/merge-fields`, {

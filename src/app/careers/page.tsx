@@ -1,11 +1,18 @@
 import JoinOurTeamComp from '@components/pages/OrangeLeaf/JoinOurTeam/JoinOurTeam';
+import { Metadata } from 'next';
 import { createClient } from 'prismicio';
-import { GiftCardsPageSlice, JoinOurTeamSectionSlice } from 'prismicio-types';
+import { JoinOurTeamSectionSlice } from 'prismicio-types';
 import type { FC } from 'react';
 
-export const metadata = {
-  title: 'Gift Cards | Orange Leaf Frozen Yogurt',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('careers');
+
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}
 
 /* @ts-expect-error Server Component */
 const Careers: FC = async () => {

@@ -208,18 +208,17 @@ const MenuSection: FC<{ slice: FranchisingMenuSectionSlice }> = ({
               </SliderAbsoluteContentWrapper>
             );
           })}
+          <SliderButtonsContainer>
+            {items.map(({ title }) => (
+              <SliderButton
+                key={title}
+                id={title as string}
+                isActive={title === activeSliderTitle}
+                onClick={handleSliderButtonClick as MouseEventHandler<HTMLButtonElement> & (() => void)}
+              />
+            ))}
+          </SliderButtonsContainer>
         </SliderImageContainer>
-
-        <SliderButtonsContainer>
-          {items.map(({ title }) => (
-            <SliderButton
-              key={title}
-              id={title as string}
-              isActive={title === activeSliderTitle}
-              onClick={handleSliderButtonClick as MouseEventHandler<HTMLButtonElement> & (() => void)}
-            />
-          ))}
-        </SliderButtonsContainer>
       </SliderContainer>
 
       <PartnersText dangerouslySetInnerHTML={{ __html: partners_title as string }}></PartnersText>

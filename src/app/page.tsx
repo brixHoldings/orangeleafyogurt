@@ -4,14 +4,30 @@ import Pill from '@components/pages/OrangeLeaf/Home/Pill';
 import Promo from '@components/pages/OrangeLeaf/Home/Promo';
 import SharePhotos from '@components/pages/OrangeLeaf/Home/SharePhotos';
 import WhatsNew from '@components/pages/OrangeLeaf/Home/WhatsNew';
+import { asText } from '@prismicio/client';
+import { Metadata } from 'next';
 import { createClient } from 'prismicio';
 import { HomeGallerySlice, HomeHeadingSlice, HomePromoSlice, SharePhotosSlice, WhatsNewSlice } from 'prismicio-types';
 
 import type { FC } from 'react';
 
-export const metadata = {
-  title: 'Orange Leaf Frozen Yogurt',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('homepage');
+
+  return {
+    title: page.data.meta_title,
+    description: asText(page.data.meta_description),
+    openGraph: {
+      title: page.data.meta_title || undefined,
+      images: [
+        {
+          url: page.data.meta_image.url || '',
+        },
+      ],
+    },
+  };
+}
 
 /* @ts-expect-error Server Component */
 const Home: FC = async () => {

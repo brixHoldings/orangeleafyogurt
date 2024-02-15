@@ -3,10 +3,17 @@ import MenuSection from '@components/pages/OrangeLeaf/Menu/MenuSection/MenuSecti
 import type { FC } from 'react';
 import { createClient } from 'prismicio';
 import { MenuHeaderSlice } from 'prismicio-types';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Menu | Orange Leaf Frozen Yogurt',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle('menu');
+
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}
 
 /* @ts-expect-error Server Component */
 const Menu: FC = async () => {

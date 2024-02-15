@@ -155,12 +155,9 @@ export const SliderImageContentTitle = styled.h2<SliderImageContentTitleProps>`
 
 export const SliderButtonsContainer = styled.div`
   display: flex;
-  padding-left: 172px;
-  margin-bottom: 92px;
-
-  @media only screen and (max-width: ${theme.breakpoints.tablet}px) {
-    padding: 0 25px;
-  }
+  padding-left: 32px;
+  position: absolute;
+  bottom: 20px;
 `;
 
 export const CircularDiv = styled.div`

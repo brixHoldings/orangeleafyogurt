@@ -22,7 +22,7 @@ const PurposeSection: FC<{ slice: FranchisingPurposeSectionSlice }> = ({
       <Image fill alt="GummyWormsImage" src="/images/GummyWormsTopdown.png" />
     </ImageContainer>
     <ImageContainer isBottom>
-      <Image fill alt="GreenFrostingImage" src="/images/GreenFrosting.png" />
+      <Image fill alt="GreenFrostingImage" src="/images/tops_side.png" />
     </ImageContainer>
   </Container>
 );

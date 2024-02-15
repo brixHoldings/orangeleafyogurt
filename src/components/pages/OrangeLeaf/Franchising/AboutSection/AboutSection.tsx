@@ -46,12 +46,12 @@ const AboutSection: FC<{ slice: FranchisingAboutSectionSlice }> = ({
           <Button label="Learn more" onClick={onClickHandle} />
         </ContentLeft>
         <ImageContainer>
-          <Image alt="first-row-image" height={401} src="/images/about_1.png" width={572} />
+          <Image alt="first-row-image" height={401} src="/images/about_1.jpg" width={572} />
         </ImageContainer>
       </Row>
       <Row>
         <ImageContainer>
-          <Image alt="first-row-image" height={400} src="/images/about_2.png" width={570} />
+          <Image alt="first-row-image" height={400} src="/images/about_2.jpg" width={570} />
         </ImageContainer>
         <ContentRight>
           <Subtitle dangerouslySetInnerHTML={{ __html: section_2_title as string }}></Subtitle>
@@ -66,7 +66,7 @@ const AboutSection: FC<{ slice: FranchisingAboutSectionSlice }> = ({
           <Button label="Learn more" onClick={onClickHandle} />
         </ContentLeft>
         <ImageContainer>
-          <Image alt="first-row-image" height={400} src="/images/about_3.png" width={570} />
+          <Image alt="first-row-image" height={400} src="/images/about_3.jpg" width={570} />
         </ImageContainer>
       </Row>
     </Container>
