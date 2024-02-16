@@ -145,5 +145,5 @@ export const OuterWrapper = styled.footer`
 
 export const FloatingIceCreamImage = styled(FloatingImage)`
   top: 0;
-  transform: translateY(-58%);
+  transform: translateY(-64%);
 `;

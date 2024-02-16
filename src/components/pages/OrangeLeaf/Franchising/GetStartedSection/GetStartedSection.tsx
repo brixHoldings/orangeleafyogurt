@@ -30,6 +30,7 @@ import {
 
 import type { FC } from 'react';
 import { FranchisingGetStartedSectionSlice } from 'prismicio-types';
+import { PrismicImage } from '@prismicio/react';
 
 const Point: FC<{ color: string }> = ({ color }) => (
   <svg
@@ -70,6 +71,7 @@ const GetStartedSection: FC<{ slice: FranchisingGetStartedSectionSlice }> = ({
       card_2_list_item_subtitle_4,
       military_title,
       military_subtitle,
+      military_image,
       promotion_1,
       promotion_2,
       promotion_3,
@@ -203,7 +205,7 @@ const GetStartedSection: FC<{ slice: FranchisingGetStartedSectionSlice }> = ({
         <MilitaryDescription dangerouslySetInnerHTML={{ __html: military_subtitle as string }}></MilitaryDescription>
       </MilitaryContent>
       <Flag>
-        <Image alt="american-flag-image" height={344} src="/images/grunge-american-flag.png" width={321} />
+        <PrismicImage field={military_image} style={{ objectFit: 'cover', height: '100%' }} />
       </Flag>
     </MilitaryContainer>
   </>

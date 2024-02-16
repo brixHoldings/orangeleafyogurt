@@ -40,7 +40,7 @@ const Footer: FC = () => {
     <OuterWrapper ref={ref}>
       <Wrapper>
         <FloatingIceCreamImage
-          alt="froyo1"
+          alt="cone"
           height="clamp(100px, 10.38vw, 157px)"
           src="/images/footer-cone.png"
           top="0"

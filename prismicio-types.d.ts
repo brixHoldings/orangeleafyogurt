@@ -1300,6 +1300,16 @@ export interface FranchisingGetStartedSectionSliceDefaultPrimary {
   military_subtitle: prismic.KeyTextField;
 
   /**
+   * Military Image field in *FranchisingGetStartedSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: franchising_get_started_section.primary.military_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  military_image: prismic.ImageField<never>;
+
+  /**
    * Promotion 1 field in *FranchisingGetStartedSection → Primary*
    *
    * - **Field Type**: Text

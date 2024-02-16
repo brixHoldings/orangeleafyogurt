@@ -173,6 +173,14 @@
             "placeholder": ""
           }
         },
+        "military_image": {
+          "type": "Image",
+          "config": {
+            "label": "Military Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "promotion_1": {
           "type": "Text",
           "config": {
