@@ -90,6 +90,7 @@ export const VideoOverlayContainer = styled.div<VideoControlPops>`
   ${({ isVideoPlaying }): CSSProp => {
     if (isVideoPlaying) {
       return css`
+        pointer-events: none;
         opacity: 0;
       `;
     }
