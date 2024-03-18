@@ -1,6 +1,6 @@
 {
-  "id": "navigation",
-  "label": "Navigation",
+  "id": "footer",
+  "label": "Footer",
   "format": "custom",
   "repeatable": false,
   "status": true,

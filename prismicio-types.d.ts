@@ -196,6 +196,23 @@ export type EclubsignupDocument<Lang extends string = string> = prismic.PrismicD
   Lang
 >;
 
+interface FooterDocumentData {}
+
+/**
+ * Footer document from Prismic
+ *
+ * - **API ID**: `footer`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type FooterDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<FooterDocumentData>,
+  'footer',
+  Lang
+>;
+
 type FranchisingDocumentDataSlicesSlice =
   | FranchisingGetStartedSectionSlice
   | FranchisingAboutSectionSlice
@@ -464,32 +481,15 @@ export type MenuDocument<Lang extends string = string> = prismic.PrismicDocument
   Lang
 >;
 
-interface NavigationDocumentData {}
-
-/**
- * Navigation document from Prismic
- *
- * - **API ID**: `navigation`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type NavigationDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
-  Simplify<NavigationDocumentData>,
-  'navigation',
-  Lang
->;
-
 export type AllDocumentTypes =
   | AboutUsDocument
   | CareersDocument
   | EclubsignupDocument
+  | FooterDocument
   | FranchisingDocument
   | GiftCardsDocument
   | HomepageDocument
-  | MenuDocument
-  | NavigationDocument;
+  | MenuDocument;
 
 /**
  * Primary content in *AboutUsPage → Primary*
@@ -2662,6 +2662,8 @@ declare module '@prismicio/client' {
       EclubsignupDocument,
       EclubsignupDocumentData,
       EclubsignupDocumentDataSlicesSlice,
+      FooterDocument,
+      FooterDocumentData,
       FranchisingDocument,
       FranchisingDocumentData,
       FranchisingDocumentDataSlicesSlice,
@@ -2674,8 +2676,6 @@ declare module '@prismicio/client' {
       MenuDocument,
       MenuDocumentData,
       MenuDocumentDataSlicesSlice,
-      NavigationDocument,
-      NavigationDocumentData,
       AllDocumentTypes,
       AboutUsPageSlice,
       AboutUsPageSliceDefaultPrimary,

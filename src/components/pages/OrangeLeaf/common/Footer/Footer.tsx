@@ -107,7 +107,7 @@ const Footer: FC = () => {
               <Separator />
               <Link href="/terms-of-use">Terms & Conditions</Link>
               <Separator />
-              <NativeLink download href="/files/Orange Leaf - Nutritional Chart 2023.pdf">
+              <NativeLink download href="/files/Orange Leaf - Nutritional Chart 2024.pdf">
                 Nutritional Info
               </NativeLink>
             </LinksWrapper>
