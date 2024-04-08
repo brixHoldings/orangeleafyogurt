@@ -14,7 +14,7 @@ const JoinOurTeam: FC<{ slice: JoinOurTeamSectionSlice }> = ({
   },
 }) => {
   return (
-    <MaxWidthWrapper style={{ marginTop: '253px' }}>
+    <MaxWidthWrapper style={{ marginTop: 'clamp(112px,16.73vw, 253px)', marginBottom: 'clamp(115px,17.12vw, 259px)' }}>
       <Wrapper>
         <Title dangerouslySetInnerHTML={{ __html: title as string }}></Title>
         <Text dangerouslySetInnerHTML={{ __html: text as string }}></Text>
@@ -56,7 +56,7 @@ const JoinOurTeam: FC<{ slice: JoinOurTeamSectionSlice }> = ({
           width="741px"
           src="/images/Ellipse 11.png"
           renderInBody
-          style={{ zIndex: -2 }}
+          style={{ zIndex: -2, height: 0 }}
           hideUnder={1024}
         />
       </Wrapper>

@@ -5,9 +5,6 @@ import theme from '@styles/theme';
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  @media (max-width: calc(${theme.breakpoints.tablet}px)) {
-    margin-bottom: 100px;
-  }
 `;
 
 export const Title = styled.h1`
