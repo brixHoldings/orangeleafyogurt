@@ -27,19 +27,19 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const getOptions = async (): Promise<GetOptionsResponse> => {
-  const res = await fetch(`https://us21.api.mailchimp.com/3.0/lists/6ba144ea7f/merge-fields`, {
-    headers: {
-      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      Authorization: `auth ${process.env.NEXT_PUBLIC_MAIL_CHIMP_KEY}`,
-    },
-    method: 'GET',
-  });
+  try {
+    const res = await fetch(`https://us21.api.mailchimp.com/3.0/lists/6ba144ea7f/merge-fields`, {
+      headers: {
+        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+        Authorization: `auth ${process.env.NEXT_PUBLIC_MAIL_CHIMP_KEY}`,
+      },
+      method: 'GET',
+    });
 
-  if (!res.ok) {
+    return res.json() as Promise<GetOptionsResponse>;
+  } catch (e) {
     throw new Error('Failed to fetch data');
   }
-
-  return res.json() as Promise<GetOptionsResponse>;
 };
 
 /* @ts-expect-error Server Component */

@@ -20,5 +20,6 @@ export const components = {
   join_our_team_section: dynamic(() => import('./JoinOurTeamSection')),
   menu_header: dynamic(() => import('./MenuPage')),
   share_photos: dynamic(() => import('./SharePhotos')),
+  thank_you: dynamic(() => import('./ThankYou')),
   whats_new: dynamic(() => import('./WhatsNew')),
 };

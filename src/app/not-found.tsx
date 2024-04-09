@@ -17,7 +17,6 @@ const NotFound: FC = () => (
       style={{ zIndex: -1 }}
       top="4.29vw"
       width="709.1px"
-      renderInBody
     />
     <FlexWrapper>
       <Title>Error 404</Title>

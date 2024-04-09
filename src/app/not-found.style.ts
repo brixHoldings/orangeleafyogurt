@@ -5,7 +5,6 @@ import theme from '@styles/theme';
 
 export const Container = styled.section`
   width: 100%;
-  min-height: 100vh;
   margin-inline: auto;
   position: relative;
   display: flex;
@@ -51,5 +50,6 @@ export const FlexWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-inline: 32px;
-  margin-bottom: 300px;
+  margin-top: clamp(180px, 24.27vw, 367px);
+  margin-bottom: clamp(163px, 14.88vw, 225px);
 `;
