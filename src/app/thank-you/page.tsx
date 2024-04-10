@@ -6,6 +6,7 @@ import { ThankYouSlice } from 'prismicio-types';
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
+
   const page = await client.getSingle('thank_you');
 
   return {
