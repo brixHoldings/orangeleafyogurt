@@ -29,8 +29,9 @@ import {
 } from './GetStartedSection.styles';
 
 import type { FC } from 'react';
-import { FranchisingGetStartedSectionSlice } from 'prismicio-types';
+import { FranchisingGetStartedSectionSlice, PressReleaseSectionSlice } from 'prismicio-types';
 import { PrismicImage } from '@prismicio/react';
+import PressRelease from '../PressRelease/PressRelease';
 
 const Point: FC<{ color: string }> = ({ color }) => (
   <svg
@@ -45,7 +46,11 @@ const Point: FC<{ color: string }> = ({ color }) => (
   </svg>
 );
 
-const GetStartedSection: FC<{ slice: FranchisingGetStartedSectionSlice }> = ({
+const GetStartedSection: FC<{
+  slice: FranchisingGetStartedSectionSlice;
+  pressReleaseSlice: PressReleaseSectionSlice;
+}> = ({
+  pressReleaseSlice,
   slice: {
     primary: {
       title,
@@ -199,6 +204,7 @@ const GetStartedSection: FC<{ slice: FranchisingGetStartedSectionSlice }> = ({
         </PromoOptions>
       </PromotionContainer>
     ) : null}
+    <PressRelease slice={pressReleaseSlice} />
     <MilitaryContainer>
       <MilitaryContent>
         <MilitaryTitle dangerouslySetInnerHTML={{ __html: military_title as string }}></MilitaryTitle>

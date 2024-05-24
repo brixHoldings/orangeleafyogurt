@@ -11,6 +11,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "press_release_section": {
+              "type": "SharedSlice"
+            },
             "franchising_get_started_section": {
               "type": "SharedSlice"
             },

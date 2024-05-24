@@ -19,6 +19,7 @@ export const components = {
   home_promo: dynamic(() => import('./HomePromo')),
   join_our_team_section: dynamic(() => import('./JoinOurTeamSection')),
   menu_header: dynamic(() => import('./MenuPage')),
+  press_release_section: dynamic(() => import('./PressReleaseSection')),
   share_photos: dynamic(() => import('./SharePhotos')),
   thank_you: dynamic(() => import('./ThankYou')),
   whats_new: dynamic(() => import('./WhatsNew')),

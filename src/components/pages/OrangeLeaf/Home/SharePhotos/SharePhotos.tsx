@@ -19,7 +19,6 @@ import {
 } from './SharePhotos.styles';
 
 import type { FC } from 'react';
-import Image from 'next/image';
 import { SharePhotosSlice } from 'prismicio-types';
 import { PrismicImage } from '@prismicio/react';
 

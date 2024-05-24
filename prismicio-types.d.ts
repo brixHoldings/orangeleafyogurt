@@ -214,6 +214,7 @@ export type FooterDocument<Lang extends string = string> = prismic.PrismicDocume
 >;
 
 type FranchisingDocumentDataSlicesSlice =
+  | PressReleaseSectionSlice
   | FranchisingGetStartedSectionSlice
   | FranchisingAboutSectionSlice
   | FranchisingPurposeSectionSlice
@@ -2533,6 +2534,93 @@ type MenuHeaderSliceVariation = MenuHeaderSliceDefault;
 export type MenuHeaderSlice = prismic.SharedSlice<'menu_header', MenuHeaderSliceVariation>;
 
 /**
+ * Primary content in *PressReleaseSection → Primary*
+ */
+export interface PressReleaseSectionSliceDefaultPrimary {
+  /**
+   * Title field in *PressReleaseSection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: press_release_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *PressReleaseSection → Items*
+ */
+export interface PressReleaseSectionSliceDefaultItem {
+  /**
+   * Image field in *PressReleaseSection → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: press_release_section.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Text field in *PressReleaseSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: press_release_section.items[].text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
+
+  /**
+   * Title field in *PressReleaseSection → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: press_release_section.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Link field in *PressReleaseSection → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: press_release_section.items[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+}
+
+/**
+ * Default variation for PressReleaseSection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PressReleaseSectionSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<PressReleaseSectionSliceDefaultPrimary>,
+  Simplify<PressReleaseSectionSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *PressReleaseSection*
+ */
+type PressReleaseSectionSliceVariation = PressReleaseSectionSliceDefault;
+
+/**
+ * PressReleaseSection Shared Slice
+ *
+ * - **API ID**: `press_release_section`
+ * - **Description**: PressReleaseSection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PressReleaseSectionSlice = prismic.SharedSlice<'press_release_section', PressReleaseSectionSliceVariation>;
+
+/**
  * Primary content in *SharePhotos → Primary*
  */
 export interface SharePhotosSliceDefaultPrimary {
@@ -2864,6 +2952,11 @@ declare module '@prismicio/client' {
       MenuHeaderSliceDefaultPrimary,
       MenuHeaderSliceVariation,
       MenuHeaderSliceDefault,
+      PressReleaseSectionSlice,
+      PressReleaseSectionSliceDefaultPrimary,
+      PressReleaseSectionSliceDefaultItem,
+      PressReleaseSectionSliceVariation,
+      PressReleaseSectionSliceDefault,
       SharePhotosSlice,
       SharePhotosSliceDefaultPrimary,
       SharePhotosSliceDefaultItem,

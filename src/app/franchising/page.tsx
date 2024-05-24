@@ -3,6 +3,7 @@ import GetStartedSection from '@components/pages/OrangeLeaf/Franchising/GetStart
 import HeaderSection from '@components/pages/OrangeLeaf/Franchising/HeaderSection';
 import HowToSection from '@components/pages/OrangeLeaf/Franchising/HowToSection';
 import MenuSection from '@components/pages/OrangeLeaf/Franchising/MenuSection';
+import PressRelease from '@components/pages/OrangeLeaf/Franchising/PressRelease/PressRelease';
 import PurposeSection from '@components/pages/OrangeLeaf/Franchising/PurposeSection';
 import VideoSection from '@components/pages/OrangeLeaf/Franchising/VideoSection';
 import { Metadata } from 'next';
@@ -15,6 +16,7 @@ import {
   FranchisingVideoSlice,
   FranchisingAboutSectionSlice,
   FranchisingGetStartedSectionSlice,
+  PressReleaseSectionSlice,
 } from 'prismicio-types';
 
 import type { FC } from 'react';
@@ -63,6 +65,10 @@ const Franchising: FC = async () => {
     | FranchisingGetStartedSectionSlice
     | undefined;
 
+  const pressReleaseSection = page.data.slices.find((slice) => slice.slice_type === 'press_release_section') as
+    | PressReleaseSectionSlice
+    | undefined;
+
   return (
     <>
       {headerSlice ? <HeaderSection slice={headerSlice} /> : null}
@@ -71,7 +77,9 @@ const Franchising: FC = async () => {
       {menuSection ? <MenuSection slice={menuSection} /> : null}
       {purposeSection ? <PurposeSection slice={purposeSection} /> : null}
       {aboutSection ? <AboutSection slice={aboutSection} /> : null}
-      {getStartedSection ? <GetStartedSection slice={getStartedSection} /> : null}
+      {getStartedSection && pressReleaseSection ? (
+        <GetStartedSection slice={getStartedSection} pressReleaseSlice={pressReleaseSection} />
+      ) : null}
     </>
   );
 };
