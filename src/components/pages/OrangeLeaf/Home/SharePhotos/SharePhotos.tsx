@@ -41,7 +41,7 @@ const SharePhotos: FC<{ slice: SharePhotosSlice }> = ({
           {[...items, ...items, ...items].map((photo, index) => (
             <Item key={index}>
               <Photo>
-                <PrismicImage field={photo.image} style={{ objectFit: 'cover', height: '100%' }} />
+                <PrismicImage field={photo.image} style={{ objectFit: 'cover', height: '100%', width: '100%' }} />
 
                 <Logo>
                   <svg fill="none" height="55" viewBox="0 0 53 55" width="53" xmlns="http://www.w3.org/2000/svg">

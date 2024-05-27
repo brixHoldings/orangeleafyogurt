@@ -38,7 +38,7 @@ const PressRelease: FC<{ slice: PressReleaseSectionSlice }> = ({
             <Item key={index}>
               <StyledLink href={asLink(release.link) as string} target="_blank">
                 <Photo>
-                  <PrismicImage field={release.image} style={{ objectFit: 'cover', height: '100%' }} />
+                  <PrismicImage field={release.image} style={{ objectFit: 'cover', height: '100%', width: '100%' }} />
 
                   <Logo>
                     <svg fill="none" height="55" viewBox="0 0 53 55" width="53" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,6 @@ const PressRelease: FC<{ slice: PressReleaseSectionSlice }> = ({
                     </svg>
                   </Logo>
                 </Photo>
-
                 <PhotoTitle dangerouslySetInnerHTML={{ __html: release.title as string }}></PhotoTitle>
                 <PhotoDescription dangerouslySetInnerHTML={{ __html: release.text as string }}></PhotoDescription>
               </StyledLink>
