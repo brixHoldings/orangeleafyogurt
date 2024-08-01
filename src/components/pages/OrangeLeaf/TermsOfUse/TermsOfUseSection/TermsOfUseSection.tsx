@@ -850,7 +850,12 @@ const TermsOfUseSection: FC = () => (
           The Official Rules for the $25 gift card giveaway
         </Title>
         <Text>
-          Click <a href="../../../../../../public/files/25GCGiveaway_OfficialRules.pdf" download>here</a> for the official rules.
+          Click <a 
+            href="/files/25GCGiveaway_OfficialRules.pdf"
+            alt="Gift Card Giveaway Rules"
+            target="_blank"
+            rel="noopener noreferrer">
+              here</a> for the official rules.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
