@@ -852,7 +852,6 @@ const TermsOfUseSection: FC = () => (
         <Text>
           Click <a 
             href="/files/25GCGiveaway_OfficialRules.pdf"
-            alt="Gift Card Giveaway Rules"
             target="_blank"
             rel="noopener noreferrer">
               here</a> for the official rules.
