@@ -846,6 +846,12 @@ const TermsOfUseSection: FC = () => (
           Drive, Suite 131 PMB22, Dallas, TX 75254. Please specify that you are requesting a “California Privacy Rights
           Notice.” We will make every effort to promptly respond to your request.
         </Text>
+        <Title>
+          The Official Rules for the $25 gift card giveaway
+        </Title>
+        <Text>
+          Click <Link href="/public/files/25GCGiveaway_Official Rules.pdf">here</Link> for the official rules.
+        </Text>
         <Title>CONTACT US</Title>
         <Text>
           If you have any questions or concerns regarding these Terms (including, without limitation, the Orange Leaf
