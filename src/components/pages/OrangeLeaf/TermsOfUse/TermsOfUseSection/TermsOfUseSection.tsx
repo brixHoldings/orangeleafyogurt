@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 
-import pdfFile from '../../../../../../public/files/25GCGiveaway_OfficialRules.pdf';
-
 import { MaxWidthWrapper } from '@styles/common';
 
 import { Container, Paper, Title, Text, RelativeWrapper, PageTitle, ListItem } from './TermsOfUseSection.style';
@@ -852,7 +850,7 @@ const TermsOfUseSection: FC = () => (
           The Official Rules for the $25 gift card giveaway
         </Title>
         <Text>
-          Click <a href={pdfFile} download>here</a> for the official rules.
+          Click <a href="../../../../../../public/files/25GCGiveaway_OfficialRules.pdf" download>here</a> for the official rules.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
