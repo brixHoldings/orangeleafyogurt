@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import pdfFile from '../../../../public/files/25GCGiveaway_OfficialRules.pdf';
+import pdfFile from './public/files/25GCGiveaway_OfficialRules.pdf';
 
 import { MaxWidthWrapper } from '@styles/common';
 
