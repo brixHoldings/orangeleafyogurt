@@ -36,6 +36,7 @@ import {
   StyledFloatingBirthdayCakes,
   FloatingSmudgeImage,
   Select,
+  AppButtonsContainer,
 } from './EClubSection.style';
 
 import { Error } from '../../AboutUs/AboutUsSection/AboutUsSection.style';
@@ -156,9 +157,15 @@ const EClubSection: FC<{ options: string[]; slice: EClubPageSlice }> = ({
         <YellowBg>
           <Title dangerouslySetInnerHTML={{ __html: header_title as string }}></Title>
           <Paragraph dangerouslySetInnerHTML={{ __html: header_text as string }}></Paragraph>
-          <a href="#form-bg">
-            <Button dangerouslySetInnerHTML={{ __html: header_button as string }}></Button>
-          </a>
+          <AppButtonsContainer>
+            <a href="#form-bg">
+              <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
+            </a>
+            <a href="#form-bg">
+              <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
+            </a>
+          </AppButtonsContainer>
+
           <FloatingImage
             alt="circle"
             bottom="calc(clamp(72px, 12.43vw, 188px) / 2)"
@@ -182,34 +189,18 @@ const EClubSection: FC<{ options: string[]; slice: EClubPageSlice }> = ({
         <BirthdayContent>
           <Title2 dangerouslySetInnerHTML={{ __html: section_title as string }}></Title2>
           <Paragraph dangerouslySetInnerHTML={{ __html: section_text as string }}></Paragraph>
-          <a href="#form-bg">
-            <Button dangerouslySetInnerHTML={{ __html: section_button as string }}></Button>
-          </a>
+          <AppButtonsContainer>
+            <a href="#form-bg">
+              {/* <Button dangerouslySetInnerHTML={{ __html: header_button as string }}></Button> */}
+              <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
+            </a>
+            <a href="#form-bg">
+              <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
+            </a>
+          </AppButtonsContainer>
         </BirthdayContent>
       </BirthdayWrapper>
-      <MaxWidthWrapper>
-        <TitleCentered>How does it work?</TitleCentered>
-        <Steps>
-          <NumberWrapper>
-            <Number color="#FF6034">
-              <span>1</span>
-            </Number>
-            <StepLabel dangerouslySetInnerHTML={{ __html: step_1 as string }}></StepLabel>
-          </NumberWrapper>
-          <NumberWrapper>
-            <Number color="#FFDB31">
-              <span>2</span>
-            </Number>
-            <StepLabel dangerouslySetInnerHTML={{ __html: step_2 as string }}></StepLabel>
-          </NumberWrapper>
-          <NumberWrapper>
-            <Number color="#8BA726">
-              <span>3</span>
-            </Number>
-            <StepLabel dangerouslySetInnerHTML={{ __html: step_3 as string }}></StepLabel>
-          </NumberWrapper>
-        </Steps>
-      </MaxWidthWrapper>
+
       <FormBg id="form-bg">
         <Image alt="background" src="/images/terms-of-service-bg2.jpg" style={{ objectFit: 'cover' }} fill />
         <Paper>
