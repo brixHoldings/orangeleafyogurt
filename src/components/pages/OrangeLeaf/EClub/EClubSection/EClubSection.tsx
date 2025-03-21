@@ -36,7 +36,6 @@ import {
   StyledFloatingBirthdayCakes,
   FloatingSmudgeImage,
   Select,
-  AppButtonsContainer,
 } from './EClubSection.style';
 
 import { Error } from '../../AboutUs/AboutUsSection/AboutUsSection.style';
@@ -47,6 +46,7 @@ import type { FC, FormEventHandler } from 'react';
 import type { FieldValues } from 'react-hook-form';
 import { validateDateFormat } from '@utils/validateDateFormat';
 import { EClubPageSlice } from 'prismicio-types';
+import MobileAppButtons from '@components/ui/MobileAppButtons/MobileAppButtons';
 
 type EClubFormData = {
   birthday: string;
@@ -157,15 +157,7 @@ const EClubSection: FC<{ options: string[]; slice: EClubPageSlice }> = ({
         <YellowBg>
           <Title dangerouslySetInnerHTML={{ __html: header_title as string }}></Title>
           <Paragraph dangerouslySetInnerHTML={{ __html: header_text as string }}></Paragraph>
-          <AppButtonsContainer>
-            <a href="#form-bg">
-              <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
-            </a>
-            <a href="#form-bg">
-              <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
-            </a>
-          </AppButtonsContainer>
-
+          <MobileAppButtons />
           <FloatingImage
             alt="circle"
             bottom="calc(clamp(72px, 12.43vw, 188px) / 2)"
@@ -189,15 +181,7 @@ const EClubSection: FC<{ options: string[]; slice: EClubPageSlice }> = ({
         <BirthdayContent>
           <Title2 dangerouslySetInnerHTML={{ __html: section_title as string }}></Title2>
           <Paragraph dangerouslySetInnerHTML={{ __html: section_text as string }}></Paragraph>
-          <AppButtonsContainer>
-            <a href="#form-bg">
-              {/* <Button dangerouslySetInnerHTML={{ __html: header_button as string }}></Button> */}
-              <Image src={'/images/AppStoreButton.png'} alt={'appStoreButton'} width={195} height={60} />
-            </a>
-            <a href="#form-bg">
-              <Image src={'/images/GooglePlayButton.png'} alt={'googlePlayButton'} width={195} height={60} />
-            </a>
-          </AppButtonsContainer>
+          <MobileAppButtons />
         </BirthdayContent>
       </BirthdayWrapper>
 

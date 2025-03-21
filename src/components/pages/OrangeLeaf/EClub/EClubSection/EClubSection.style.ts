@@ -61,15 +61,6 @@ export const Title = styled.h1`
   color: #421b00;
 `;
 
-export const AppButtonsContainer = styled.div`
-  display: flex;
-  gap: 30px;
-  @media (max-width: ${theme.breakpoints.mobile}px) {
-    flex-direction: column;
-    gap: 30px;
-  }
-`;
-
 export const Title2 = styled.h2`
   font-size: clamp(24px, 3.43vw, 52px);
   line-height: clamp(32px, 4.76vw, 72px);

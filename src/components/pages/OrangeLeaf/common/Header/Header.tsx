@@ -216,7 +216,7 @@ const Header: FC = () => {
               Franchising
             </Link>
             <Separator />
-            <Link href="/order">
+            <Link href="https://order.orangeleafyogurt.com/">
               <Button>Order now</Button>
             </Link>
           </Section>

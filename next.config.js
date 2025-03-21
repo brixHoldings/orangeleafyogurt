@@ -23,6 +23,11 @@ const nextConfig = {
         destination: 'https://locations.orangeleafyogurt.com/',
         permanent: true,
       },
+      {
+        source: '/order',
+        destination: 'https://order.orangeleafyogurt.com/',
+        permanent: true,
+      },
     ];
   },
 };

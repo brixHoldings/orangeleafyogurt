@@ -48,7 +48,7 @@ export const POST = async (request: NextRequest): Promise<Response> => {
   try {
     await sgMail.send({
       from: 'info@orangeleafyogurt.com',
-      html: message.replace(/\r\n/gu, '<br>'),
+      html: message.replace(/\r\n/g, '<br>'),
       subject: 'New Message!',
       text: message,
       to: 'info@orangeleafyogurt.com',
