@@ -113,12 +113,12 @@ const Header: FC = () => {
           Locations
         </ButtonLinkAsAnchor>
         <ButtonLink
-          data-is-active={pathname === '/e-club-signup'}
+          data-is-active={pathname === '/rewards-club'}
           onClick={(): void => {
-            onClose('/e-club-signup');
+            onClose('/rewards-club');
           }}
         >
-          E-club
+          Orange Leaf Rewards Club
         </ButtonLink>
         <ButtonLink
           data-is-active={pathname === '/gift-cards'}
@@ -201,8 +201,8 @@ const Header: FC = () => {
             <Link data-is-active={pathname === '/menu'} href="/menu">
               Menu
             </Link>
-            <Link data-is-active={pathname === '/e-club-signup'} href="/e-club-signup">
-              E-club
+            <Link data-is-active={pathname === '/rewards-club'} href="/rewards-club">
+              Orange Leaf Rewards Club
             </Link>
             <Link data-is-active={pathname === '/gift-cards'} href="/gift-cards">
               Gift cards

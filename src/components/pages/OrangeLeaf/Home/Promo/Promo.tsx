@@ -56,7 +56,7 @@ const Promo: FC<{ slice: HomePromoSlice }> = ({
         <Title dangerouslySetInnerHTML={{ __html: title_1 as string }}></Title>
         <FlexWrapper>
           <Subtitle dangerouslySetInnerHTML={{ __html: subtitle_1 as string }}></Subtitle>
-          <Link href="/e-club-signup">
+          <Link href="/rewards-club">
             <Button dangerouslySetInnerHTML={{ __html: button_1 as string }}></Button>
           </Link>
         </FlexWrapper>

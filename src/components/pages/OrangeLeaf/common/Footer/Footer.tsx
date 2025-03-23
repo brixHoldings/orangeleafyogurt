@@ -110,6 +110,8 @@ const Footer: FC = () => {
               <NativeLink download href="/files/Orange Leaf - Nutritional Chart 2024.pdf">
                 Nutritional Info
               </NativeLink>
+              <Separator />
+              <Link href="/accessibility-statement">Accessibility Statement</Link>
             </LinksWrapper>
           </TermsAndConditions>
         </Container>
