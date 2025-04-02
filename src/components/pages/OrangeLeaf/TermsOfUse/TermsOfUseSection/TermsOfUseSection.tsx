@@ -54,14 +54,14 @@ const TermsOfUseSection: FC = () => (
     </Container>
     <MaxWidthWrapper>
       <Paper>
-        <PageTitle>Terms of use</PageTitle>
+        <PageTitle>TERMS OF USE</PageTitle>
         <Text>
-          Welcome to the Orange Leaf, LLC website, <Link href="/">www.orangeleafyogurt.com</Link>. These Terms and
-          Conditions of Use (“Terms”) apply to your access to, and use of, all or part of any website or mobile
-          application of Orange Leaf, LLC or its subsidiaries and affiliated companies (collectively, “Orange Leaf,”
-          “we,” or “us”), including <Link href="/">www.orangeleafyogurt.com</Link> and any other site, mobile
-          application (“Application”), or online service where these Terms are posted (collectively, the “Sites”). By
-          accessing the Sites, you (“you”) agree to be bound by these Terms regardless of whether or not you have read
+          Welcome to the Orange Leaf website, <Link href="/">https://orangeleafyogurt.com</Link>. These Terms and
+          Conditions of Use ("Terms") apply to your access to, and use of, all or part of any website or mobile
+          application of Orange Leaf, LLC or its subsidiaries and affiliated companies (collectively, "Orange Leaf,"
+          "we," or "us"), including <Link href="/">https://orangeleafyogurt.com</Link> and any other site, mobile
+          application ("Application"), or online service where these Terms are posted (collectively, the "Sites"). By
+          accessing the Sites, you ("you") agree to be bound by these Terms regardless of whether or not you have read
           them. If you do not agree to these Terms, do not access the Sites. The Sites are not targeted towards, nor
           intended for use by, anyone under the age of 13. YOU MUST BE AT LEAST 13 YEARS OLD TO ACCESS AND USE THE
           SITES. If you are between the ages of 13 and 18, you may only use the Sites under the supervision of a parent
@@ -69,25 +69,34 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           This Application utilizes Google Maps and Google Earth. By using this Application, you are also are bound by
-          the Google Maps/Google Earth Additional{' '}
+          the{' '}
           <a href="https://maps.google.com/help/terms_maps/" target="_blank">
-            Terms of Service
+            Google Maps/Google Earth Additional Terms of Service
           </a>{' '}
-          and the Google{' '}
+          and the{' '}
           <a href="https://policies.google.com/privacy" target="_blank">
-            Privacy Policy
+            Google Privacy Policy
           </a>
           .
         </Text>
+        <Title>COMPLIANCE STATUS</Title>
         <Text>
-          This website is undergoing construction and corrective action to address accessibility issues experienced by
-          some of our customers. Orange Leaf has adopted the W3C WAI Web Content Accessibility Guidelines (WCAG) as its
-          accessibility standard for all online products and services that we design, develop and/or procure, on or
-          after the effective date of this accessibility policy. We are working to ensure, to the extent practicable,
-          the new online products and services satisfy the standard Success Criteria set forth in the WCAG 2.0. Orange
-          Leaf is committed to making its Sites accessible to customers with disabilities and welcomes suggestions for
-          improvement. While we strive to make the Sites as accessible as possible, we ask for your patience during this
-          time of transitions.
+          We firmly believe that the internet should be available and accessible to anyone and are committed to
+          providing a website that is accessible to the broadest possible audience, regardless of ability. To fulfill
+          this, we aim to adhere as strictly as possible to the World Wide Web Consortium's (W3C) Web Content
+          Accessibility Guidelines 2.1 (WCAG 2.1) at the AA level. These guidelines explain how to make web content
+          accessible to people with a wide array of disabilities. Complying with those guidelines helps us ensure that
+          the website is accessible to blind people, people with motor impairments, visual impairment, cognitive
+          disabilities, and more. This website utilizes various technologies that are meant to make it as accessible as
+          possible at all times. We utilize an accessibility interface that allows persons with specific disabilities to
+          adjust the website's UI (user interface) and design it to their personal needs. Additionally, the website
+          utilizes an AI-based application that runs in the background and optimizes its accessibility level constantly.
+          This application remediates the website's HTML, adapts its functionality and behavior for screen-readers used
+          by blind users, and for keyboard functions used by individuals with motor impairments. Click here{' '}
+          <Link href="/accessibility-statement">https://orangeleafyogurt.com/accessibility-statement/</Link>. If you
+          wish to contact the website's owner please use the following email{' '}
+          <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a> or call us at{' '}
+          <a href="tel:2143025910">214-302-5910</a> and one of our team members will personally assist you.
         </Text>
         <Title>CHANGES TO TERMS AND CONDITIONS</Title>
         <Text>
@@ -103,13 +112,13 @@ const TermsOfUseSection: FC = () => (
           The Sites and its contents, including but not limited to, all Site software, design, text, editorial
           materials, information, data, photographs, visual interfaces, user interfaces, images, graphics,
           illustrations, video, sound, games, clips, artwork, hyperlinks, displays, and other materials, (all such
-          content collectively referred to as “Content”), and the design, structure, selection, coordination,
+          content collectively referred to as "Content"), and the design, structure, selection, coordination,
           expression, look and feel and arrangement of such Content, are protected under United States and international
           copyright laws and are the property of Orange Leaf or its third party licensors. All rights are reserved by
-          Orange Leaf. The ORANGE LEAF name, design and related marks are registered trademarks of DFA Brands IP, LLC.
-          All other names, logos, splash screens, page headers, custom graphics and button icons, or other indicia of
-          origin displayed on the Sites are either service marks, names, logos, trademarks, service marks, trade dress,
-          or are otherwise the property (collectively, “Marks”) of Orange Leaf or its third party licensors.
+          Orange Leaf. The ORANGE LEAF name, design and related marks are registered trademarks of Orange Leaf, LLC. All
+          other names, logos, splash screens, page headers, custom graphics and button icons, or other indicia of origin
+          displayed on the Sites are either service marks, names, logos, trademarks, service marks, trade dress, or are
+          otherwise the property (collectively, "Marks") of Orange Leaf or its third party licensors.
         </Text>
         <Text>
           Except as specifically permitted herein, copying, distributing, transmitting, displaying, modifying, selling
@@ -123,23 +132,23 @@ const TermsOfUseSection: FC = () => (
           revocable license to use and display the Content and to use the Application for noncommercial and personal use
           only; provided that you maintain all copyright and other notices contained in such Content and only use the
           Application on a device owned or controlled by you as permitted by the rules contained in the terms contained
-          in the Apple, Inc. Terms and Conditions (“Apple Terms”) or the Google Inc. Google Play Terms of Service
-          (“Google Terms”), whichever is applicable to your device. Orange Leaf, content providers and content
-          providers’ licensors do not transfer any title, right or interest to or in any Content to you. If any of the
+          in the Apple, Inc. Terms and Conditions ("Apple Terms") or the Google Inc. Google Play Terms of Service
+          ("Google Terms"), whichever is applicable to your device. Orange Leaf, content providers and content
+          providers' licensors do not transfer any title, right or interest to or in any Content to you. If any of the
           provisions of the Apple Terms or the Google Terms conflict with our Terms, our Terms will control, solely to
           the extent that such terms apply to the Application. You agree not to reproduce, modify, create derivative
           works from, display, perform, distribute, sell, rent, lease, transfer, sublicense, disseminate, broadcast or
           circulate any Content to any third party (including, without limitation, the display and distribution of
-          Content via a third party website) without express prior written consent of Orange Leaf. Use of Content is
+          Content via a third-party website) without express prior written consent of Orange Leaf. Use of Content is
           only permitted with the express written permission of Orange Leaf and/or its licensors. You further agree that
           you will not disassemble, decompile, reverse engineer, modify or otherwise reduce the computer file in which
-          the Content is stored to a human-readable form. In addition, you may not attempt to circumvent, avoid, bypass,
-          remove, deactivate, impair or otherwise defeat any encryption, rights signaling or copy protection technology
-          in which the Content is wrapped or otherwise associated with, and you may not edit, modify, translate, or
-          create adaptations of the Content.
+          the Content is stored to a human- readable form. In addition, you may not attempt to circumvent, avoid,
+          bypass, remove, deactivate, impair or otherwise defeat any encryption, rights signaling or copy protection
+          technology in which the Content is wrapped or otherwise associated with, and you may not edit, modify,
+          translate, or create adaptations of the Content.
         </Text>
         <Text>This Section will survive the termination of your right to use the Sites.</Text>
-        <Title>DIGITAL MILLENIUM COPYRIGHT ACT (“DMCA”) NOTICE</Title>
+        <Title>DIGITAL MILLENIUM COPYRIGHT ACT ("DMCA") NOTICE</Title>
         <Text>
           Pursuant to the Digital Millennium Copyright Act, 17 U.S.C. Sec. 512(c), if you believe any material available
           on the Sites infringes upon a copyright that you own or control, you may file a notification of such
@@ -147,20 +156,30 @@ const TermsOfUseSection: FC = () => (
           <Link href="/about-us">Contact Us</Link> section of the Site.
         </Text>
         <Text>
-          Orange Leaf, LLC <br />
+          Orange Leaf, LLC
+          <br />
           Customer Care
           <br />
-          14850 Montfort Drive, Suite 131 PMB22
+          14860 Montfort Drive, Suite 150 PMB34
           <br />
           Dallas, TX 75254
           <br />
+          <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a>
+          <br />
+          <a href="tel:2143025910">214-302-5910</a>
         </Text>
-        <Text>_________________________</Text>
         <Text>
-          If you knowingly misrepresent in your notification that the material or activity is infringing, you will be
-          liable for any damages, including costs and attorneys’ fees, incurred by us or the alleged infringer as the
-          result of our relying upon such misrepresentation in removing or disabling access to the material or activity
-          claimed to be infringing.
+          Please see 17 U.S.C. Sec. 512(c)(3) for the requirements of a proper notification. If you knowingly
+          misrepresent in your notification that the material or activity is infringing, you will be liable for any
+          damages, including costs and attorneys' fees, incurred by us or the alleged infringer as the result of our
+          relying upon such misrepresentation in removing or disabling access to the material or activity claimed to be
+          infringing.
+        </Text>
+        <Text>
+          If a notice of copyright infringement has been filed against material posted by you on the Sites, you may make
+          a counter-notification with our Designated Agent listed above, provided that such counter- notification
+          complies with the requirements of 17 U.S.C. Sec. 512(g)(3). If we receive a valid counter- notification, we
+          may reinstate the removed or disabled material in accordance with the DMCA.
         </Text>
         <Text>
           In accordance with the DMCA and other applicable law, we have adopted a policy of terminating, in appropriate
@@ -168,13 +187,13 @@ const TermsOfUseSection: FC = () => (
           sole discretion, limit access to the Sites and/or terminate the accounts of any users who infringe any
           intellectual property rights of others, whether or not there is any repeat infringement.
         </Text>
-        <Title>YOUR COMMENTS AND TRANSMISSIONS</Title>
+        <Title>SUBMISSIONS: YOUR COMMENTS AND TRANSMISSIONS</Title>
         <Text>
           We appreciate your comments, reviews, photos, content, remarks, feedback, suggestions, ideas, inventions,
           artwork, developments, concepts, and other types of communications, materials and submissions you disclose or
-          transmit to us or to publicly-accessible social networks such as Facebook®, Twitter®, Instagram®, Path®,
-          TwitPic®, Lockerz®, our Application, and similar information and image gathering and sharing services
-          (collectively, “Submissions”). You represent and warrant that your Submissions are not subject to any
+          transmit to us or to publicly-accessible social networks such as Facebook ® , Twitter ® , Instagram ® , Path ®
+          , TwitPic ® , Lockerz ® , our Application, and similar information and image gathering and sharing services
+          (collectively, "Submissions"). You represent and warrant that your Submissions are not subject to any
           confidentiality obligations and that you own and control all of the rights to the Submissions, have the lawful
           right to distribute and produce such Submissions, or otherwise have the right to grant the rights to Orange
           Leaf that you grant under these Terms. Orange Leaf is free to use the Submissions for any purpose whatsoever.
@@ -195,7 +214,7 @@ const TermsOfUseSection: FC = () => (
           concurrently or subsequently submitted materials relating to this Submission shall be considered to have been
           submitted in accordance with these conditions. By making a Submission, you also warrant that you own the
           material/content submitted, that it is original, that it is not defamatory, and that Orange Leaf use of the
-          Submission will not violate any third party’s rights. Orange Leaf is under no obligation to use any Submission
+          Submission will not violate any third party's rights. Orange Leaf is under no obligation to use any Submission
           or any part thereof.
         </Text>
         <Text>
@@ -212,13 +231,12 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           We ask that you do not submit confidential information or materials to us. We will not keep the Submission
-          confidential and we may use it as we see fit. By submitting anything to us, you acknowledge that the
+          confidential, and we may use it as we see fit. By submitting anything to us, you acknowledge that the
           Submission is not confidential, or that even if you think that it is, you are waiving any rights you may have
           to the Submission being confidential or any ownership interest you think that you have in the Submission.
           Also, please do not submit anything to us that you have done for your employer during the course of your
           employment.
         </Text>
-
         <Title>YOUR OBLIGATIONS</Title>
         <Text>
           In order to participate in certain areas of our Sites, you will need to register for an account. In providing
@@ -229,23 +247,25 @@ const TermsOfUseSection: FC = () => (
           refuse any and all current or future use of the account. You agree to maintain the security of your account by
           not sharing your password and will promptly notify Orange Leaf if you discover or otherwise suspect any
           security breaches related to your account. You agree to take responsibility for all activities that occur
-          under your account and accept all risks of unauthorized access. In using the Sites you agree that you will
-          not: (a) post, disseminate or transmit unauthorized advertising, promotional materials, chain letters, junk
-          mail or any other type of unsolicited mass email to people or entities who have not agreed to be part of such
-          mailings; (b) omit, delete, forge or misrepresent transmission information, including headers, return mailing
-          and Internet protocol addresses, or otherwise manipulate identifiers to disguise the origin of any content;
-          (c) impersonate any person or entity, or falsely state or otherwise misrepresent an affiliation with any
-          person or entity; (d) engage in any activities intended to withhold or cloak identity or contact information;
-          (e) send harassing and/or threatening messages to others; (f) post excessive responses to interactive features
-          or functions of the Sites; or (g) engage in “flooding,” i.e., ICMP flooding and mail bombing (sending large
-          amounts of email repeatedly to the same email address).
+          under your account and accept all risks of unauthorized access.
+        </Text>
+        <Text>
+          In using the Sites you agree that you will not: (a) post, disseminate or transmit unauthorized advertising,
+          promotional materials, chain letters, junk mail or any other type of unsolicited mass email to people or
+          entities who have not agreed to be part of such mailings; (b) omit, delete, forge or misrepresent transmission
+          information, including headers, return mailing and Internet protocol addresses, or otherwise manipulate
+          identifiers to disguise the origin of any content; (c) impersonate any person or entity, or falsely state or
+          otherwise misrepresent an affiliation with any person or entity; (d) engage in any activities intended to
+          withhold or cloak identity or contact information; (e) send harassing and/or threatening messages to others;
+          (f) post excessive responses to interactive features or functions of the Sites; or (g) engage in "flooding,"
+          i.e., ICMP flooding and mail bombing (sending large amounts of email repeatedly to the same email address).
         </Text>
         <Text>
           You agree that you are responsible for your own communications and that you will not post, disseminate or
           transmit any content that: (a) is unlawful, harassing, defamatory, abusive, threatening, obscene, harmful,
-          tortious, libelous, invasive of another’s privacy, obscene, pornographic, indecent, lewd, suggestive,
+          tortious, libelous, invasive of another's privacy, obscene, pornographic, indecent, lewd, suggestive,
           threatening, inflammatory, fraudulent, otherwise objectionable or which threatens our relationship with our
-          employees, partners, customers, or suppliers; (b) infringes or violates any party’s copyright, trademark,
+          employees, partners, customers, or suppliers; (b) infringes or violates any party's copyright, trademark,
           trade secret, patent or other proprietary right including, but not limited to, using third-party copyrighted
           materials without appropriate permission, using third-party trademarks without appropriate permission or
           attribution, and using or distributing third-party information protected as a trade secret in violation of a
@@ -266,6 +286,19 @@ const TermsOfUseSection: FC = () => (
           and distributing information about Internet users without their permission, except as permitted by applicable
           law.
         </Text>
+        <Text>
+          To the extent that any of the following activities materially interfere with the Sites or the network and
+          systems of an Orange Leaf service provider ("Service"), you will not: (a) post, disseminate or transmit any
+          worm, viruses or other harmful, disruptive or destructive files, code or programs on the Sites; (b) use
+          Internet Relay Chat (IRC) bots, i.e., programs that utilize excessive resources by connecting to an IRC
+          network and running 24 hours per day; (c) hinder the ability of others to use IRC; (d) disrupt the normal flow
+          on the Sites or otherwise act in a manner that negatively affects other users' ability to engage in real time
+          exchanges; (e) interfere with, disrupt, or harm in any way the servers or networks connected to the Sites or
+          Service; (f) use the Sites or Service to access the accounts of others without permission; (g) attempt to
+          penetrate security measures of the Sites, Service, or another entity, or obtain or bypass others' passwords;
+          or (h) engage in denial of service attacks, i.e., actions designed to impair network access by flooding a site
+          or the Internet with useless traffic.
+        </Text>
         <Title>MODIFICATIONS TO THE SITES</Title>
         <Text>
           Changes may be made at any time to the information, names, text, software, images, pictures, logos,
@@ -285,26 +318,34 @@ const TermsOfUseSection: FC = () => (
           there is a special notice that a particular transmission is encrypted. The Sites do not intend to target or
           collect personal information from individuals under the age of 13.
         </Text>
-
+        <Title>HEALTH REQUIREMENTS AND DISCLAIMER</Title>
+        <Text>
+          Our products may include allergens. Please check the ingredients list before purchase and before consumption.
+          Orange Leaf is not liable for any allergic reactions and refunds will not be given to those how have an
+          allergy to an ingredient.
+        </Text>
+        <Text>
+          Our Sites and all contents of our Sites are provided on an "as is" basis without warranties of any kind,
+          either expressed or implied. You acknowledge, by your use of our Sites and the purchase of our products, that
+          you do so at your own risk.
+        </Text>
         <Title>MOBILE PAYMENT</Title>
         <Text>
           You may elect to participate in certain functionality of the Sites which will allow you to use the Sites to
-          purchase Orange Leaf products (“Mobile Payment”). Mobile payment may be accepted at participating Orange Leaf
+          purchase Orange Leaf products ("Mobile Payment"). Mobile payment may be accepted at participating Orange Leaf
           locations in the United States. Orange Leaf reserves the right at any time to discontinue Mobile Payment or
           change the location of the stores accepting Mobile Payment.
         </Text>
-
         <Title>MOBILE ORDER AND PAY (MOP) AND DELIVERY</Title>
         <Text>
           You may also elect to participate in certain functionality of the Sites which will allow you in certain Orange
           Leaf locations in certain markets to use the Sites to order and pay for certain Orange Leaf products prior to
-          arrival at the restaurant (“MOP”). Orange Leaf reserves the right at any time to discontinue MOP or change the
+          arrival at the store ("MOP"). Orange Leaf reserves the right at any time to discontinue MOP or change the
           location of the stores or markets offering MOP.
         </Text>
-
-        <Title>GIFT CARDS TERMS AND CONDITIONS (“Gift Card Rules”)</Title>
+        <Title>GIFT CARDS TERMS AND CONDITIONS ("Gift Card Rules")</Title>
         <Text>
-          The Gift Card Terms and Conditions (this “Gift Card Rules”) is an agreement between you and Orange Leaf, and
+          The Gift Card Terms and Conditions (this "Gift Card Rules") is an agreement between you and Orange Leaf and
           describes the terms and conditions that apply to your gift card. By buying, loading, or using a Gift Card, you
           agree to these terms. Please read the following provisions, as well as the complete Terms of Use and Privacy
           Policy that govern the Sites. These Gift Card Rules include an Arbitration provision that governs any disputes
@@ -312,30 +353,27 @@ const TermsOfUseSection: FC = () => (
           affect your rights, including preventing you from bringing, joining, or participating in class or consolidated
           proceedings.
         </Text>
-
         <Title>ABOUT YOUR GIFT CARD</Title>
         <Text>
-          Orange Leaf gift cards are not subject to any service fees or expiration dates. Your use of a gift card
+          ORANGE LEAF gift cards are not subject to any service fees or expiration dates. Your use of a gift card
           constitutes your acceptance of the complete Gift Card Rules (including the Arbitration provisions). Gift cards
-          are redeemable for food, drink and eligible merchandise at participating locations in the United States.
-          Eligible merchandise or services are determined by Orange Leaf in its sole discretion and may be changed
-          without notice. Gift cards cannot be used to purchase other gift cards and you will not receive Rewards points
-          for the purchase of any gift card. Gift cards cannot be redeemed for cash or applied as payment to any
-          account, unless required by law. In California, all gift cards are redeemable for cash upon request if the
-          balance on the card is less than $10.00. Gift cards may be redeemable for cash when their balance falls below
-          a certain amount in other states within the United States as well.
+          are redeemable for food, drink and eligible merchandise at participating Orange Leaf locations in the United
+          States. Eligible merchandise or services are determined by Orange Leaf in its sole discretion. You will not
+          receive loyalty points for the purchase of any gift card. Gift cards cannot be redeemed for cash or applied as
+          payment to any account, unless required by law. For instance, in California, all gift cards are redeemable for
+          cash upon request if the balance on the card is less than $10.00. Gift cards may be redeemable for cash when
+          their balance falls below a certain amount in other states within the United States as well.
         </Text>
-
         <Title>ELECTRONIC GIFT CARDS</Title>
         <Text>
-          The Electronic Gift Card program allows you to purchase and send a virtual Card via email. You may choose the
-          design and dollar value (within certain limits) and complete your purchase using a credit card, or debit card.
-          You will need the email address for the recipient of your Card eGift (also known as an “eGift” or “eGift
-          Card”). You authorize us to charge your credit card or debit card at the time you purchase your eGift.
+          The Electronic Gift Card program allows you to purchase and send a virtual gift card via email. You may choose
+          the design and dollar value (within certain limits) and complete your purchase using a credit card, or debit
+          card. You will need the email address for the recipient of your eGift card (also known as an "eGift" or "eGift
+          Card"). You authorize us to charge your credit card or debit card at the time you purchase your eGift.
         </Text>
         <Text>
-          We will send the recipient of your eGift an email notifying them that they have received an eGift from you. He
-          or she will then be able to print out the eGift and bring it into a location to make a purchase. An eGift is
+          We will send the recipient of your eGift an email notifying them that they have received an eGift from you.
+          They will then be able to print out the eGift and bring it into a location to make a purchase. An eGift is
           like a gift card and should be treated like cash by the recipient.
         </Text>
         <Text>
@@ -344,82 +382,52 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Title>ADDING VALUE TO YOUR GIFT CARD</Title>
         <Text>
-          In the United States, you can load a dollar value on a gift card by using a credit card, debit card or cash by
-          visiting any participating Orange Leaf location. You may not load more than $100 worth of value on each gift
-          card. There is no minimum amount that must be loaded onto your gift card. Orange Leaf may change the maximum
-          and minimum amounts at any time by notifying you at the point of sale, by phone when you call or on the Sites,
-          and such change shall not constitute an amendment to these Gift Card Rules.
+          When this function is made available, you will be able to load a dollar value on a physical gift card in the
+          United States by using a credit card, debit card or cash by visiting any participating Orange Leaf location.
+          You may not load more than $500 worth of value on each gift card. The minimum amount that must be loaded onto
+          your gift card is $5. Orange Leaf may change the maximum and minimum amounts at any time by notifying you at
+          the point of sale, by phone when you call or on the Sites, and such change shall not constitute an amendment
+          to these Gift Card Rules.
         </Text>
         <Title>LOST, STOLEN OR DAMAGED GIFT CARD REPLACEMENT POLICY</Title>
         <Text>
-          Unless you have an original sales receipt for your gift card and your 16-digit gift card number, or unless it
-          has been registered by you on <Link href="/">www.orangeleafyogurt.com</Link> and you can provide us your email
-          address or phone number that you used to register your gift card, the remaining gift card value will not be
-          replaced if lost, stolen or damaged.
+          Unless you have an original sales receipt for your gift card and your 16 or 19-digit gift card number, the
+          remaining gift card value will not be replaced if lost, stolen or damaged. If you have your original sales
+          receipt for your gift card and your 16 or 19-digit gift card number, then you can send an email to
+          <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a> and include the following
+          information: (1) the 16 or 19-digit gift card number, (2) a photo copy of the original location receipt
+          indicating the purchase of the gift card, (3) a copy of a valid government issued I.D. (Driver's License,
+          Military I.D., State Issued I.D. or Passport); and (4) your name, email, phone number and mailing address.
+          Upon satisfactory receipt of this required information, Orange Leaf will cancel your old gift card and issue a
+          new eGift Card in the amount of any remaining balance on your old gift card on the date of Orange Leaf receipt
+          of such information; the eGift Card will be emailed to the email address you provide. Reproduction, purchase,
+          trade or sales of Report Form, gift card numbers, and or cash register receipts are prohibited. Fraudulent
+          submissions may result in prosecution under applicable federal mail fraud statutes.
         </Text>
-        <ul>
-          <ListItem>
-            If you registered your gift card with us, you can contact us via the{' '}
-            <Link href="/about-us">Contact Us</Link> section of the Site or via your account balance page (go to disable
-            my gift card) and we can deactivate your lost, stolen or damaged gift card and load the balance remaining at
-            the time of notification onto a new gift card or Orange Leaf Rewards account.
-          </ListItem>
-          <ListItem>
-            You can also go into a participating Orange Leaf location, with your original receipt for the gift card
-            purchase and your 16-digit gift card number or, again, if you registered the gift card with us and you can
-            provide your email address or phone number that you used to register the gift card. The store personnel can
-            deactivate your gift card and issue you a new gift card with the remaining balance.
-          </ListItem>
-          <ListItem>
-            If you cannot either go online or to a participating Orange Leaf restaurant and if your gift card has been
-            lost, stolen or damaged, please mail: (1) the 16-digit gift card number (or if you registered your gift card
-            with us, you can provide us with the email address or phone number used at the time of registration), (2) an
-            original location receipt indicating the purchase of the gift card, (3) a copy of a valid government issued
-            I.D. (Driver’s License, Military I.D., or Passport), and (4) your complete name and mailing address to:
-            Orange Leaf, Attn: Gift Cards Replacement, 14850 Montfort Drive, Suite 131 PMB22, Dallas, TX 75254. Upon
-            satisfactory receipt of these required information, Orange Leaf will cancel your old gift card and issue a
-            new gift card in the amount of any remaining balance on your old gift card on the date of Orange Leaf
-            receipt of such information. The replacement gift card will be mailed to the address you provide, which must
-            be a valid street address. P.O. Boxes will not be accepted. Please make a copy of all documents you submit
-            to us for your records. All documents submitted become Orange Leaf property and will not be returned. Please
-            allow up to 8 weeks for delivery of the replacement gift card. Orange Leaf shall not be responsible for any
-            lost, late, illegible, damaged, misdirected, incomplete or postage due mail. Reproduction, purchase, trade
-            or sales of Report Form, gift card numbers, and or cash register receipts are prohibited. Fraudulent
-            submissions may result in prosecution under applicable federal mail fraud statutes.
-          </ListItem>
-        </ul>
         <Title>FRAUD ASSOCIATED WITH YOUR GIFT CARD OR CARD BALANCE</Title>
         <Text>
-          We will not accept any gift card, or will limit use of any gift card or gift card balance, if we reasonably
+          We will not accept any gift card or will limit use of any gift card or gift card balance, if we reasonably
           believe that the use is unauthorized, fraudulent or otherwise unlawful, and we consider such action
           appropriate to limit our risk. Orange Leaf does not control who may sell preloaded gift cards, nor can we
           control the price or preloaded denominations offered by independent sellers. Consequently, Orange Leaf has no
-          liability to you for any third party fraud or unlawful activity associated with any gift card balance. If
+          liability to you for any third-party fraud or unlawful activity associated with any gift card balance. If
           Orange Leaf discovers any gift card or gift card balance was sourced or derived from fraud or other unlawful
           means, in our sole discretion, we may cancel all impacted gift cards and retain all related gift card balances
           without notice to you. We may use retained gift card balances to help offset our liability to card companies,
           networks and issuers of lost or stolen credit and debit cards used to purchase or load gift cards.
         </Text>
-        <Title>REGISTRATION, LIABILITY FOR UNAUTHORIZED TRANSACTIONS</Title>
+        <Title>LIABILITY FOR UNAUTHORIZED TRANSACTIONS</Title>
         <Text>
-          To register your gift card, please visit <Link href="/">www.orangeleafyogurt.com</Link>. When registering a
-          gift card, you agree that you will: (i) provide complete and accurate information about yourself; and (ii)
-          update such information if it changes. If you do not provide or update such information, or if we have
-          reasonable grounds to suspect that you have not provided or updated such information, we shall have the right,
-          in our sole and absolute discretion, to disable your gift card. If you believe your gift card has been
-          disabled in error, please contact us via the <Link href="/about-us">Contact Us</Link> section of the Site. You
-          are responsible for: (a) the accuracy of all information that you provide to us; and (b) maintaining the
-          confidentiality and security of your gift card information.
-        </Text>
-        <Text>
-          Because your gift card is used like cash for purchases from participating locations, you are responsible for
-          all transactions associated with your gift card, including unauthorized transactions. However, if your gift
-          card is lost, stolen or destroyed, the card can be replaced with the balance remaining on it at the time of
-          your call, but only if you have registered it with us. Please notify us immediately if you change any of your
-          registration information. If your gift card becomes lost, stolen or damaged, you should contact us via the{' '}
-          <Link href="/about-us">Contact Us</Link> section of the Site. Your gift card balance is only protected from
-          the point in time you notify us that your gift card is missing. We will freeze the remaining balance on your
-          gift card at the time you notify us and will load that remaining balance on a replacement gift card.
+          You are responsible for: (a) the accuracy of all information that you provide to us; and (b) maintaining the
+          confidentiality and security of your gift card information. Because your gift card is used like cash for
+          purchases from participating restaurant locations, you are responsible for all transactions associated with
+          your gift card, including unauthorized transactions. However, if your gift card is lost, stolen or destroyed,
+          the card can be replaced with the balance remaining on it at the time of your call, but only if you have the
+          16-digit number and the original purchase receipt for the gift card. If your gift card becomes lost, stolen or
+          damaged, you should contact us via the <Link href="/about-us">Contact Us</Link> section of the Site. Your gift
+          card balance is only protected from the point in time you notify us that your gift card is missing. We will
+          freeze the remaining balance on your gift card at the time you notify us and will load that remaining balance
+          on a replacement gift card which will be an eGift Card.
         </Text>
         <Title>ARBITRATION</Title>
         <Text>
@@ -439,23 +447,23 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           Notwithstanding the above, you may choose to pursue your claim in court and not by arbitration if you opt out
-          of this arbitration provision within <strong>30</strong> days from the earliest of the date you purchased,
-          loaded, reloaded or used any of your gift cards (the “Opt Out Deadline”) after these Gift Card Rules have gone
-          into effect. You may opt out of these arbitration procedures by sending us a written notice that you opt out
-          to the following address: Orange Leaf, Attn: Customer Service, 14850 Montfort Drive, Suite 131 PMB22, Dallas,
-          TX 75254. Any opt-out received after the Opt Out Deadline (allowing three (3) additional days for mailing)
-          will not be valid and you must pursue your claim in arbitration or small claims court.
+          of this arbitration provision within 30 days from the earliest of the date you purchased, loaded, reloaded or
+          used any of your gift cards (the "Opt Out Deadline") after these Gift Card Rules have gone into effect. You
+          may opt out of these arbitration procedures by sending us a written notice that you opt out to the following
+          address: Orange Leaf, Attn: Customer Service, 14860 Montfort Drive, Suite 150 PMB34, Dallas, TX 75254. Any
+          opt-out received after the Opt Out Deadline (allowing three (3) additional days for mailing) will not be valid
+          and you must pursue your claim in arbitration or small claims court.
         </Text>
         <Text>
           For all disputes, whether pursued in court or arbitration, you must first send a written description of your
           claim to our Customer Service department to allow us an opportunity to resolve the dispute. You and we each
           agree to negotiate your claim in good faith. You may request arbitration if your claim or dispute cannot be
           resolved within sixty (60) days. The arbitration of any dispute or claim shall be conducted in accordance with
-          the rules of the American Arbitration Association (“AAA”), including the AAA’s Consumer Arbitration Rules (as
+          the rules of the American Arbitration Association ("AAA"), including the AAA's Consumer Arbitration Rules (as
           applicable), as modified by this Agreement. The AAA Rules and information about arbitration and fees are
           available online at www.adr.org. You and we agree that these Gift Card Rules evidences a transaction in
           interstate commerce and this arbitration provision will be interpreted and enforced in accordance with the
-          U.S. Federal Arbitration Act and federal arbitration law, and not governed by state law. Any arbitration will
+          U.S. Federal Arbitration Act and federal arbitration law and not governed by state law. Any arbitration will
           be held in a reasonably convenient location in the state in which you reside or at another mutually agreed
           location. The arbitration will be conducted in the English language. An arbitrator may award on an individual
           basis any relief that would be available in a court, including injunctive or declaratory relief to the extent
@@ -485,236 +493,166 @@ const TermsOfUseSection: FC = () => (
           These Gift Card Rules and this agreement to arbitrate shall be governed by and construed in accordance with
           the laws of the State of Texas not withstanding any conflict-of-laws rules.
         </Text>
-        <Title>ORANGE LEAF REWARDS TERMS AND CONDITIONS (“Orange Leaf Loyalty Program Rules”)</Title>
+        <Title>ORANGE LEAF® REWARDS CLUB - LOYALTY TERMS AND CONDITIONS ("Loyalty Program Rules")</Title>
         <Text>
-          Orange Leaf Rewards is the exclusive Orange Leaf loyalty program that allows you to earn rewards for every
-          qualified purchase you make in any participating Orange Leaf location. All customers can join Orange Leaf
-          Rewards. There is no fee to join. In order to join Orange Leaf Rewards, you must first obtain and activate an
-          Orange Leaf Rewards account by one of the following methods: (1) obtain an Orange Leaf Rewards card at any
-          participating Orange Leaf location; (2) download the Orange Leaf mobile application; or (3) sign up online.
+          The Orange Leaf loyalty program, also known as the ORANGE LEAF® Rewards Club, is powered by Lunchbox and
+          allows you to earn rewards for every qualified purchase you make in any participating ORANGE LEAF location.
+          All customers can join the ORANGE LEAF Rewards Club. There is no fee to join. In order to join the ORANGE LEAF
+          Rewards Club, you must first obtain and activate a loyalty account by either (1) downloading the ORANGE LEAF
+          mobile app; or (2) signing up online on the ORANGE LEAF website.
         </Text>
         <Text>
-          As an Orange Leaf Rewards member, you may receive special promotions, coupons and invitations to exclusive
-          events at Orange Leaf locations. You must present your Orange Leaf Rewards card, your 16-digit Orange Leaf
-          Rewards account number, or other identifiable information provided at time of registration (such as your email
-          address or phone number that is linked to your Rewards account) at the time of check out to earn Orange Leaf
-          Rewards points; however, if you forget to do so, you may either (i) take your original receipt back to the
-          Orange Leaf location from which you made your purchase, and request your Orange Leaf Rewards points for that
-          purchase be added to your Orange Leaf Rewards account, or (ii) contact us via the{' '}
-          <Link href="/about-us">Contact Us</Link> section of the Site. Make sure that you keep a copy of your receipt
-          for the previous qualified purchases as we will need the information from the receipt in order to update your
-          account accordingly with the rewards points earned for any qualified purchases you make in participating
-          Orange Leaf location(s). If you cannot contact us via the
-          <Link href="/about-us">Contact Us</Link> section of the Site or return to the Orange Leaf location, then you
-          can mail a copy of your receipt and your Orange Leaf Rewards card number to Orange Leaf, Attn: Orange Leaf
-          Rewards, 14850 Montfort Drive, Suite 131 PMB22, Dallas, TX 75254. Visit our website for answers to frequently
-          asked questions regarding Orange Leaf Rewards.
+          As a loyalty member, you may receive special promotions, coupons and invitations to exclusive events at ORANGE
+          LEAF locations. You must present your loyalty account number (which is your 10 digit phone number) at the time
+          of check out to earn loyalty points; however, if you forget to do so, you may contact us via the{' '}
+          <Link href="/about-us">Contact Us</Link> section of the Site and have a copy of your receipt and loyalty
+          account number. Make sure that you keep a copy of your receipt for the previous qualified purchases as we will
+          need the information from the receipt in order to update your account accordingly with the loyalty points
+          earned for any qualified purchases you make in participating ORANGE LEAF location(s). If you cannot contact us
+          via the <Link href="/about-us">Contact Us</Link> section of the Site, then you can mail a copy of your receipt
+          and your loyalty account number to Orange Leaf, Attn: ORANGE LEAF Loyalty, 14860 Montfort Drive, Suite 150
+          PMB34, Dallas, TX 75254. Click <Link href="/">here</Link> for answers to frequently asked questions regarding
+          the ORANGE LEAF Rewards Club.
         </Text>
         <Text>
-          Your use of an Orange Leaf Rewards account constitutes your acceptance of the complete Orange Leaf Loyalty
-          Program Rules. Orange Leaf may at any time, and at its sole discretion, modify the terms and conditions of the
-          Orange Leaf Loyalty Program, with or without notice. Such modifications will be effective immediately upon
-          posting. You agree to review these Orange Leaf Loyalty Program Rules periodically and your continued use of or
-          participation in the Orange Leaf Rewards following such modifications will indicate your acceptance of any
-          modified terms and conditions. If you do not agree to any modification of the terms and conditions of use, you
-          must immediately stop using your Orange Leaf Rewards account.
+          Your use of a loyalty account constitutes your acceptance of the complete Loyalty Program Rules. Orange Leaf
+          may at any time, and at its sole discretion, modify the terms and conditions of the ORANGE LEAF Rewards Club,
+          with or without notice. Such modifications will be effective immediately upon posting. You agree to review
+          these Loyalty Program Rules periodically and your continued use of or participation in the ORANGE LEAF Rewards
+          Club following such modifications will indicate your acceptance of any modified terms and conditions. If you
+          do not agree to any modification of the terms and conditions of use, you must immediately stop using your
+          loyalty account.
         </Text>
         <Text>
-          Orange Leaf may make changes to Orange Leaf Rewards, including, without limitation, the benefits of the
-          program, at any time, and from time to time, without prior notice. Further, Orange Leaf reserves the right to
-          suspend or end the Orange Leaf Rewards program without prior notice, in Orange Leaf sole discretion. Orange
-          Leaf also reserves the right to suspend or end the Orange Leaf Rewards program or certain aspects and/or
-          benefits thereof in certain geographic areas without prior notice. Void where prohibited.
+          Orange Leaf may make changes to the ORANGE LEAF Rewards Club, including, without limitation, the benefits and
+          rewards of the program, at any time, and from time to time, without prior notice. Further, Orange Leaf
+          reserves the right to suspend or end the ORANGE LEAF Rewards Club without prior notice, in Orange Leaf's sole
+          discretion. Orange Leaf also reserves the right to suspend or end the ORANGE LEAF Rewards Club or certain
+          aspects, rewards and/or benefits thereof in certain geographic areas without prior notice. Void where
+          prohibited.
         </Text>
-        <Title>ORANGE LEAF REWARDS POINTS AND REWARDS</Title>
+        <Title>ORANGE LEAF LOYALTY POINTS AND REWARDS</Title>
         <Text>
-          You will earn 10 points for every dollar spent on qualified purchases in a participating location as long as
-          you present your Orange Leaf Rewards card or your 16-digit Orange Leaf Rewards account number at the time of
-          purchase. Your Orange Leaf Rewards card can also be used as a prepaid/stored value card (see below).
+          You will earn 1 point for every dollar spent on qualified purchases in a participating location as long as you
+          present your loyalty account number at the time of purchase. If you forget to give your loyalty account number
+          at the time of purchase, you can contact us at{' '}
+          <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a> and provide your loyalty account
+          number (which is the 10 digit phone number that is linked to your account) and a copy of your receipt and we
+          will be able to add the points to your account. Points are issued on the net subtotal of the qualified
+          transaction (meaning net of any discounts that have been applied to a qualified transaction) and are not
+          earned on taxes, gratuities, service or delivery fees.
         </Text>
         <Text>
-          You will receive a $5 reward for every 500 Orange Leaf Rewards points you earn. Your rewards are automatically
-          saved on your Orange Leaf Rewards account. To redeem them, you must present your Orange Leaf Rewards card or
-          your 16-digit Orange Leaf Rewards account number at the time of purchase.
+          You will receive specific rewards based on the number of loyalty points you earn ("Earned Rewards"). Your
+          rewards are automatically saved on your loyalty account. To redeem them, you must present your loyalty account
+          number at the time of purchase and order the menu item that is associated with the particular reward.
         </Text>
         <Text>
           Qualified purchases are determined by Orange Leaf in its sole discretion and may be changed without notice.
-          The purchase of an Orange Leaf gift card and/or redemption of Orange Leaf Rewards are not qualified purchases;
-          however, purchases (other than purchases of gift cards) made at a participating Orange Leaf location using an
-          Orange Leaf gift card and/or a preloaded Orange Leaf Rewards card (other than use of any Orange Leaf Rewards
-          rewards) are considered qualified purchases. You cannot use rewards to purchase Orange Leaf gift cards. Please
-          note that rewards will expire upon the earlier of (a) 12 months of inactivity on your Orange Leaf Rewards
-          card, or (b) the following rewards expiration schedule:
+          The purchase of an ORANGE LEAF gift card and/or redemption of loyalty rewards are not qualified purchases;
+          however, purchases (other than purchases of gift cards) made at a participating ORANGE LEAF location using an
+          ORANGE LEAF gift card are considered qualified purchases. Note, you cannot use an ORANGE LEAF gift card to
+          purchase an ORANGE LEAF gift card. Offers and rewards do expire:
         </Text>
         <ul>
           <ListItem>
-            Earned $5 Rewards, which are $5 rewards we give you for every 500 Orange Leaf Rewards points you earn,
-            expire 90 days after you receive your reward.
+            Earned Rewards expire 12 months after you receive your Earned Reward. Points converted into Earned Rewards
+            will be deducted from your point balance upon issuance of the Earned Reward, regardless of whether or not
+            redeemed. Earned Rewards that are dollars off of menu items at participating stores must be used in a single
+            transaction; any remainder or balance will be forfeited. In addition, dollars off Earned Rewards may not be
+            used to purchase gift cards or pay gratuities, delivery or service fees or applicable taxes.
           </ListItem>
           <ListItem>
-            Coupons and other rewards we may send you on a periodic basis (other than your Earned $5 Rewards) typically
-            expire 30 days after you receive the coupon or reward.
+            Coupons and other rewards, such as birthday, anniversary or sign-up rewards, that we may send you on a
+            periodic basis (other than your Earned Rewards) typically expire 30 days after you receive the coupon or
+            reward.
           </ListItem>
-          <ListItem>The expiration date of coupons and rewards will be listed on your account balance.</ListItem>
+          <ListItem>
+            The expiration date of coupons and rewards will be listed on the offer and/or on your account balance.
+          </ListItem>
         </ul>
         <Text>
-          The only way to redeem your rewards earned is by registering your Orange Leaf Rewards card and presenting your
-          Orange Leaf Rewards card, your 16-digit Orange Leaf Rewards account number, or other identifiable information
-          provided at time of registration (such as your email address or phone number that is linked to your Rewards
-          account) at the time of check out. You must register you Orange Leaf Rewards card to redeem your rewards. You
-          will, however, continue to accumulate reward points for qualified purchases in participating Orange Leaf
-          locations. You must provide us with your email address in order to register your Rewards account. You may
-          elect to opt out of receiving marketing and promotional from Orange Leaf, however, if you do so, you will also
-          be opting out of us sending to you special promotions, coupons and/or invitations to exclusive events from
-          Orange Leaf.
+          The only way to redeem your rewards earned is by presenting your loyalty account number (i.e., your 10-digit
+          phone number linked to your loyalty account) at the time of check out. You must provide us with your name,
+          phone number and email address in order to join the loyalty program. You may not redeem multiple rewards in
+          the same transaction. You may elect to opt out of receiving marketing and promotional messages from Orange
+          Leaf and from receiving order updates and promotions via text, SMS or push notifications however, if you do
+          so, you will also be opting out of us sending you special promotions, coupons and/or invitations to exclusive
+          events from Orange Leaf.
         </Text>
         <Text>
-          If you want to combine your reward points and/or rewards from multiple cards, simply register the Orange Leaf
-          Rewards account number or card that you will keep as your primary Orange Leaf Rewards account and follow the
-          steps to merge Orange Leaf Rewards accounts on the Site. If you have any questions or if you cannot complete
-          the merger yourself online, you can always contact us via the Contact Us section of the Site with your request
-          to combine multiple Orange Leaf Rewards cards. We will need the numbers of all Orange Leaf Rewards cards and
-          you will need to indicate which Orange Leaf Rewards card is to be the primary one; we will transfer your
-          reward points and/or rewards from the identified Orange Leaf Rewards cards to the one that you designate as
-          your primary account or card, and then deactivate your other Orange Leaf Rewards cards.
-        </Text>
-        <Title>USE OF YOUR ORANGE LEAF REWARDS CARD AS A PREPAID/STORED VALUE CARD</Title>
-        <Text>
-          Eventually, your Orange Leaf Rewards account or card will allow you to load a dollar value on to it for future
-          purchases at participating Orange Leaf locations. The dollar value that you load onto your Orange Leaf Rewards
-          account or card is a prepayment only for the goods and services of participating Orange Leaf locations. No
-          credit card, credit line, overdraft protection or deposit account is associated with an Orange Leaf Rewards
-          account or card. Unless otherwise required by law or permitted by these Orange Leaf Loyalty Program Rules, any
-          amount on your Orange Leaf Rewards account or card is nonrefundable and may not be redeemed for cash. No
-          interest, dividends or any other earnings on funds deposited to an Orange Leaf Rewards account or card will
-          accrue or be paid or credited to you by Orange Leaf. The value associated with the Orange Leaf Rewards account
-          or card is not insured by the Federal Deposit Insurance Corporation (FDIC).
-        </Text>
-        <Text>
-          Most Orange Leaf locations in the United States accept your Orange Leaf Rewards account or card. Certain
-          Orange Leaf -branded locations may not permit you to use the Orange Leaf Rewards card for payment, including
-          some franchise locations, special venue locations, or in restaurants located outside the United States, to the
-          extent applicable. We reserve the right not to accept any Orange Leaf Rewards account or card or otherwise
-          limit use of an Orange Leaf Rewards account or card if we reasonably believe that the use is unauthorized,
-          fraudulent or otherwise unlawful.
-        </Text>
-        <Title>ADDING VALUE TO YOUR ORANGE LEAF REWARDS ACCOUNT OR CARD</Title>
-        <Text>
-          Soon, your Orange Leaf Rewards account or card can be used as an Orange Leaf gift card. When such
-          functionality is launched, in the United States, you will be able to load a dollar value on an Orange Leaf
-          Rewards account or card by using a credit card, debit card or cash by visiting any participating Orange Leaf
-          location. You may not load more than $100 worth of value on each Orange Leaf Rewards account or card. There is
-          no minimum amount that must be loaded onto your Orange Leaf Rewards account or card. Orange Leaf may change
-          the maximum and minimum amounts at any time by notifying you at the point of sale, by phone when you call or
-          on the Sites, and such change shall not constitute an amendment to these Orange Leaf Loyalty Program Rules.
-        </Text>
-        <Title>RECEIPTS AND STATEMENTS</Title>
-        <Text>
-          Orange Leaf Rewards accountholders are not sent statements of itemized transactions from an Orange Leaf
-          Rewards account. You can check the balance of your Orange Leaf Rewards account or card or review recent
-          transactions on your Orange Leaf Rewards account or card by visiting our website or contacting us via the
-          Contact Us section of the Site. You will need to have your Orange Leaf Rewards card, your 16-digit Orange Leaf
-          Rewards account number, or other identifiable information provided at time of registration (such as your email
-          address or phone number that is linked to your Rewards account) available in order to access your account. The
-          account balance for an Orange Leaf Rewards account or card or Orange Leaf gift card also will appear on your
-          receipt from a point-of-sale register. When you use your Orange Leaf Rewards account or card, you will receive
-          a receipt if you request one but will not be asked to sign the receipt. The receipt will indicate that the
-          purchase was made using an Orange Leaf Rewards account or card and will provide the remaining balance of your
-          Orange Leaf Rewards account or card. You should keep your receipts and check your online statement to ensure
-          that your account balance is correct.
+          You can view your loyalty account via the mobile app or through{' '}
+          <Link href="/">https://order.orangeleafyogurt.com</Link>; your rewards will be listed under your Profile. You
+          will need to have your loyalty account number available in order to access your account.
         </Text>
         <Title>BILLINGS AND ERROR CORRECTIONS</Title>
         <Text>
-          We reserve the right to correct the balance of your Orange Leaf Rewards card or account if we believe that a
-          clerical, billing or accounting error occurred. If you have questions regarding your transaction history or
-          any correction, or if you dispute any transaction or correction that has been assessed against your Orange
-          Leaf Rewards account or card, please contact us via our Contact Us page on the Site. We will conduct an
-          investigation and communicate the results and correct any error that we verify as soon as we finish the
-          investigation. If no error was found, we will communicate an explanation. We shall have no liability for any
-          billing error unless you provide us notice within 60 days of the date of the transaction in question. You
-          should monitor your transactions and account balances closely.
+          We reserve the right to correct the balance of your loyalty account if we believe that a clerical, billing or
+          accounting error occurred. If you have questions regarding your transaction history or any correction, or if
+          you dispute any transaction or correction that has been assessed against your loyalty account, please contact
+          us via our <Link href="/about-us">Contact Us</Link> page on the Site. We will conduct an investigation and
+          communicate the results and correct any error that we verify as soon as we finish the investigation. If no
+          error was found, we will communicate an explanation. We shall have no liability for any billing error unless
+          you provide us notice within 60 days of the date of the transaction in question. You should monitor your
+          transactions and account balances closely.
         </Text>
-        <Title>FRAUD ASSOCIATED WITH YOUR ORANGE LEAF REWARDS ACCOUNT OR CARD OR ACCOUNT OR CARD BALANCE</Title>
+        <Title>FRAUD ASSOCIATED WITH YOUR ORANGE LEAF LOYALTY ACCOUNT OR BALANCE</Title>
         <Text>
-          We will not accept any Orange Leaf Rewards account or card, or will limit use of any Orange Leaf Rewards
-          account or card or account or card balance, if we reasonably believe that the use is unauthorized, fraudulent
-          or otherwise unlawful, and we consider such action appropriate to limit our risk. Orange Leaf does not control
-          who may sell preloaded Orange Leaf Rewards account or cards, nor can we control the price or preloaded
-          denominations offered by independent sellers. Consequently, Orange Leaf has no liability to you for any third
-          party fraud or unlawful activity associated with any Orange Leaf Rewards account or card balance. If Orange
-          Leaf discovers any Orange Leaf Rewards account or card or account or card balance was sourced or derived from
-          fraud or other unlawful means, in our sole discretion, we may cancel all impacted Orange Leaf Rewards accounts
-          or cards and retain all related Orange Leaf Rewards account or card balances without notice to you. We may use
-          retained Orange Leaf Rewards account or card balances to help offset our liability to card companies, networks
-          and issuers of lost or stolen credit and debit cards used to purchase or load Orange Leaf gift cards and
-          Orange Leaf Rewards accounts or cards.
+          We will not accept any loyalty account or will limit use of any loyalty account, if we reasonably believe that
+          the use is unauthorized, fraudulent or otherwise unlawful, and we consider such action appropriate to limit
+          our risk. Consequently, Orange Leaf has no liability to you for any third-party fraud or unlawful activity
+          associated with any loyalty accounts. If Orange Leaf discovers any loyalty account was sourced or derived from
+          fraud or other unlawful means, in our sole discretion, we may cancel all impacted loyalty accounts and void
+          all related loyalty rewards on such account without notice to you.
         </Text>
-        <Title>REPLACING A LOST OR STOLEN ORANGE LEAF REWARDS ACCOUNT OR CARD</Title>
-        <Text>
-          If your Orange Leaf Rewards card is lost, stolen or destroyed or you cannot remember your Orange Leaf Rewards
-          account number of any of the information you used to activate such account, the card can be replaced with the
-          balance remaining on it at the time of your call, but only if you have registered it with us. Please notify us
-          immediately if you change any of your registration information. If your Orange Leaf Rewards card is ever lost
-          or stolen, visit your local participating Orange Leaf location and request a new Orange Leaf Rewards card. If
-          you remember the 16-digit number of the Orange Leaf Rewards card you have lost or stolen or your email and/or
-          phone number that you used when registering your Rewards account, a participating Orange Leaf restaurant will
-          be able to deactivate your old card and issue you a new one. Your Orange Leaf Rewards card balance is only
-          protected from the point in time you notify us that your Orange Leaf Rewards card is missing. We will freeze
-          the remaining balance on your Orange Leaf Rewards card at the time you notify us and will load that remaining
-          balance on a replacement Orange Leaf Rewards card. If you do not remember any of this information, you will
-          need to obtain and register a new Orange Leaf Rewards account either in a participating Orange Leaf location
-          or online by contacting us via the <Link href="/about-us">Contact Us</Link> section of the Site; we are sorry
-          but none of your Rewards points, rewards or balances can be transferred if you cannot remember the 16-digit
-          number of the Orange Leaf Rewards account or card or the email address or phone number that you used to
-          register your account
-        </Text>
-        <Title>USERNAME, PASSWORD AND ACCESS TO YOUR ORANGE LEAF REWARDS CLUB ACCOUNT</Title>
+        <Title>USERNAME, PASSWORD AND ACCESS TO YOUR ORANGE LEAF LOYALTY ACCOUNT</Title>
         <Text>
           You are solely responsible for managing your password and for keeping your password confidential. No one from
           Orange Leaf will be authorized to provide you your password. If you forget your username or password, click on
-          the “Forgot Your Password” link, or contact us via the <Link href="/about-us">Contact Us</Link> section of the
-          Site to request your username or password. For your privacy, we do not have access to your password
+          the "Forgot Your Password" link, or contact us via the <Link href="/about-us">Contact Us</Link> section of the
+          Site to request your user name or password. For your privacy, we do not have access to your password
           information. However, we can reset it for you so that you can update your account with a new password. You are
-          also solely responsible for restricting access to any computer or mobile device you use to access your Orange
-          Leaf Rewards membership. You agree that you are responsible for all activities that occur on your account or
-          through use of your password by yourself or by other persons. If we provide you with, and you opt for a
-          “Remember me” feature for your Orange Leaf Rewards account, or if you login with your personal Facebook
-          account, a cookie helps Orange Leaf recall certain items of your specific information on subsequent visits,
-          including your username and password. When you return to Orange Leaf Rewards, the information you previously
-          provided can be retrieved, so that it is not necessary to enter your username and password to access certain
-          functionality. While cookies are a convenience, please remember that if you elect the “Remember Me” option,
-          anyone who can access the computer or mobile device you are using will have the ability to access your account
-          for certain functions and view certain information about your account.
+          also solely responsible for restricting access to any computer or mobile device you use to access your loyalty
+          membership. You agree that you are responsible for all activities that occur on your account or through use of
+          your password by yourself or by other persons. If we provide you with, and you opt for a "Remember me" feature
+          for your loyalty account, or if you login with your personal Facebook account, a cookie helps Orange Leaf
+          recall certain items of your specific information on subsequent visits, including your username and password.
+          When you return to loyalty account, the information you previously provided can be retrieved, so that it is
+          not necessary to enter your username and password to access certain functionality. While cookies are a
+          convenience, please remember that if you elect the "Remember Me" option, anyone who can access the computer or
+          mobile device you are using will have the ability to access your account for certain functions and view
+          certain information about your account.
         </Text>
         <Title>CONSENT TO ELECTRONIC COMMUNICATIONS</Title>
         <Text>
-          Through your registration of your Orange Leaf Rewards account, you consent to receive communications from
-          Orange Leaf about Orange Leaf and/or your Orange Leaf Rewards membership electronically, either by e-mail or
-          by notices posted on the Sites, as determined by Orange Leaf in its sole discretion. You agree that a notice,
-          disclosure, agreement, or other communication be sent to you by Orange Leaf in writing is satisfied by such
-          electronic communication. You agree that Orange Leaf may send you e-mails which include notices about your
+          Through your joining the loyalty program and provided that you do not opt out of receiving such communication
+          from Orange Leaf, you consent to receive communications from Orange Leaf about Orange Leaf and/or your loyalty
+          membership electronically, either by e-mail, text, SMS, push notification or by notices posted on the Sites,
+          as determined by Orange Leaf in its sole discretion. You agree that a notice, disclosure, agreement, or other
+          communication be sent to you by Orange Leaf in writing is satisfied by such electronic communication. You
+          agree that Orange Leaf may send you e-mails, texts, SMS or push notifications which include notices about your
           account as well as information pertaining to our products and/or services, such as featured products or new
-          offerings. You agree that this information is part of your Orange Leaf Rewards membership and your
-          relationship with Orange Leaf.
+          offerings. You agree that this information is part of your loyalty membership and your relationship with
+          Orange Leaf.
         </Text>
-        <Title>ORANGE LEAF INITIATED ORANGE LEAF REWARDS CANCELLATIONS</Title>
+        <Title>ORANGE LEAF INITIATED ORANGE LEAF LOYALTY CANCELLATIONS</Title>
         <Text>
-          Orange Leaf may suspend or cancel your Orange Leaf Rewards membership account, or otherwise restrict your use
-          of any of Orange Leaf services, in Orange Leaf sole discretion, with or without cause.
+          Orange Leaf may suspend or cancel your loyalty account or otherwise restrict your use of any of Orange Leaf
+          services, in Orange Leaf sole discretion, with or without cause.
         </Text>
         <Title>SECURITY</Title>
         <Text>
-          In connection with any Orange Leaf gift card or Orange Leaf Rewards card, your personally identifiable and
-          financial information are encrypted using SSL (Secure Socket Layer) encryption technology before being sent
-          over the Internet. This is industry standard technology designed to protect the security of your information.
-          To help prevent unauthorized access to your data, maintain data accuracy, and ensure the correct use of
-          information, we have also established physical, electronic, and managerial procedures designed to safeguard
-          and secure the information we collect online.
+          In connection with any ORANGE LEAF gift card or loyalty account, your personally identifiable and financial
+          information are encrypted using SSL (Secure Socket Layer) encryption technology before being sent over the
+          Internet. This is industry standard technology designed to protect the security of your information. To help
+          prevent unauthorized access to your data, maintain data accuracy, and ensure the correct use of information,
+          we have also established physical, electronic, and managerial procedures designed to safeguard and secure the
+          information we collect online.
         </Text>
         <Title>DISCLAIMER</Title>
         <Text>
           THE SITES, THEIR CONTENTS, AND ANY SOFTWARE, FUNCTIONS AND ALL INFORMATION, PRODUCTS AND SERVICES CONTAINED IN
-          OR OFFERED THROUGH THE SITES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT REPRESENTATIONS OR
+          OR OFFERED THROUGH THE SITES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT REPRESENTATIONS OR
           WARRANTIES OF ANY KIND. ORANGE LEAF AND ITS LICENSORS AND CONTENT PROVIDERS EXPRESSLY DISCLAIM ALL SUCH
           REPRESENTATIONS AND WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE,
           MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT (INCLUDING, WITHOUT LIMITATION,
@@ -722,11 +660,11 @@ const TermsOfUseSection: FC = () => (
           RELIABILITY, SECURITY, CURRENCY AND COMPLETENESS ARISING FROM OR RELATING TO THE SITES, THEIR CONTENT OR ANY
           LINKS, ANY SOFTWARE, TOOLS, TIPS, PRODUCTS OR SERVICES PROVIDED THROUGH THE SITES) AND ANY IMPLIED WARRANTIES
           ARISING FROM COURSE OF DEALING OR COURSE OF PERFORMANCE WITH RESPECT TO THE SITES, ANY GIFT CARD AND/OR ANY
-          ORANGE LEAF REWARDS CARD OR ACCOUNT. ORANGE LEAF DOES NOT WARRANT THAT THE GIFT CARD AND/OR THE ORANGE LEAF
-          REWARDS CARD OR ACCOUNT WILL ALWAYS BE ACCESSIBLE OR ACCEPTED. ORANGE LEAF DOES NOT WARRANT THAT THE SITES OR
-          THEIR CONTENTS WILL BE COMPLETE, ACCURATE, TIMELY, UNINTERRUPTED, SECURE OR ERROR FREE, OR THAT DEFECTS WILL
-          BE CORRECTED. ALL INFORMATION ON THE SITES IS SUBJECT TO CHANGE WITHOUT NOTICE. SOME JURISDICTIONS DO NOT
-          ALLOW THE EXCLUSION OF CERTAIN WARRANTIES SO SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.
+          LOYALTY ACCOUNT. ORANGE LEAF DOES NOT WARRANT THAT THE GIFT CARD AND/OR THE LOYALTY ACCOUNT WILL ALWAYS BE
+          ACCESSIBLE OR ACCEPTED. ORANGE LEAF DOES NOT WARRANT THAT THE SITES OR THEIR CONTENTS WILL BE COMPLETE,
+          ACCURATE, TIMELY, UNINTERRUPTED, SECURE OR ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED. ALL INFORMATION ON
+          THE SITES IS SUBJECT TO CHANGE WITHOUT NOTICE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN
+          WARRANTIES SO SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU.
         </Text>
         <Title>LIMITATION OF LIABILITY</Title>
         <Text>
@@ -740,10 +678,10 @@ const TermsOfUseSection: FC = () => (
           SITES; ANY LINK PROVIDED ON THE SITES; AND YOUR ACCOUNT AND PASSWORD, WHETHER OR NOT ORANGE LEAF HAS BEEN
           ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL ORANGE LEAF OR ITS AFFILIATES OR SUBSIDIARIES
           HAVE ANY LIABILITY FOR UNAUTHORIZED ACCESS TO, OR ALTERATION, THEFT OR DESTRUCTION OF A GIFT CARD AND/OR
-          ORANGE LEAF REWARDS ACCOUNT OR CARD THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY
-          THIRD PARTY, OR AS A RESULT OF ANY DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS
-          EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE
-          TERMINATION OF YOUR RIGHT TO USE THE SITES.
+          LOYALTY ACCOUNT THROUGH ACCIDENT, MISUSE OR FRAUDULENT MEANS OR DEVICES BY YOU OR ANY THIRD PARTY, OR AS A
+          RESULT OF ANY DELAY OR MISTAKE RESULTING FROM ANY CIRCUMSTANCES BEYOND OUR CONTROL. THIS EXCLUSION OF
+          LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW. THIS PROVISION SHALL SURVIVE THE TERMINATION OF
+          YOUR RIGHT TO USE THE SITES.
         </Text>
         <Text>
           YOU ACKNOWLEDGE THAT YOU WILL BE FULLY LIABLE FOR ALL DAMAGES RESULTING DIRECTLY OR INDIRECTLY FROM YOUR USE
@@ -757,9 +695,9 @@ const TermsOfUseSection: FC = () => (
           damages, liabilities, costs and expenses, including reasonable fees and expenses of counsel, incurred or
           suffered by them and arising from or related to your (i) use of the Sites including, without limitation,
           transmission or placement of information or material by you on the Sites, (ii) use of a gift card, (iii) use
-          of an Orange Leaf Rewards card, account or any earned rewards or points, or (iv) violation of any of these
-          Terms including, without limitation, the Orange Leaf Loyalty Program Rules and the Gift Card Rules. This
-          provision shall survive the termination of your right to use the Sites.
+          of a loyalty account or any earned rewards or points, or (iv) violation of any of these Terms including,
+          without limitation, the Loyalty Program Rules and the Gift Card Rules. This provision shall survive the
+          termination of your right to use the Sites.
         </Text>
         <Title>DISPUTE RESOLUTION</Title>
         <Text>
@@ -767,10 +705,10 @@ const TermsOfUseSection: FC = () => (
           advertisement or promotion relating to these Terms or the Sites; or (d) transactions effectuated through the
           Sites; or (e) the relationship which results from these Terms (including relationships with third parties who
           are not party to these Terms) shall be resolved by binding individual arbitration under the American
-          Arbitration Association’s rules for consumer-related disputes. Neither you nor Orange Leaf will participate in
+          Arbitration Association's rules for consumer-related disputes. Neither you nor Orange Leaf will participate in
           a class action or class-wide arbitration for any claims covered by these Terms. If this class action waiver is
           found to be unenforceable in a particular case, then this entire arbitration agreement shall be null and void
-          in that case. These Terms shall be governed by the Federal Arbitration Act and, where consistent, Texas law.
+          in that case. These Terms shall be governed by the Federal Arbitration Act and were consistent, Texas law.
           Orange Leaf reserves the right to change this dispute resolution provision, but any such changes will not
           apply to disputes filed before the effective date of the amendment. This provision will survive the
           termination of your right to use the Sites.
@@ -791,44 +729,44 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Title>GENERAL PROVISIONS</Title>
         <Text>
-          Except for the portion of these Terms specifically labeled as the Orange Leaf Rewards Terms and Conditions,
-          which govern the Orange Leaf Rewards program (i.e., Orange Leaf Loyalty Program Rules) or the Orange Leaf Gift
-          Card Terms and Conditions, which govern the Orange Leaf Gift Card program (i.e., Gift Card Rules), these Terms
-          constitute a binding agreement between you and Orange Leaf and supersede all prior agreements, understandings
-          and representations between the parties regarding the subject matter herein. In the event of an inconsistency
-          between these Terms and either the Orange Leaf Loyalty Program Rules or the Gift Card Rules relating to your
-          use of the Sites, these Terms shall prevail. In the event of an inconsistency between these Terms and the
-          Orange Leaf Loyalty Program Rules relating to your use of your Orange Leaf Rewards loyalty card or Orange Leaf
-          Rewards points, the Orange Leaf Loyalty Program Rules shall prevail. In the event of an inconsistency between
-          these Terms and the Gift Card Rules relating to your use of your Orange Leaf gift card, the Gift Card Rules
-          shall prevail. No failure by Orange Leaf or you to exercise any rights, powers or remedies hereunder or its
-          delay to do so shall constitute a waiver of these rights, powers or remedies. The single or partial exercise
-          of a right, power or remedy shall not prevent its subsequent exercise or the exercise of any other right,
-          power or remedy. If any provision of these Terms or part thereof is or becomes illegal, invalid or
-          unenforceable in any jurisdiction, the illegality, invalidity or unenforceability of that provision will not
-          affect the legality, validity or enforceability of the remainder of the provision or the remaining provisions
-          of these Terms, as the case may be, or the legality, validity or enforceability of that provision or part
-          thereof in any other jurisdiction. These Terms are effective until terminated by you or Orange Leaf, which
-          Orange Leaf may do at any time, without notice, in its sole discretion. If you become dissatisfied with the
-          Sites, your only recourse is to immediately discontinue use of the Sites. All provisions of the Terms
-          regarding representations, warranties, indemnification, disclaimers, and limitations of liability shall
-          survive the termination of the Terms.
+          Except for the portion of these Terms specifically labeled as the ORANGE LEAF® Loyalty Terms and Conditions,
+          which govern ORANGE LEAF® Rewards Club (i.e., Loyalty Program Rules) or the ORANGE LEAF Gift Card Terms and
+          Conditions, which govern the ORANGE LEAF Gift Card program (i.e., Gift Card Rules), these Terms constitute a
+          binding agreement between you and Orange Leaf and supersede all prior agreements, understandings and
+          representations between the parties regarding the subject matter herein. In the event of an inconsistency
+          between these Terms and either the Loyalty Program Rules or the Gift Card Rules relating to your use of the
+          Sites, these Terms shall prevail. In the event of an inconsistency between these Terms and the Loyalty Program
+          Rules relating to your use of your loyalty account or loyalty points, the Loyalty Program Rules shall prevail.
+          In the event of an inconsistency between these Terms and the Gift Card Rules relating to your use of your
+          ORANGE LEAF gift card, the Gift Card Rules shall prevail. No failure by Orange Leaf or you to exercise any
+          rights, powers or remedies hereunder or its delay to do so shall constitute a waiver of these rights, powers
+          or remedies. The single or partial exercise of a right, power or remedy shall not prevent its subsequent
+          exercise or the exercise of any other right, power or remedy. If any provision of these Terms or part thereof
+          is or becomes illegal, invalid or unenforceable in any jurisdiction, the illegality, invalidity or
+          unenforceability of that provision will not affect the legality, validity or enforceability of the remainder
+          of the provision or the remaining provisions of these Terms, as the case may be, or the legality, validity or
+          enforceability of that provision or part thereof in any other jurisdiction. These Terms are effective until
+          terminated by you or Orange Leaf, which Orange Leaf may do at any time, without notice, in its sole
+          discretion. If you become dissatisfied with the Sites, your only recourse is to immediately discontinue use of
+          the Sites. All provisions of the Terms regarding representations, warranties, indemnification, disclaimers,
+          and limitations of liability shall survive the termination of the Terms.
         </Text>
         <Text>
-          If you have any questions or comments about these Terms, please contact us via the{' '}
-          <Link href="/about-us">Contact Us</Link> section of the Site.
+          If you have any questions or comments about these Terms, please call us at{' '}
+          <a href="tel:2143025910">214-302-5910</a> or contact us via the <Link href="/about-us">Contact Us</Link>{' '}
+          section of the Site.
         </Text>
         <Title>LINKS</Title>
         <Text>
           The Sites contains links to or references to other web sites owned and operated by third party, including
           among others those of advertisers and other third parties and companies whose trademarks appear on the Sites.
-          These links are provided for your convenience only. No endorsement of any third party products, services or
+          These links are provided for your convenience only. No endorsement of any third-party products, services or
           information is expressed or implied by any information, material or content of any third party contained in,
           referred to, included on, or linked from or to this Site. Any information, data, opinions, recommendation,
           products or services provided by such third parties through links to other websites or otherwise made
           available through their websites are solely those of such third parties and not of Orange Leaf or its
-          affiliates. This could be the case even for those web sites that carry Orange Leaf or its affiliates’
-          trademarks or logos or which are framed by the Sites. Your use of such third party websites is subject to the
+          affiliates. This could be the case even for those web sites that carry Orange Leaf or its affiliates'
+          trademarks or logos or which are framed by the Sites. Your use of such third-party websites is subject to the
           terms and conditions of use and the privacy policies of such websites. We are not responsible for the
           information collection practices or the content of the sites to which we link.
         </Text>
@@ -841,30 +779,20 @@ const TermsOfUseSection: FC = () => (
         </Text>
         <Text>
           If you are a California resident, you can also request a notice disclosing the categories or personal
-          information we have shared with third parties, if any, for the third parties’ direct marketing purposes. To
-          request a notice, please submit your request by mail to: Orange Leaf, Attn: Customer Service, 14850 Montfort
-          Drive, Suite 131 PMB22, Dallas, TX 75254. Please specify that you are requesting a “California Privacy Rights
-          Notice.” We will make every effort to promptly respond to your request.
-        </Text>
-        <Title>
-          The Official Rules for the $25 gift card giveaway
-        </Title>
-        <Text>
-          Click <a 
-            href="/files/25GCGiveaway_OfficialRules.pdf"
-            target="_blank"
-            rel="noopener noreferrer">
-              here</a> for the official rules.
+          information we have shared with third parties, if any, for the third parties' direct marketing purposes. To
+          request a notice, please submit your request by mail to: Orange Leaf, Attn: Customer Service, 14860 Montfort
+          Drive, Suite 150 PMB34, Dallas, TX 75254. Please specify that you are requesting a "California Privacy Rights
+          Notice." We will make every effort to promptly respond to your request.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
-          If you have any questions or concerns regarding these Terms (including, without limitation, the Orange Leaf
-          Rewards Loyalty Program Rules or the Gift Card Rules) or regarding the privacy or security of any Orange Leaf
-          gift card or Orange Leaf Rewards card or account, please contact us via the{' '}
-          <Link href="/about-us">Contact Us</Link> section of the Site, or write to us at Orange Leaf, 14850 Montfort
-          Drive, Suite 131 PMB22, Dallas, TX 75254.
+          If you have any questions or concerns regarding these Terms (including, without limitation, the Loyalty
+          Program Rules or the Gift Card Rules) or regarding the privacy or security of any ORANGE LEAF gift card or
+          loyalty account, please call us at <a href="tel:2143025910">214-302-5910</a> or contact us via the{' '}
+          <Link href="/about-us">Contact Us</Link> section of the Site, or write to us at Orange Leaf, 14860 Montfort
+          Drive, Suite 150 PMB34, Dallas, TX 75254.
         </Text>
-        <Text>© 2021 Orange Leaf, LLC. All rights reserved.</Text>
+        <Text>© {new Date().getFullYear()} Orange Leaf, LLC. All rights reserved.</Text>
       </Paper>
     </MaxWidthWrapper>
   </RelativeWrapper>
