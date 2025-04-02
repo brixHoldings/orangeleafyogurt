@@ -511,7 +511,10 @@ const TermsOfUseSection: FC = () => (
           earned for any qualified purchases you make in participating ORANGE LEAF location(s). If you cannot contact us
           via the <Link href="/about-us">Contact Us</Link> section of the Site, then you can mail a copy of your receipt
           and your loyalty account number to Orange Leaf, Attn: ORANGE LEAF Loyalty, 14860 Montfort Drive, Suite 150
-          PMB34, Dallas, TX 75254. Click <Link href="/">here</Link> for answers to frequently asked questions regarding
+          PMB34, Dallas, TX 75254. Click <Link href="/">here</Link> for answers to
+          <a download href="/files/OrangeLeaf-LoyaltyFAQs3-27-2025.pdf">
+            frequently asked questions regarding
+          </a>
           the ORANGE LEAF Rewards Club.
         </Text>
         <Text>
