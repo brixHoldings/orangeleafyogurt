@@ -92,10 +92,9 @@ const TermsOfUseSection: FC = () => (
           adjust the website's UI (user interface) and design it to their personal needs. Additionally, the website
           utilizes an AI-based application that runs in the background and optimizes its accessibility level constantly.
           This application remediates the website's HTML, adapts its functionality and behavior for screen-readers used
-          by blind users, and for keyboard functions used by individuals with motor impairments. Click here{' '}
-          <Link href="/accessibility-statement">https://orangeleafyogurt.com/accessibility-statement/</Link>. If you
-          wish to contact the website's owner please use the following email{' '}
-          <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a> or call us at{' '}
+          by blind users, and for keyboard functions used by individuals with motor impairments. Click{' '}
+          <Link href="/accessibility-statement">here</Link> if you wish to contact the website's owner please use the
+          following email <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a> or call us at{' '}
           <a href="tel:2143025910">214-302-5910</a> and one of our team members will personally assist you.
         </Text>
         <Title>CHANGES TO TERMS AND CONDITIONS</Title>
@@ -393,7 +392,7 @@ const TermsOfUseSection: FC = () => (
         <Text>
           Unless you have an original sales receipt for your gift card and your 16 or 19-digit gift card number, the
           remaining gift card value will not be replaced if lost, stolen or damaged. If you have your original sales
-          receipt for your gift card and your 16 or 19-digit gift card number, then you can send an email to
+          receipt for your gift card and your 16 or 19-digit gift card number, then you can send an email to{' '}
           <a href="mailto:info@orangeleafyogurt.com">info@orangeleafyogurt.com</a> and include the following
           information: (1) the 16 or 19-digit gift card number, (2) a photo copy of the original location receipt
           indicating the purchase of the gift card, (3) a copy of a valid government issued I.D. (Driver's License,
@@ -511,11 +510,11 @@ const TermsOfUseSection: FC = () => (
           earned for any qualified purchases you make in participating ORANGE LEAF location(s). If you cannot contact us
           via the <Link href="/about-us">Contact Us</Link> section of the Site, then you can mail a copy of your receipt
           and your loyalty account number to Orange Leaf, Attn: ORANGE LEAF Loyalty, 14860 Montfort Drive, Suite 150
-          PMB34, Dallas, TX 75254. Click <Link href="/">here</Link> for answers to{' '}
-          <Link href="/files/OrangeLeaf-LoyaltyFAQs3-27-2025.pdf" target="_blank">
-            frequently asked questions
+          PMB34, Dallas, TX 75254. Click{' '}
+          <Link href="/files/OrangeLeaf-LoyaltyFAQs3-27-2025.pdf" target="_blank" download>
+            here
           </Link>{' '}
-          regarding the ORANGE LEAF Rewards Club.
+          for answers to frequently asked questions regarding the ORANGE LEAF Rewards Club.
         </Text>
         <Text>
           Your use of a loyalty account constitutes your acceptance of the complete Loyalty Program Rules. Orange Leaf
@@ -786,6 +785,14 @@ const TermsOfUseSection: FC = () => (
           request a notice, please submit your request by mail to: Orange Leaf, Attn: Customer Service, 14860 Montfort
           Drive, Suite 150 PMB34, Dallas, TX 75254. Please specify that you are requesting a "California Privacy Rights
           Notice." We will make every effort to promptly respond to your request.
+        </Text>
+        <Title>The Official Rules for the $25 gift card giveaway</Title>
+        <Text>
+          Click{' '}
+          <a href="/files/25GCGiveaway_OfficialRules.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
