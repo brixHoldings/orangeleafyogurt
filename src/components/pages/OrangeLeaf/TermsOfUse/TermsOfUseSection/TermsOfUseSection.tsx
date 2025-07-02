@@ -801,6 +801,13 @@ const TermsOfUseSection: FC = () => (
           </a>{' '}
           for the official rules on Orange Leaf Columbus, IN.
         </Text>
+        <Text>
+          Click{' '}
+          <a href="/files/25GCGiveaway_OfficialRules_CiboloTX.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules on Orange Leaf Cibolo, TX.
+        </Text>
         <Title>CONTACT US</Title>
         <Text>
           If you have any questions or concerns regarding these Terms (including, without limitation, the Loyalty
