@@ -172,9 +172,7 @@ const Privacy: FC = () => (
 
         <Title>THE WAY WE USE INFORMATION</Title>
         <Text>
-          We may sell or disclose your personally identifiable information to third parties for direct marketing
-          purposes without providing you an opportunity to opt out or otherwise prohibit such use. Orange Leaf uses the
-          personal information you provide for the purposes for which it was provided, for example, to support an Orange
+          Orange Leaf uses the personal information you provide for the purposes for which it was provided, for example, to support an Orange
           Leaf Rewards program; to notify you that you have won a contest or sweepstakes; to respond to your inquiries
           or complaints; or to contact you or send you information about your membership. In addition, Orange Leaf, its
           subsidiaries, affiliates and their franchisees may share and use information collected through the Sites to
