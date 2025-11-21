@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
 
   experimental: {
-    appDir: true,
+   
   },
 
   // i18n: {
