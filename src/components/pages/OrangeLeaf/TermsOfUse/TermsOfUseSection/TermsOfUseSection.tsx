@@ -789,24 +789,10 @@ const TermsOfUseSection: FC = () => (
         <Title>The Official Rules for the $25 gift card giveaway</Title>
         <Text>
           Click{' '}
-          <a href="/files/25GCGiveaway_OfficialRules_EastRutherford.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/files/25GCGiveaway_OfficialRules_AledoTX" target="_blank" rel="noopener noreferrer">
             here
           </a>{' '}
-          for the official rules on Orange Leaf East Rutherford, NJ.
-        </Text>
-        <Text>
-          Click{' '}
-          <a href="/files/25GCGiveaway_OfficialRules_ColumbusIN.pdf" target="_blank" rel="noopener noreferrer">
-            here
-          </a>{' '}
-          for the official rules on Orange Leaf Columbus, IN.
-        </Text>
-        <Text>
-          Click{' '}
-          <a href="/files/25GCGiveaway_OfficialRules_CiboloTX.pdf" target="_blank" rel="noopener noreferrer">
-            here
-          </a>{' '}
-          for the official rules on Orange Leaf Cibolo, TX.
+          for the official rules on Orange Leaf Aledo, TX.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
