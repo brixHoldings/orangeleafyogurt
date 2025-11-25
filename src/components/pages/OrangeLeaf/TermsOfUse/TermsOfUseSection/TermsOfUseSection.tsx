@@ -794,6 +794,14 @@ const TermsOfUseSection: FC = () => (
           </a>{' '}
           for the official rules on Orange Leaf Aledo, TX.
         </Text>
+        <Title>The Official Rules for the Azle 1st Anniversary giveaway</Title>
+        <Text>
+          Click{' '}
+          <a href="/files/AzleAnniversaryParty_Instore_SweepstakesRules.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules on the Azle 1st Anniversary giveaway.
+        </Text>
         <Title>CONTACT US</Title>
         <Text>
           If you have any questions or concerns regarding these Terms (including, without limitation, the Loyalty
