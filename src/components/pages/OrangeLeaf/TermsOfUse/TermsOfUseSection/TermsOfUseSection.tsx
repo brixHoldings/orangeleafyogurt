@@ -792,7 +792,14 @@ const TermsOfUseSection: FC = () => (
           <a href="/files/25GCGiveaway_OfficialRules_AledoTX.pdf" target="_blank" rel="noopener noreferrer">
             here
           </a>{' '}
-          for the official rules on Orange Leaf Aledo, TX.
+          for the official rules on Orange Leaf Aledo, TX giveaway.
+        </Text>
+        <Text>
+          Click{' '}
+          <a href="/files/25GCGiveaway_OfficialRules_StGeorgeUT.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules on Orange Leaf St. George, UT giveaway.
         </Text>
         <Title>The Official Rules for the Azle 1st Anniversary giveaway</Title>
         <Text>
