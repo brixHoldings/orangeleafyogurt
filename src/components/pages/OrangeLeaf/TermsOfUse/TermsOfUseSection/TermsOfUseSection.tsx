@@ -789,25 +789,10 @@ const TermsOfUseSection: FC = () => (
         <Title>The Official Rules for the $25 gift card giveaway</Title>
         <Text>
           Click{' '}
-          <a href="/files/25GCGiveaway_OfficialRules_AledoTX.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/files/25GCGiveaway_OfficialRules_CiboloTX_Jan26.pdf" target="_blank" rel="noopener noreferrer">
             here
           </a>{' '}
-          for the official rules on Orange Leaf Aledo, TX giveaway.
-        </Text>
-        <Text>
-          Click{' '}
-          <a href="/files/25GCGiveaway_OfficialRules_StGeorgeUT.pdf" target="_blank" rel="noopener noreferrer">
-            here
-          </a>{' '}
-          for the official rules on Orange Leaf St. George, UT giveaway.
-        </Text>
-        <Title>The Official Rules for the Azle 1st Anniversary giveaway</Title>
-        <Text>
-          Click{' '}
-          <a href="/files/AzleAnniversaryParty_Instore_SweepstakesRules.pdf" target="_blank" rel="noopener noreferrer">
-            here
-          </a>{' '}
-          for the official rules on the Azle 1st Anniversary giveaway.
+          for the official rules on Orange Leaf Azle, TX January 2026 giveaway.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
