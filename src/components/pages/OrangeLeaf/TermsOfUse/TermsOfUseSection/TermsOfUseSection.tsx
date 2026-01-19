@@ -792,7 +792,7 @@ const TermsOfUseSection: FC = () => (
           <a href="/files/25GCGiveaway_OfficialRules_CiboloTX_Jan26.pdf" target="_blank" rel="noopener noreferrer">
             here
           </a>{' '}
-          for the official rules on Orange Leaf Azle, TX January 2026 giveaway.
+          for the official rules on Orange Leaf Cibolo, TX January 2026 giveaway.
         </Text>
         <Title>CONTACT US</Title>
         <Text>
