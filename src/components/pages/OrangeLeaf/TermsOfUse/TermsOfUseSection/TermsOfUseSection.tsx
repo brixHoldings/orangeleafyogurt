@@ -794,6 +794,13 @@ const TermsOfUseSection: FC = () => (
           </a>{' '}
           for the official rules on Orange Leaf Cibolo, TX January 2026 giveaway.
         </Text>
+        <Text>
+          Click{' '}
+          <a href="/files/25GCGiveaway_OfficialRules_CiboloTX_Feb26.pdf" target="_blank" rel="noopener noreferrer">
+            here
+          </a>{' '}
+          for the official rules on Orange Leaf Cibolo, TX February 2026 giveaway.
+        </Text>
         <Title>CONTACT US</Title>
         <Text>
           If you have any questions or concerns regarding these Terms (including, without limitation, the Loyalty
